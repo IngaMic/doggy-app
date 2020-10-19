@@ -49,7 +49,9 @@ export default class Login extends React.Component {
                         <h4 className="err">Something Went Wrong!</h4>
                     )}
                     <div>
-                        <label className="move4">Email: </label>
+                        <label className="move4">
+                            <span className="glyphicon glyphicon-user"></span>
+                        </label>
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="email"
@@ -59,7 +61,10 @@ export default class Login extends React.Component {
                         />
                     </div>
                     <div>
-                        <label>Password: </label>
+                        <label>
+                            {" "}
+                            <span className="glyphicon glyphicon-lock"></span>
+                        </label>
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="password"
@@ -70,12 +75,13 @@ export default class Login extends React.Component {
                     </div>
                     <button>Login</button>
                 </form>
-                <HashRouter>
-                    <Link to="/registration">
-                        {" "}
-                        Don't have an account yet? Click here to Register!
-                    </Link>
-                </HashRouter>
+                <div className="reglink">
+                    <HashRouter>
+                        <Link to="/registration">
+                            No account yet? Click here to Register!
+                        </Link>
+                    </HashRouter>
+                </div>
             </div>
         );
     }

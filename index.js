@@ -11,9 +11,9 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 //const cryptoRandomString = require("crypto-random-string");
 const csurf = require("csurf");
-const { s3Url } = require("./config.json");
+//const { s3Url } = require("./config.json");
 const uidSafe = require("uid-safe");
-const s3 = require("./s3.js");
+//const s3 = require("./s3.js");
 const multer = require("multer");
 //const { brotliDecompress } = require("zlib");
 

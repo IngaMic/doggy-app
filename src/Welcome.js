@@ -9,22 +9,35 @@ export default function Welcome() {
             <div>
                 <p className="welcome-logo-name">Doggy App</p>
             </div>
-            <div>
-                <p className="description">
-                    Doggo
-                    <br />
-                    <br />
-                    Telling you about the doggy app. Doggy app doggy app doggy,
-                    doggy app doggy app doggy app doggy app.
-                </p>
-            </div>
-
-            <HashRouter>
+            <div className="grid-one">
                 <div>
-                    <Route exact path="/" component={Login} />
-                    <Route path="/registration" component={Registration} />
+                    <img id="firstdog" src="/dog3.png"></img>
                 </div>
-            </HashRouter>
+
+                <div>
+                    <p className="description">
+                        Would you like to spend more time with your dog,
+                        <br />
+                        not only playing but learning something new and fun?
+                        <br />
+                        Dogs are loving and highly social animals - and good
+                        training doesn't only
+                        <br />
+                        make your life easier, it promotes mental stimulation
+                        and physical wellbeing
+                        <br />
+                        for your dog.
+                    </p>
+                </div>
+
+                <HashRouter>
+                    <div>
+                        <Route exact path="/" component={Login} />
+                        <Route path="/registration" component={Registration} />
+                    </div>
+                </HashRouter>
+            </div>
+            <img id="background" src="/background.png"></img>
         </div>
     );
 }

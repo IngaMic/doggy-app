@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid-one {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    -moz-box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 700px;
+    width: 80%;
+    background-color: white;
+    opacity: 90%;
+    position: absolute;
+    z-index: -1;
+}
+.welcome {
+    display: grid;
+    grid-column: 1fr 1fr;
+    /* background-image: url("/background.png");
+    height: 800px;
+    width: 1600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    margin-right: -50px; */
+}
+#background {
+    margin-top: 0px;
+    position: absolute;
+    max-height: 100vw;
+    max-width: 1600vw;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+    opacity: 50%;
+}
+img {
+    object-fit: cover;
+}
+.welcome-logo-name {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#firstdog {
+    position: relative;
+    top: 100px;
+    height: 320px;
+    width: 320px;
+    left: 220px;
+    z-index: -2;
+}
+
+.description {
+    position: relative;
+    top: 140px;
+    left: 100px;
+    font-size: large;
+}
+.login,
+.registration {
+    opacity: 80%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    /* box-shadow: 3px, 3px, 3px, slategrey; */
+    position: absolute;
+    top: 90px;
+    right: 10%;
+    z-index: 9999;
+}
+
+.login h3 {
+    text-align: center;
+    padding: 5px;
+    color: teal;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+/* .move4 {
+    margin-left: 22px;
+    border-bottom: 1px solid black; */
+/* } */
+
+.login input {
+    width: 80%;
+    border: none;
+    text-align: left;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+
+.glyphicon-user {
+    padding-right: 10px;
+    padding-bottom: 11px;
+    padding-top: 6px;
+    padding-left: 11px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+
+.glyphicon-lock {
+    padding-right: 10px;
+    padding-bottom: 10.5px;
+    padding-top: 6px;
+    padding-left: 11px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+
+.login input,
+.registration input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.login button,
+.registration button {
+    color: white;
+    background-color: turquoise;
+    border: 5px solid rgb(115, 228, 216);
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.reglink {
+    margin-top: 50px;
+}
+@media all and (max-width: 1290px) {
+    #firstdog {
+        position: relative;
+        top: 80px;
+        height: 250px;
+        width: 250px;
+        left: 15%;
+        z-index: -2;
+    }
+    .description {
+        position: relative;
+        top: 120px;
+        left: 15%;
+        width: 40%;
+        font-size: large;
+        margin-right: 25px;
+    }
+    .login,
+    .registration {
+        opacity: 80%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        position: relative;
+        top: -430px;
+        left: 60%;
+        width: 32%;
+    }
+    .grid-one {
+        width: 90%;
+    }
+}
+@media all and (max-width: 900px) {
+    html,
+    main {
+        background-color: rgba(192, 192, 224, 0.815);
+        z-index: -1;
+    }
+    .login,
+    .registration {
+        opacity: 80%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        position: relative;
+        top: -180px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        z-index: -0.5;
+        left: auto;
+        right: auto;
+    }
+    #firstdog {
+        position: relative;
+        top: 20px;
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+    .description {
+        position: relative;
+        top: 220px;
+        left: auto;
+        right: auto;
+        width: 40%;
+        font-size: medium;
+    }
+}
+.container {
+    margin-left: 0px;
+}
