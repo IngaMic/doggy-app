@@ -7,14 +7,14 @@ var db = spicedPg(
 module.exports.registerUser = (first, last, email, password) => {
     return db.query(
         `
-    INSERT INTO user (first, last, email, password)
+    INSERT INTO users (first, last, email, password)
     VALUES ($1, $2, $3, $4) RETURNING id `,
         [first, last, email, password]
     );
 };
 module.exports.getUser = (userId) => {
     return db.query(
-        `SELECT * FROM user 
+        `SELECT * FROM users 
     WHERE id = ($1)
     `,
         [userId]
@@ -23,8 +23,14 @@ module.exports.getUser = (userId) => {
 module.exports.getLogin = (email) => {
     return db.query(
         `
-        SELECT * FROM user 
+        SELECT * FROM users 
         WHERE email = ($1)`,
         [email]
+    );
+};
+module.exports.getTricks = () => {
+    return db.query(
+        `
+        SELECT * FROM tricks`
     );
 };

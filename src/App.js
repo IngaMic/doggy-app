@@ -3,6 +3,7 @@ import axios from "./axios";
 import { Link } from "react-router-dom";
 import { BrowserRouter, Route } from "react-router-dom";
 import Profile from "./Profile";
+import Dashboard from "./Dashboard";
 /////////////////////////////////////////////////////////////
 
 export default class App extends React.Component {
@@ -36,6 +37,9 @@ export default class App extends React.Component {
         return (
             <div>
                 <div>
+                    <img id="logodog" src="/dog3.png"></img>
+                </div>
+                <div>
                     {this.state.error && (
                         <h4 className="err">Something Went Wrong!</h4>
                     )}
@@ -48,26 +52,23 @@ export default class App extends React.Component {
                                 <Link className="active" to="/">
                                     Profile
                                 </Link>
-                            </div>
-                            <div className="logout-link">
                                 <a href="/logout">Logout</a>
                             </div>
                         </div>
-                    </div>
-
-                    <div>
-                        <Route
-                            exact
-                            path="/"
-                            render={() => (
-                                <Profile
-                                    logUserId={this.state.logUserId}
-                                    first={this.state.first}
-                                    last={this.state.last}
-                                    imageUrl={this.state.imageUrl}
-                                />
-                            )}
-                        />
+                        <div>
+                            <Route
+                                exact
+                                path="/"
+                                render={() => (
+                                    <Dashboard
+                                        logUserId={this.state.logUserId}
+                                        first={this.state.first}
+                                        last={this.state.last}
+                                        imageUrl={this.state.imageUrl}
+                                    />
+                                )}
+                            />
+                        </div>
                     </div>
                 </BrowserRouter>
             </div>

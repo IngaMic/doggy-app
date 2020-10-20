@@ -224,6 +224,22 @@ app.get("/user", (req, res) => {
     }
 });
 
+app.get("/api/tricks", async (req, res) => {
+    //console.log("I am getting a req in /tricks");
+    try {
+        //var userId = req.session.userId;
+        var tricks = [];
+        const { rows } = await db.getTricks();
+        tricks = rows;
+        //console.log("tricks from get /api/tricks", tricks);
+        res.json({
+            tricks: tricks,
+        });
+    } catch (err) {
+        console.log("err in getTricks get /tricks"), err;
+    }
+});
+
 app.get("/logout", (req, res) => {
     req.session = null;
     res.redirect("/");

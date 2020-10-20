@@ -27,13 +27,12 @@ export default class Registration extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log("this.state  :", this.state);
-        const { first, last, email, password, cd } = this.state;
+        const { first, last, email, password } = this.state;
         const user = {
             first: first,
             last: last,
             email: email,
             password: password,
-            cd: cd,
         };
         axios.post("/registration", user).then((resp) => {
             console.log(" resp : ", resp);
@@ -58,7 +57,7 @@ export default class Registration extends React.Component {
                         <h4 className="err">Something Went Wrong!</h4>
                     )}
                     <div>
-                        <label>First Name: </label>
+                        {/* <label>First Name: </label> */}
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="first"
@@ -67,7 +66,7 @@ export default class Registration extends React.Component {
                         />
                     </div>
                     <div>
-                        <label className="move1">Last Name: </label>
+                        {/* <label className="move1">Last Name: </label> */}
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="last"
@@ -76,7 +75,7 @@ export default class Registration extends React.Component {
                         />
                     </div>
                     <div>
-                        <label className="move2">Email: </label>
+                        {/* <label className="move2">Email: </label> */}
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="email"
@@ -86,7 +85,7 @@ export default class Registration extends React.Component {
                         />
                     </div>
                     <div>
-                        <label className="move3">Password: </label>
+                        {/* <label className="move3">Password: </label> */}
                         <input
                             onChange={(e) => this.handleChange(e)}
                             name="password"

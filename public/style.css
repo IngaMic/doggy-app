@@ -60,6 +60,9 @@ img {
     left: 100px;
     font-size: large;
 }
+
+/* LOGIN STUFF */
+
 .login,
 .registration {
     opacity: 80%;
@@ -73,7 +76,8 @@ img {
     z-index: 9999;
 }
 
-.login h3 {
+.login h3,
+.registration h2 {
     text-align: center;
     padding: 5px;
     color: teal;
@@ -83,12 +87,8 @@ img {
     margin-bottom: 30px;
 }
 
-/* .move4 {
-    margin-left: 22px;
-    border-bottom: 1px solid black; */
-/* } */
-
-.login input {
+.login input,
+.registration input {
     width: 80%;
     border: none;
     text-align: left;
@@ -101,7 +101,7 @@ img {
 
 .glyphicon-user {
     padding-right: 10px;
-    padding-bottom: 11px;
+    padding-bottom: 10.5px;
     padding-top: 6px;
     padding-left: 11px;
     border-bottom: 2px solid grey;
@@ -110,7 +110,7 @@ img {
 
 .glyphicon-lock {
     padding-right: 10px;
-    padding-bottom: 10.5px;
+    padding-bottom: 11px;
     padding-top: 6px;
     padding-left: 11px;
     border-bottom: 2px solid grey;
@@ -133,6 +133,8 @@ img {
     margin-top: 10px;
     margin-bottom: 40px;
 }
+
+/* MEDIA REQUESTS */
 
 .reglink {
     margin-top: 50px;
@@ -169,6 +171,7 @@ img {
         width: 90%;
     }
 }
+
 @media all and (max-width: 900px) {
     html,
     main {
@@ -210,4 +213,41 @@ img {
 }
 .container {
     margin-left: 0px;
+}
+
+/* DASHBOARD PAGE */
+
+#logodog {
+    margin-top: 15px;
+    margin-left: 25px;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+}
+
+.links {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px 10px 20px;
+    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
+    width: 98%;
+    margin-left: auto;
+    height: 80px;
+    margin-right: auto;
+    text-decoration: none;
+    font-weight: bold;
+    flex-direction: row-reverse;
+}
+
+.links a {
+    text-decoration: none;
+    margin-right: 15px;
+    color: rgb(82, 78, 78);
+}
+
+.alltrick-img {
+    height: 150px;
+    width: auto;
+    /* border-radius: 50%; */
 }

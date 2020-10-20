@@ -1,5 +1,10 @@
 export default function (state = {}, action) {
     console.log("Action :", action);
+    if (action.type == "RECEIVE_TRICKS") {
+        state = Object.assign({}, state, {
+            tricks: action.tricks,
+        });
+    }
     // if (action.type == "SAY_YES") {
     //     state = {
     //         ...state,
