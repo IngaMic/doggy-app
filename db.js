@@ -34,3 +34,17 @@ module.exports.getTricks = () => {
         SELECT * FROM tricks`
     );
 };
+module.exports.getTrick = (trickId) => {
+    return db.query(
+        `SELECT * FROM tricks 
+    WHERE id = ($1)
+    `,
+        [trickId]
+    );
+};
+module.exports.getQuotes = () => {
+    return db.query(
+        `
+        SELECT * FROM quotes`
+    );
+};

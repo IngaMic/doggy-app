@@ -8,7 +8,7 @@ descr VARCHAR NOT NULL
 
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Sit',
-    '/dog2.png',
+    '/sit.png',
   'this is a description of sit command'
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
@@ -20,4 +20,9 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Wait',
     '/clock0.png',
   'this is a description of wait command'
+);
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'Bang',
+    '/bang.png',
+  'this is a description of bang command'
 );

@@ -5,6 +5,17 @@ export default function (state = {}, action) {
             tricks: action.tricks,
         });
     }
+    if (action.type == "RECEIVE_TRICK") {
+        state = Object.assign({}, state, {
+            trick: action.trick,
+        });
+    }
+    if (action.type == "RECEIVE_QUOTES") {
+        state = Object.assign({}, state, {
+            quotes: action.quotes,
+        });
+    }
+    //console.log("state.trick from reducer", state.trick);
     // if (action.type == "SAY_YES") {
     //     state = {
     //         ...state,

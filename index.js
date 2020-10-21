@@ -240,6 +240,44 @@ app.get("/api/tricks", async (req, res) => {
     }
 });
 
+app.get("/trick/:id.json", (req, res) => {
+    const trickId = req.params.id;
+    if (trickId) {
+        db.getTrick(trickId)
+            .then((info) => {
+                var trick = info.rows[0];
+                console.log("my trick in server  :", trick);
+                return res.json({
+                    trick,
+                });
+            })
+            .catch((err) => {
+                console.log("err in getTrick index.js", err);
+                return res.json({
+                    error: "Please try again",
+                });
+            });
+    } else {
+        res.sendFile(__dirname + "/index.html");
+    }
+});
+
+app.get("/api/quotes", async (req, res) => {
+    //console.log("I am getting a req in /tricks");
+    try {
+        //var userId = req.session.userId;
+        var quotes = [];
+        const { rows } = await db.getQuotes();
+        quotes = rows;
+        //console.log("quotes from get /api/quotes", quotes);
+        res.json({
+            quotes: quotes,
+        });
+    } catch (err) {
+        console.log("err in getTricks get /tricks"), err;
+    }
+});
+
 app.get("/logout", (req, res) => {
     req.session = null;
     res.redirect("/");
