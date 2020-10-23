@@ -26,3 +26,8 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
     '/bang.png',
   'this is a description of bang command'
 );
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'Come',
+    '/come.png',
+  'this is a description of come command'
+);

@@ -28,6 +28,32 @@ module.exports.getLogin = (email) => {
         [email]
     );
 };
+module.exports.updateImage = (imageUrl, userId) => {
+    return db.query(
+        `UPDATE users
+    SET imageUrl = ($1)
+    WHERE id = ($2) RETURNING *
+    `,
+        [imageUrl, userId]
+    );
+};
+module.exports.addDogInfo = (name, gender, size, bio, imageurl, userId) => {
+    return db.query(
+        `
+    INSERT INTO doggy (name, gender, size, bio, imageUrl, firstuserid)
+    VALUES ($1, $2, $3, $4, $5, $6) RETURNING * `,
+        [name, gender, size, bio, imageurl, userId]
+    );
+};
+module.exports.getDogInfo = (userId) => {
+    return db.query(
+        `SELECT * FROM doggy 
+    WHERE firstuserid = ($1)
+    `,
+        [userId]
+    );
+};
+
 module.exports.getTricks = () => {
     return db.query(
         `

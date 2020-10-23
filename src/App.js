@@ -6,6 +6,7 @@ import Profile from "./Profile";
 import Dashboard from "./Dashboard";
 import Diary from "./Diary";
 import Trick from "./Trick";
+import Uploader from "./Uploader";
 /////////////////////////////////////////////////////////////
 
 export default class App extends React.Component {
@@ -17,6 +18,14 @@ export default class App extends React.Component {
             imageUrl: "",
             file: "",
             logUserId: null,
+            name: "",
+            size: "",
+            gender: "",
+            dogimg: "",
+            bio: "",
+            firstuserid: null,
+            seconduserid: null,
+            uploaderIsVisible: false,
             error: false,
         };
     }
@@ -31,6 +40,41 @@ export default class App extends React.Component {
                 pos: resp.data.pos,
             });
         });
+        axios.get("/doginfo").then((resp) => {
+            this.setState({
+                name: resp.data.name,
+                gender: resp.data.gender,
+                dogimg: resp.data.dogimg,
+                size: resp.data.size,
+                bio: resp.data.bio,
+                firstuserid: resp.data.firstuserid,
+                seconduserid: resp.data.seconduserid,
+            });
+        });
+    }
+    showUploader(e) {
+        e.preventDefault();
+        this.setState({ uploaderIsVisible: true });
+    }
+    setInfo() {
+        axios.get("/doginfo").then((resp) => {
+            this.setState({
+                name: resp.data.name,
+                gender: resp.data.gender,
+                dogimg: resp.data.dogimg,
+                size: resp.data.size,
+                bio: resp.data.bio,
+                firstuserid: resp.data.firstuserid,
+                seconduserid: resp.data.seconduserid,
+            });
+        });
+    }
+    closeUploader(e) {
+        e.preventDefault();
+        this.setState({ uploaderIsVisible: false });
+    }
+    setImage(imageUrl) {
+        this.setState({ imageUrl: imageUrl });
     }
     render() {
         if (!this.state.logUserId) {
@@ -50,6 +94,9 @@ export default class App extends React.Component {
                             <img id="logodog" src="/dog3.png"></img>
                         </Link>
                     </div>
+                    <div className="trees-container">
+                        <img src="trees.png" className="trees"></img>
+                    </div>
                     <div className="flex">
                         <div className="links">
                             <div className="profile-link">
@@ -58,6 +105,7 @@ export default class App extends React.Component {
                                 <a href="/logout">Logout</a>
                             </div>
                         </div>
+
                         <div>
                             <Route
                                 exact
@@ -93,6 +141,39 @@ export default class App extends React.Component {
                                         first={this.state.first}
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
+                                        name={this.state.name}
+                                        size={this.state.size}
+                                        gender={this.state.gender}
+                                        bio={this.state.bio}
+                                        dogimg={this.state.dogimg}
+                                        firstuserid={this.state.firstuserid}
+                                        seconduserid={this.state.seconduserid}
+                                        clickHandler={() =>
+                                            this.setState({
+                                                uploaderIsVisible: true,
+                                            })
+                                        }
+                                        setInfo={() => {
+                                            axios
+                                                .get("/doginfo")
+                                                .then((resp) => {
+                                                    this.setState({
+                                                        name: resp.data.name,
+                                                        gender:
+                                                            resp.data.gender,
+                                                        dogimg:
+                                                            resp.data.dogimg,
+                                                        size: resp.data.size,
+                                                        bio: resp.data.bio,
+                                                        firstuserid:
+                                                            resp.data
+                                                                .firstuserid,
+                                                        seconduserid:
+                                                            resp.data
+                                                                .seconduserid,
+                                                    });
+                                                });
+                                        }}
                                     />
                                 )}
                             />
@@ -113,6 +194,20 @@ export default class App extends React.Component {
                         </div>
                     </div>
                 </BrowserRouter>
+                <div>
+                    {this.state.uploaderIsVisible && (
+                        <Uploader
+                            imageUrl={this.state.imageUrl}
+                            setImage={(imageUrl) => {
+                                this.setImage(imageUrl);
+                            }}
+                            userId={this.state.logUserId}
+                            closeUploader={() => {
+                                this.setState({ uploaderIsVisible: false });
+                            }}
+                        />
+                    )}
+                </div>
             </div>
         );
     }

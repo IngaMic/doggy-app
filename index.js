@@ -11,9 +11,9 @@ const path = require("path");
 const cookieSession = require("cookie-session");
 //const cryptoRandomString = require("crypto-random-string");
 const csurf = require("csurf");
-//const { s3Url } = require("./config.json");
+const { s3Url } = require("./config.json");
 const uidSafe = require("uid-safe");
-//const s3 = require("./s3.js");
+const s3 = require("./s3.js");
 const multer = require("multer");
 //const { brotliDecompress } = require("zlib");
 
@@ -218,6 +218,72 @@ app.get("/user", (req, res) => {
             })
             .catch((err) => {
                 console.log("err in getUser index.js", err);
+            });
+    } else {
+        res.sendFile(__dirname + "/index.html");
+    }
+});
+app.post("/uploadimg", uploader.single("file"), s3.upload, (req, res) => {
+    let userId = req.session.userId;
+    let filename = req.file.filename;
+    const url = `${s3Url}${filename}`;
+    db.updateImage(url, userId)
+        .then((info) => {
+            // console.log("info after updateImage : ", info.rows[0].imageurl);
+            return res.json({
+                imageUrl: info.rows[0].imageurl,
+                success: "success",
+            });
+        })
+        .catch((err) => {
+            console.log("trouble with updating /uploadimg", err);
+        });
+});
+app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
+    //console.log("I am getting an /uploaddogbio req");
+    console.log("req.body from /uploaddogbio :", req.body);
+    let userId = req.session.userId;
+    let filen = req.file.filename;
+    const imageurl = `${s3Url}${filen}`;
+    db.addDogInfo(
+        req.body.name,
+        req.body.gender,
+        req.body.size,
+        req.body.bio,
+        imageurl,
+        userId
+    )
+        .then(({ rows }) => {
+            console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
+            res.json({
+                dog: rows[0],
+            });
+        })
+        .catch((err) => {
+            console.log("err n addDogInfo index.js", err);
+        });
+});
+app.get("/doginfo", (req, res) => {
+    // console.log("req.session.userId", req.session.userId);
+    if (req.session.userId) {
+        let userId = req.session.userId;
+        console.log("userId from /user ", userId);
+        db.getDogInfo(userId)
+            .then((info) => {
+                var list = info.rows;
+                console.log("list from /dogifo ", list);
+                return res.json({
+                    name: list[0].name,
+                    gender: list[0].gender,
+                    size: list[0].size,
+                    dogimg: list[0].imageurl,
+                    bio: list[0].bio,
+                    firstuserid: list[0].firstuserid,
+                    seconduserid: list[0].seconduserid,
+                });
+            })
+            .catch((err) => {
+                console.log("err in getDogInfo index.js", err);
             });
     } else {
         res.sendFile(__dirname + "/index.html");
