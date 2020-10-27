@@ -5,6 +5,7 @@ export default class Bioeditor extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            dogId: this.props.dogId,
             text: this.props.bio,
             name: "",
             size: "",
@@ -31,21 +32,46 @@ export default class Bioeditor extends React.Component {
         formData.append("bio", this.state.text);
         var that = this;
         console.log("formData before sending it", formData);
-        axios
-            .post("/uploaddogbio", formData)
-            .then(function (resp) {
-                console.log("response in DogBio.js after axios is done", resp);
-                console.log("resp.data.dog.name", resp.data.dog.name);
-                console.log("resp.data.dog.gender", resp.data.dog.gender);
-                console.log("resp.data.dog.size", resp.data.dog.size);
-                // e.target.children.value = "";
-                that.props.setInfo;
-                that.clearInput();
-                that.setState({ bioEditIsVisible: false });
-            })
-            .catch(function (err) {
-                console.log("error in axios post", err);
-            });
+        if (!this.props.dogId) {
+            axios
+                .post("/uploaddogbio", formData)
+                .then(function (resp) {
+                    console.log(
+                        "response in DogBio.js after axios is done",
+                        resp
+                    );
+                    console.log("resp.data.dog.name", resp.data.dog.name);
+                    console.log("resp.data.dog.gender", resp.data.dog.gender);
+                    console.log("resp.data.dog.size", resp.data.dog.size);
+                    // e.target.children.value = "";
+                    that.props.setInfo;
+                    that.clearInput();
+                    that.setState({ bioEditIsVisible: false });
+                })
+                .catch(function (err) {
+                    console.log("error in axios post", err);
+                });
+        } else {
+            formData.append("dogId", this.props.dogId);
+            console.log("formData before sending it", formData);
+            axios
+                .post("/updatedogbio", formData)
+                .then(function (resp) {
+                    console.log(
+                        "response in update DogBio.js after axios is done",
+                        resp
+                    );
+                    console.log("resp.data.dog.name", resp.data.dog.name);
+                    console.log("resp.data.dog.gender", resp.data.dog.gender);
+                    console.log("resp.data.dog.size", resp.data.dog.size);
+                    that.props.setInfo;
+                    that.clearInput();
+                    that.setState({ bioEditIsVisible: false });
+                })
+                .catch(function (err) {
+                    console.log("error in axios post", err);
+                });
+        }
     }
     clearInput() {
         var inputs = document.querySelectorAll("input");
@@ -88,7 +114,7 @@ export default class Bioeditor extends React.Component {
                     )}
                     {!this.state.bioEditIsVisible && !this.props.bio && (
                         <button id="add-button" onClick={this.openBioEditor}>
-                            Add
+                            Tell us about your dog
                         </button>
                     )}
                 </div>

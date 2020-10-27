@@ -6,6 +6,6 @@ gender VARCHAR,
 size VARCHAR,
 bio VARCHAR,
 imageUrl TEXT,
-firstuserid INT REFERENCES users(id) NOT NULL,
-seconduserid INT REFERENCES users(id)
+firstuserid INT REFERENCES users(id) NOT NULL UNIQUE,
+seconduserid INT REFERENCES users(id) UNIQUE
 );

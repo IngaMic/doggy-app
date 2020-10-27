@@ -21,7 +21,8 @@ export default class App extends React.Component {
             name: "",
             size: "",
             gender: "",
-            dogimg: "",
+            dogId: null,
+            dogimg: null,
             bio: "",
             firstuserid: null,
             seconduserid: null,
@@ -30,7 +31,25 @@ export default class App extends React.Component {
         };
     }
     componentDidMount() {
+        axios.get("/doginfo").then(({ data }) => {
+            console.log("data after App component mounts and dogInfo", data);
+            this.setState({
+                dogId: data.id,
+                name: data.name,
+                gender: data.gender,
+                dogimg: data.dogimg,
+                size: data.size,
+                bio: data.bio,
+                firstuserid: data.firstuserid,
+                seconduserid: data.seconduserid,
+            });
+            console.log(
+                "state after App component mounts and dogInfo",
+                this.state
+            );
+        });
         axios.get("/user").then((resp) => {
+            console.log("resp after App component mounts and userInfo", resp);
             this.setState({
                 logUserId: resp.data.userId,
                 first: resp.data.first,
@@ -38,17 +57,6 @@ export default class App extends React.Component {
                 imageUrl: resp.data.imageUrl,
                 cd: resp.data.cd,
                 pos: resp.data.pos,
-            });
-        });
-        axios.get("/doginfo").then((resp) => {
-            this.setState({
-                name: resp.data.name,
-                gender: resp.data.gender,
-                dogimg: resp.data.dogimg,
-                size: resp.data.size,
-                bio: resp.data.bio,
-                firstuserid: resp.data.firstuserid,
-                seconduserid: resp.data.seconduserid,
             });
         });
     }
@@ -59,15 +67,20 @@ export default class App extends React.Component {
     setInfo() {
         axios.get("/doginfo").then((resp) => {
             this.setState({
-                name: resp.data.name,
-                gender: resp.data.gender,
-                dogimg: resp.data.dogimg,
-                size: resp.data.size,
-                bio: resp.data.bio,
-                firstuserid: resp.data.firstuserid,
-                seconduserid: resp.data.seconduserid,
+                dogId: resp.data.data.id,
+                name: resp.data.data.name,
+                gender: resp.data.data.gender,
+                dogimg: resp.data.data.dogimg,
+                size: resp.data.data.size,
+                bio: resp.data.data.bio,
+                firstuserid: resp.data.data.firstuserid,
+                seconduserid: resp.data.data.seconduserid,
             });
         });
+        console.log(
+            "this.state after setInfo dogId has to be there",
+            this.state
+        );
     }
     closeUploader(e) {
         e.preventDefault();
@@ -141,6 +154,7 @@ export default class App extends React.Component {
                                         first={this.state.first}
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
+                                        dogId={this.state.dogId}
                                         name={this.state.name}
                                         size={this.state.size}
                                         gender={this.state.gender}
@@ -158,6 +172,7 @@ export default class App extends React.Component {
                                                 .get("/doginfo")
                                                 .then((resp) => {
                                                     this.setState({
+                                                        dogId: resp.data.id,
                                                         name: resp.data.name,
                                                         gender:
                                                             resp.data.gender,

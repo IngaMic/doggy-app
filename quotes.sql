@@ -59,7 +59,7 @@ author TEXT
 --    mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm
 
    INSERT INTO quotes (quote, author) VALUES (
-         'Dogs  often respond differently to rewards.  It will come as no surprise taht most react best to food as a reward, but your dog might be better motivated by a favourite toy or verbal praise more than treats.  It is important to try different techniques to find what works best for you.',
+         'Dogs  often respond differently to rewards.  It will come as no surprise that most react best to food as a reward, but your dog might be better motivated by a favourite toy or verbal praise more than treats.  It is important to try different techniques to find what works best for you.',
         ''
    );
    

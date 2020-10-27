@@ -42,7 +42,14 @@ module.exports.addDogInfo = (name, gender, size, bio, imageurl, userId) => {
         `
     INSERT INTO doggy (name, gender, size, bio, imageUrl, firstuserid)
     VALUES ($1, $2, $3, $4, $5, $6) RETURNING * `,
-        [name, gender, size, bio, imageurl, userId]
+        [
+            name || null,
+            gender || null,
+            size || null,
+            bio || null,
+            imageurl || null,
+            userId,
+        ]
     );
 };
 module.exports.getDogInfo = (userId) => {
@@ -51,6 +58,23 @@ module.exports.getDogInfo = (userId) => {
     WHERE firstuserid = ($1)
     `,
         [userId]
+    );
+};
+module.exports.updateDogInfo = (
+    dogId,
+    name,
+    gender,
+    size,
+    bio,
+    imageurl,
+    userId
+) => {
+    return db.query(
+        `INSERT INTO doggy (id, name, gender, size, bio, imageurl, firstuserid)
+    VALUES($1, $2, $3, $4, $5, $6, $7)
+    ON CONFLICT (id)
+    DO UPDATE SET name = ($2), gender = ($3), size = ($4), bio = ($5), imageurl = ($6), firstuserid = ($7) RETURNING * `,
+        [dogId, name, gender, size, bio, imageurl, userId]
     );
 };
 

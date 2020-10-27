@@ -263,6 +263,32 @@ app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
             console.log("err n addDogInfo index.js", err);
         });
 });
+app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
+    //console.log("I am getting an /uploaddogbio req");
+    console.log("req.body from /uploaddogbio :", req.body);
+    let userId = req.session.userId;
+    let filen = req.file.filename;
+    const imageurl = `${s3Url}${filen}`;
+    db.updateDogInfo(
+        req.body.dogId,
+        req.body.name,
+        req.body.gender,
+        req.body.size,
+        req.body.bio,
+        imageurl,
+        userId
+    )
+        .then(({ rows }) => {
+            console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
+            res.json({
+                dog: rows[0],
+            });
+        })
+        .catch((err) => {
+            console.log("err n updateDogInfo index.js", err);
+        });
+});
+
 app.get("/doginfo", (req, res) => {
     // console.log("req.session.userId", req.session.userId);
     if (req.session.userId) {
@@ -273,6 +299,7 @@ app.get("/doginfo", (req, res) => {
                 var list = info.rows;
                 console.log("list from /dogifo ", list);
                 return res.json({
+                    id: list[0].id,
                     name: list[0].name,
                     gender: list[0].gender,
                     size: list[0].size,

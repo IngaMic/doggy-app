@@ -14,6 +14,7 @@ export default class Profile extends React.Component {
             gender: "",
             size: "",
             dogimg: "",
+            dogId: null,
             bio: "",
             firstuserid: null,
             seconduserid: "",
@@ -24,6 +25,7 @@ export default class Profile extends React.Component {
     }
     componentDidMount() {
         this.setState({
+            dogId: this.props.dogId,
             userId: this.props.userId,
             name: this.props.name,
             size: this.props.size,
@@ -33,12 +35,26 @@ export default class Profile extends React.Component {
             firstuserid: this.props.firstuserid,
             seconduserid: this.props.seconduserid,
         });
+        console.log("this.props in profile", this.props);
+        console.log("this.state in profile", this.state);
     }
     render() {
+        // if (!this.props.dogId) {
+        //     return null;
+        // }
         return (
             <div className="profiles">
                 {this.props.logUserId && (
                     <div id="users-profile">
+                        <div className="profiles-left"></div>
+                        <div className="profiles-right"></div>
+                        <img
+                            id="dog-profile-img"
+                            src={this.props.dogimg || "/dog1.png"}
+                            alt=""
+                            width="200"
+                            height="250"
+                        ></img>
                         <div className="layer"></div>
                         <img
                             onClick={this.props.clickHandler}
@@ -57,6 +73,7 @@ export default class Profile extends React.Component {
                             ></img>
                         </div>
                         <Bioeditor
+                            dogId={this.props.dogId}
                             bio={this.props.bio}
                             setInfo={this.props.setInfo}
                         />
@@ -64,13 +81,13 @@ export default class Profile extends React.Component {
                 )}
                 {this.props.firstuserid && (
                     <div id="dogs-profile">
-                        <img
+                        {/* <img
                             id="dog-profile-img"
                             src={this.props.dogimg || "/dog1.png"}
                             alt=""
                             width="200"
                             height="250"
-                        ></img>
+                        ></img> */}
                         <div id="dog-info">
                             <h2 id="dog-name">{this.props.name}</h2>
                             <h4 id="dog-bio">
