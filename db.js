@@ -98,3 +98,11 @@ module.exports.getQuotes = () => {
         SELECT * FROM quotes`
     );
 };
+module.exports.getWalks = (userId) => {
+    return db.query(
+        `
+        SELECT * FROM walks
+        WHERE user_id = ($1)`,
+        [userId]
+    );
+};

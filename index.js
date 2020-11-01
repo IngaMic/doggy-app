@@ -333,6 +333,22 @@ app.get("/api/tricks", async (req, res) => {
     }
 });
 
+app.get("/api/walks", async (req, res) => {
+    //console.log("I am getting a req in /walks");
+    try {
+        var userId = req.session.userId;
+        var walks = [];
+        const { rows } = await db.getWalks(userId);
+        walks = rows;
+        console.log("walks from get /api/walks", walks);
+        res.json({
+            walks: walks,
+        });
+    } catch (err) {
+        console.log("err in getWalks"), err;
+    }
+});
+
 app.get("/trick/:id.json", (req, res) => {
     const trickId = req.params.id;
     if (trickId) {

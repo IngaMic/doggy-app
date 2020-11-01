@@ -20,6 +20,8 @@ export default class Profile extends React.Component {
             seconduserid: "",
             userId: null,
             error: false,
+            trainingImg: "/dog1.png",
+            characterImg: "/dog1.png",
         };
         // this.closeEditor = this.closeEditor.bind(this);
     }
@@ -37,6 +39,30 @@ export default class Profile extends React.Component {
         });
         console.log("this.props in profile", this.props);
         console.log("this.state in profile", this.state);
+    }
+    clickTraining(e) {
+        var choice = e.currentTarget.value;
+        if (choice == "not") {
+            this.setState({ trainingImg: "/sit.png" });
+        } else if (choice == "some") {
+            this.setState({ trainingImg: "/lay.png" });
+        } else if (choice == "mid") {
+            this.setState({ trainingImg: "/come.png" });
+        } else if (choice == "well") {
+            this.setState({ trainingImg: "/huskygradient.png" });
+        }
+    }
+    clickCharacter(e) {
+        var choice = e.currentTarget.value;
+        if (choice == "not") {
+            this.setState({ characterImg: "/sit.png" });
+        } else if (choice == "some") {
+            this.setState({ characterImg: "/lay.png" });
+        } else if (choice == "mid") {
+            this.setState({ characterImg: "/come.png" });
+        } else if (choice == "well") {
+            this.setState({ characterImg: "/huskygradient.png" });
+        }
     }
     render() {
         // if (!this.props.dogId) {
@@ -81,13 +107,6 @@ export default class Profile extends React.Component {
                 )}
                 {this.props.firstuserid && (
                     <div id="dogs-profile">
-                        {/* <img
-                            id="dog-profile-img"
-                            src={this.props.dogimg || "/dog1.png"}
-                            alt=""
-                            width="200"
-                            height="250"
-                        ></img> */}
                         <div id="dog-info">
                             <h2 id="dog-name">{this.props.name}</h2>
                             <h4 id="dog-bio">
@@ -103,6 +122,66 @@ export default class Profile extends React.Component {
                         <h4 className="err">Something Went Wrong!</h4>
                     )}
                 </div>
+                {this.props.firstuserid && (
+                    <div>
+                        <div className="training-level">
+                            <h2>How well is your dog trained?</h2>
+                            <button
+                                onClick={(e) => this.clickTraining(e)}
+                                value="not"
+                            >
+                                No Training At All
+                            </button>
+                            <button
+                                onClick={(e) => this.clickTraining(e)}
+                                value="some"
+                            >
+                                Some Basic Training
+                            </button>
+                            <button
+                                onClick={(e) => this.clickTraining(e)}
+                                value="mid"
+                            >
+                                Mid Trained
+                            </button>
+                            <button
+                                onClick={(e) => this.clickTraining(e)}
+                                value="well"
+                            >
+                                Professionally Trained
+                            </button>
+                            <img src={this.state.trainingImg}></img>
+                        </div>
+                        <div className="character-level">
+                            <h2>What is your dogs temperament?</h2>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="not"
+                            >
+                                Docile
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="some"
+                            >
+                                Active
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="mid"
+                            >
+                                Dominant / Independent
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="well"
+                            >
+                                Communicable / Submissive
+                            </button>
+                            <img src={this.state.characterImg}></img>
+                        </div>
+                    </div>
+                )}
             </div>
         );
     }

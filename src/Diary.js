@@ -29,7 +29,17 @@ const Diary = () => {
     }
     //must be (walks.length == 0)
     if (!walks) {
-        return <h2>The walk log is empty for now</h2>;
+        return (
+            <div>
+                <h2>The walk log is empty for now</h2>
+                {/* /////////////////////////////////////////////////////
+            // All of the questionaire inputs go here + choices 
+            
+            
+            
+            */}
+            </div>
+        );
     } else {
         return (
             <div>
@@ -45,7 +55,7 @@ const Diary = () => {
                     return (
                         <div className="dogwalk" key={i}>
                             <p>
-                                {walk.time} {walk.date}
+                                {walk.mins} mins, by user :{walk.user_id}
                             </p>
                         </div>
                     );
