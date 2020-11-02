@@ -4,12 +4,12 @@ var db = spicedPg(
         "postgres:postgres:postgres@localhost:5432/doggyapp"
 );
 
-module.exports.registerUser = (first, last, email, password) => {
+module.exports.registerUser = (first, last, email, password, cd) => {
     return db.query(
         `
-    INSERT INTO users (first, last, email, password)
-    VALUES ($1, $2, $3, $4) RETURNING id `,
-        [first, last, email, password]
+    INSERT INTO users (first, last, email, password, cd)
+    VALUES ($1, $2, $3, $4, $5) RETURNING id `,
+        [first, last, email, password, cd]
     );
 };
 module.exports.getUser = (userId) => {
@@ -87,7 +87,9 @@ module.exports.getTricks = () => {
 module.exports.getTrick = (trickId) => {
     return db.query(
         `SELECT * FROM tricks 
-    WHERE id = ($1)
+         JOIN trickssteps
+         ON tricks.id = trickssteps.trick_id
+         WHERE tricks.id = ($1)
     `,
         [trickId]
     );

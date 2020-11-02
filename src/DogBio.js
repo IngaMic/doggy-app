@@ -124,6 +124,7 @@ export default class Bioeditor extends React.Component {
                             <div>
                                 <label>Doggys Name: </label>
                                 <input
+                                    className="dogname-input"
                                     onChange={(e) => this.handleChange(e)}
                                     name="name"
                                     value={this.state.name}

@@ -9,7 +9,7 @@ const bc = require("./bc.js");
 const path = require("path");
 // const { hash } = require("bcryptjs");
 const cookieSession = require("cookie-session");
-//const cryptoRandomString = require("crypto-random-string");
+const cryptoRandomString = require("crypto-random-string");
 const csurf = require("csurf");
 const { s3Url } = require("./config.json");
 const uidSafe = require("uid-safe");
@@ -82,7 +82,8 @@ app.post("/registration", (req, res) => {
     let first = req.body.first;
     let last = req.body.last;
     let email = req.body.email;
-    //console.log("first, last ...", first, last, email);
+    let cd = req.body.cd;
+    //console.log("first, last ...", first, last, email, cd);
     let password = req.body.password;
     //console.log("password", password);
     bc.hash(password)
@@ -115,13 +116,16 @@ app.post("/registration", (req, res) => {
                                 error: "Please try again",
                             });
                         } else {
-                            db.registerUser(first, last, email, password)
+                            // I need to generate a random code right here
+                            if (cd == "") {
+                                cd = cryptoRandomString({ length: 6 });
+                            }
+                            db.registerUser(first, last, email, password, cd)
                                 .then((result) => {
                                     var userId = result.rows[0].id;
                                     //console.log("userid", userid);
                                     req.session.userId = userId;
                                     res.json({
-                                        success: "success",
                                         userId,
                                     });
                                 })

@@ -9,6 +9,7 @@ export default class Registration extends React.Component {
             last: "",
             email: "",
             password: "",
+            cd: "",
             userId: null,
             error: false,
         };
@@ -27,12 +28,13 @@ export default class Registration extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         console.log("this.state  :", this.state);
-        const { first, last, email, password } = this.state;
+        const { first, last, email, password, cd } = this.state;
         const user = {
             first: first,
             last: last,
             email: email,
             password: password,
+            cd: cd,
         };
         axios.post("/registration", user).then((resp) => {
             console.log(" resp : ", resp);
@@ -92,6 +94,15 @@ export default class Registration extends React.Component {
                             type="password"
                             value={this.state.password}
                             placeholder="Password"
+                        />
+                    </div>
+                    <div>
+                        {/* <label className="move4">Join with Code: </label> */}
+                        <input
+                            onChange={(e) => this.handleChange(e)}
+                            name="cd"
+                            value={this.state.cd}
+                            placeholder="Code to join Your Team"
                         />
                     </div>
                     <button>Submit</button>

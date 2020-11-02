@@ -16,6 +16,7 @@ export default class App extends React.Component {
             first: "",
             last: "",
             imageUrl: "",
+            cd: "",
             file: "",
             logUserId: null,
             name: "",
@@ -107,9 +108,6 @@ export default class App extends React.Component {
                             <img id="logodog" src="/dog3.png"></img>
                         </Link>
                     </div>
-                    <div className="trees-container">
-                        <img src="trees.png" className="trees"></img>
-                    </div>
                     <div className="flex">
                         <div className="links">
                             <div className="profile-link">
@@ -154,6 +152,7 @@ export default class App extends React.Component {
                                         first={this.state.first}
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
+                                        cd={this.state.cd}
                                         dogId={this.state.dogId}
                                         name={this.state.name}
                                         size={this.state.size}
