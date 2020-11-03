@@ -125,6 +125,7 @@ export default class App extends React.Component {
                     <div className="flex">
                         <div className="links">
                             <div className="profile-link">
+                                <Link to="/">Training</Link>
                                 <Link to="/profile">Profile</Link>
                                 <Link to="/diary">Diary</Link>
                                 <a href="/logout">Logout</a>

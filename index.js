@@ -450,24 +450,33 @@ server.listen(8080, function () {
 });
 //////////////////////////////////////////////////////////////////////
 var onlineUsers = {};
+var cd;
 io.on("connection", function (socket) {
-    console.log(`socket.id ${socket.id} is now connected`);
+    //console.log(`socket.id ${socket.id} is now connected`);
     const userId = socket.request.session.userId;
-    console.log("userId from socket :", userId);
+    //console.log("userId from socket :", userId); // works
+    db.getCd(userId)
+        .then((data) => {
+            cd = data.rows[0].cd;
+        })
+        .catch((err) => {
+            console.log("err in getCd index.js", err);
+        });
     // next: filter the needed online users here
+    // console.log("cd in sockets for user selection firsTime:", cd);
     if (!socket.request.session.userId) {
         return socket.disconnect(true);
     } else {
         onlineUsers[socket.id] = userId;
         var arr = Object.values(onlineUsers);
-        console.log("My array of users ids in sockets : ", arr);
-
-        db.getUsersByIds(arr)
+        // console.log("My array of users ids in sockets : ", arr);
+        // console.log("cd in sockets for user selection secondTime:", cd);
+        db.getUsersByIds(arr, cd)
             .then(({ rows }) => {
-                console.log(
-                    "these are my rows after getUsersByIds in index.js",
-                    rows.reverse()
-                );
+                // console.log(
+                //     "these are my rows after getUsersByIds in index.js",
+                //     rows
+                // );
                 io.sockets.emit("onlineusers", rows);
             })
             .catch((err) => console.log("err in db.getUsersByIds", err));

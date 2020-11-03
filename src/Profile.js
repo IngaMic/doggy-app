@@ -79,6 +79,9 @@ export default class Profile extends React.Component {
                     <div id="users-profile">
                         <div className="profiles-left"></div>
                         <div className="profiles-right"></div>
+                        <button className="next-page">
+                            Fill a questionaire
+                        </button>
                         <img
                             id="dog-profile-img"
                             src={this.props.dogimg || "/dog1.png"}
@@ -116,13 +119,21 @@ export default class Profile extends React.Component {
                     <div id="dogs-profile">
                         <div id="dog-info">
                             <h2 id="dog-name">{this.props.name}</h2>
-                            <br></br>
+                            {/* <br></br> */}
                             <h4 id="dog-bio">
-                                About this little rascal: {this.props.bio}
+                                <u> About this little rascal:</u>
+                                <br></br>
+                                <br></br>
+                                {this.props.bio}
+                                <br></br>
                             </h4>
-                            <h4 id="dog-gender">Gender: {this.props.gender}</h4>
+                            <h4 id="dog-gender">
+                                <u>Gender:</u> {this.props.gender}
+                            </h4>
                             <br></br>
-                            <h4 id="dog-size">Size: {this.props.size}</h4>
+                            <h4 id="dog-size">
+                                <u>Size:</u> {this.props.size}
+                            </h4>
                             <br></br>
                         </div>
                     </div>
