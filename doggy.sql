@@ -5,7 +5,8 @@ name VARCHAR,
 gender VARCHAR,
 size VARCHAR,
 bio VARCHAR,
+cd TEXT NOT NULL,
 imageUrl TEXT,
-firstuserid INT REFERENCES users(id) NOT NULL UNIQUE,
-seconduserid INT REFERENCES users(id) UNIQUE
+firstuserid INT REFERENCES users(id),
+seconduserid INT REFERENCES users(id)
 );

@@ -1,7 +1,7 @@
 import React from "react";
 //import axios from "./axios";
 import Bioeditor from "./DogBio";
-
+import OtherUsers from "./OtherUsers";
 export default class Profile extends React.Component {
     constructor(props) {
         super(props);
@@ -40,6 +40,10 @@ export default class Profile extends React.Component {
         });
         console.log("this.props in profile", this.props);
         console.log("this.state in profile", this.state);
+        console.log(
+            "this.props.otherUsers in profile ...",
+            this.props.otherUsers
+        );
     }
     clickTraining(e) {
         var choice = e.currentTarget.value;
@@ -92,6 +96,7 @@ export default class Profile extends React.Component {
                             }
                             alt=""
                         ></img>
+                        <OtherUsers otherUsers={this.props.otherUsers} />
                         <h4 id="name-surname">{this.props.first}</h4>
                         <div>
                             <img
@@ -102,6 +107,7 @@ export default class Profile extends React.Component {
                         <Bioeditor
                             dogId={this.props.dogId}
                             bio={this.props.bio}
+                            cd={this.props.cd}
                             setInfo={this.props.setInfo}
                         />
                     </div>

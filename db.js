@@ -37,27 +37,45 @@ module.exports.updateImage = (imageUrl, userId) => {
         [imageUrl, userId]
     );
 };
-module.exports.addDogInfo = (name, gender, size, bio, imageurl, userId) => {
+module.exports.addDogInfo = (name, gender, size, bio, cd, imageurl, userId) => {
     return db.query(
         `
-    INSERT INTO doggy (name, gender, size, bio, imageUrl, firstuserid)
-    VALUES ($1, $2, $3, $4, $5, $6) RETURNING * `,
+    INSERT INTO doggy (name, gender, size, bio, cd, imageUrl, firstuserid)
+    VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING * `,
         [
             name || null,
             gender || null,
             size || null,
             bio || null,
+            cd,
             imageurl || null,
             userId,
         ]
     );
 };
-module.exports.getDogInfo = (userId) => {
+module.exports.getCd = (userId) => {
     return db.query(
-        `SELECT * FROM doggy 
-    WHERE firstuserid = ($1)
+        `SELECT cd FROM users 
+    WHERE id = ($1)
     `,
         [userId]
+    );
+};
+module.exports.getOtherUsers = (cd, userId) => {
+    return db.query(
+        `SELECT * FROM users 
+    WHERE cd = ($1)
+    AND id <> ($2)
+    `,
+        [cd, userId]
+    );
+};
+module.exports.getDogInfo = (cd) => {
+    return db.query(
+        `SELECT * FROM doggy 
+    WHERE cd = ($1)
+    `,
+        [cd]
     );
 };
 module.exports.updateDogInfo = (
@@ -66,15 +84,15 @@ module.exports.updateDogInfo = (
     gender,
     size,
     bio,
-    imageurl,
-    userId
+    cd,
+    imageurl
 ) => {
     return db.query(
-        `INSERT INTO doggy (id, name, gender, size, bio, imageurl, firstuserid)
+        `INSERT INTO doggy (id, name, gender, size, bio, cd, imageurl)
     VALUES($1, $2, $3, $4, $5, $6, $7)
     ON CONFLICT (id)
-    DO UPDATE SET name = ($2), gender = ($3), size = ($4), bio = ($5), imageurl = ($6), firstuserid = ($7) RETURNING * `,
-        [dogId, name, gender, size, bio, imageurl, userId]
+    DO UPDATE SET name = ($2), gender = ($3), size = ($4), bio = ($5), cd = ($6), imageurl  = ($7) RETURNING * `,
+        [dogId, name, gender, size, bio, cd, imageurl]
     );
 };
 

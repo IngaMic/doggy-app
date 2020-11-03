@@ -27,6 +27,7 @@ export default class App extends React.Component {
             bio: "",
             firstuserid: null,
             seconduserid: null,
+            otherUsers: [],
             uploaderIsVisible: false,
             error: false,
         };
@@ -59,6 +60,19 @@ export default class App extends React.Component {
                 cd: resp.data.cd,
                 pos: resp.data.pos,
             });
+        });
+        axios.get("/otherusers").then((resp) => {
+            console.log(
+                "resp after App component mounts and otherusersInfo",
+                resp
+            );
+            this.setState({
+                otherUsers: resp.data.list,
+            });
+            console.log(
+                "state.otherUsers after App component mounts and otherUsers",
+                this.state.otherUsers
+            );
         });
     }
     showUploader(e) {
@@ -159,6 +173,7 @@ export default class App extends React.Component {
                                         gender={this.state.gender}
                                         bio={this.state.bio}
                                         dogimg={this.state.dogimg}
+                                        otherUsers={this.state.otherUsers}
                                         firstuserid={this.state.firstuserid}
                                         seconduserid={this.state.seconduserid}
                                         clickHandler={() =>

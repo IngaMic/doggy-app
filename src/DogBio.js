@@ -10,6 +10,7 @@ export default class Bioeditor extends React.Component {
             name: "",
             size: "",
             gender: "",
+            cd: "",
             userId: null,
             error: false,
             bioEditIsVisible: false,
@@ -30,6 +31,7 @@ export default class Bioeditor extends React.Component {
         formData.append("gender", this.state.gender);
         formData.append("size", this.state.size);
         formData.append("bio", this.state.text);
+        formData.append("cd", this.props.cd);
         var that = this;
         console.log("formData before sending it", formData);
         if (!this.props.dogId) {
@@ -139,6 +141,7 @@ export default class Bioeditor extends React.Component {
                             />
                             <div>
                                 <textarea
+                                    className="doginfo-input"
                                     onChange={(e) => this.handleChange(e)}
                                     //value={this.props.bio}
                                     name="text"

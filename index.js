@@ -119,6 +119,7 @@ app.post("/registration", (req, res) => {
                             // I need to generate a random code right here
                             if (cd == "") {
                                 cd = cryptoRandomString({ length: 6 });
+                                console.log("cd :", cd);
                             }
                             db.registerUser(first, last, email, password, cd)
                                 .then((result) => {
@@ -218,10 +219,44 @@ app.get("/user", (req, res) => {
                     last: list[0].last,
                     imageUrl: list[0].imageurl,
                     email: list[0].email,
+                    cd: list[0].cd,
                 });
             })
             .catch((err) => {
                 console.log("err in getUser index.js", err);
+            });
+    } else {
+        res.sendFile(__dirname + "/index.html");
+    }
+});
+app.get("/otherusers", (req, res) => {
+    if (req.session.userId) {
+        let userId = req.session.userId;
+
+        db.getCd(userId)
+            .then((data) => {
+                var cd = data.rows[0].cd;
+                console.log(
+                    "cd after I fetch it from users table /otherusers",
+                    cd
+                );
+                db.getOtherUsers(cd, userId)
+                    .then((info) => {
+                        var list = info.rows;
+                        console.log(
+                            "my list here after getting /otherusers  :",
+                            list
+                        );
+                        return res.json({
+                            list,
+                        });
+                    })
+                    .catch((err) => {
+                        console.log("err in getOtherUsers index.js", err);
+                    });
+            })
+            .catch((err) => {
+                console.log("err in getCd index.js", err);
             });
     } else {
         res.sendFile(__dirname + "/index.html");
@@ -254,6 +289,7 @@ app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
         req.body.gender,
         req.body.size,
         req.body.bio,
+        req.body.cd,
         imageurl,
         userId
     )
@@ -270,7 +306,7 @@ app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
 app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
     //console.log("I am getting an /uploaddogbio req");
     console.log("req.body from /uploaddogbio :", req.body);
-    let userId = req.session.userId;
+    //let userId = req.session.userId;
     let filen = req.file.filename;
     const imageurl = `${s3Url}${filen}`;
     db.updateDogInfo(
@@ -279,8 +315,8 @@ app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
         req.body.gender,
         req.body.size,
         req.body.bio,
-        imageurl,
-        userId
+        req.body.cd,
+        imageurl
     )
         .then(({ rows }) => {
             console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
@@ -298,23 +334,35 @@ app.get("/doginfo", (req, res) => {
     if (req.session.userId) {
         let userId = req.session.userId;
         console.log("userId from /user ", userId);
-        db.getDogInfo(userId)
-            .then((info) => {
-                var list = info.rows;
-                console.log("list from /dogifo ", list);
-                return res.json({
-                    id: list[0].id,
-                    name: list[0].name,
-                    gender: list[0].gender,
-                    size: list[0].size,
-                    dogimg: list[0].imageurl,
-                    bio: list[0].bio,
-                    firstuserid: list[0].firstuserid,
-                    seconduserid: list[0].seconduserid,
-                });
+        db.getCd(userId)
+            .then((data) => {
+                var cd = data.rows[0].cd;
+                console.log(
+                    "cd after I fetch it from users table /doginfo",
+                    cd
+                );
+                db.getDogInfo(cd)
+                    .then((info) => {
+                        var list = info.rows;
+                        console.log("list[0] from /dogifo ", list[0]);
+                        return res.json({
+                            id: list[0].id,
+                            name: list[0].name,
+                            gender: list[0].gender,
+                            size: list[0].size,
+                            dogimg: list[0].imageurl,
+                            bio: list[0].bio,
+                            cd: list[0].cd,
+                            firstuserid: list[0].firstuserid,
+                            seconduserid: list[0].seconduserid,
+                        });
+                    })
+                    .catch((err) => {
+                        console.log("err in getDogInfo index.js", err);
+                    });
             })
             .catch((err) => {
-                console.log("err in getDogInfo index.js", err);
+                console.log("err in getCd index.js", err);
             });
     } else {
         res.sendFile(__dirname + "/index.html");

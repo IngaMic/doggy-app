@@ -461,6 +461,23 @@ img {
     opacity: 65%;
     z-index: -1;
 }
+/* OtherUsers 02.11 */
+#other-users-container {
+    margin-left: 10px;
+    position: absolute;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 1;
+}
+#other-users-container img {
+    border: 6px solid rgb(255, 255, 255);
+    height: 105px;
+    width: 105px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+/* OtherUsers 02.11 end */
 #dog-info {
     position: absolute;
     max-width: 450px;
