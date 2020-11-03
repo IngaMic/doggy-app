@@ -39,11 +39,11 @@ export default class Profile extends React.Component {
             seconduserid: this.props.seconduserid,
         });
         console.log("this.props in profile", this.props);
-        console.log("this.state in profile", this.state);
-        console.log(
-            "this.props.otherUsers in profile ...",
-            this.props.otherUsers
-        );
+        // console.log("this.state in profile", this.state);
+        // console.log(
+        //     "this.props.otherUsers in profile ...",
+        //     this.props.otherUsers
+        // );
     }
     clickTraining(e) {
         var choice = e.currentTarget.value;

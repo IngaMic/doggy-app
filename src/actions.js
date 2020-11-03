@@ -26,3 +26,16 @@ export async function receiveTrick(id) {
         trick: data.trick,
     };
 }
+export async function onlineUsers(onlineUsers) {
+    console.log("onlineUsers from actions.js", onlineUsers);
+    return {
+        type: "ONLINE_USERS",
+        onlineUsers,
+    };
+}
+export async function userLeft(onlineUsers) {
+    return {
+        type: "USER_LEFT",
+        onlineUsers,
+    };
+}

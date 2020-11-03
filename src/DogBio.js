@@ -63,9 +63,9 @@ export default class Bioeditor extends React.Component {
                         "response in update DogBio.js after axios is done",
                         resp
                     );
-                    console.log("resp.data.dog.name", resp.data.dog.name);
-                    console.log("resp.data.dog.gender", resp.data.dog.gender);
-                    console.log("resp.data.dog.size", resp.data.dog.size);
+                    // console.log("resp.data.dog.name", resp.data.dog.name);
+                    // console.log("resp.data.dog.gender", resp.data.dog.gender);
+                    // console.log("resp.data.dog.size", resp.data.dog.size);
                     that.props.setInfo;
                     that.clearInput();
                     that.setState({ bioEditIsVisible: false });

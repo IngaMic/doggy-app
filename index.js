@@ -174,7 +174,7 @@ app.post("/welcome", (req, res) => {
                 // console.log("password   ", password);
                 bc.compare(password, pass)
                     .then((info) => {
-                        console.log("info from compare", info);
+                        //console.log("info from compare", info);
                         if (info) {
                             //console.log("userId from here and now: ", userId);
                             req.session.userId = userId;
@@ -236,17 +236,13 @@ app.get("/otherusers", (req, res) => {
         db.getCd(userId)
             .then((data) => {
                 var cd = data.rows[0].cd;
-                console.log(
-                    "cd after I fetch it from users table /otherusers",
-                    cd
-                );
                 db.getOtherUsers(cd, userId)
                     .then((info) => {
                         var list = info.rows;
-                        console.log(
-                            "my list here after getting /otherusers  :",
-                            list
-                        );
+                        // console.log(
+                        //     "my list here after getting /otherusers  :",
+                        //     list
+                        // );
                         return res.json({
                             list,
                         });
@@ -280,7 +276,7 @@ app.post("/uploadimg", uploader.single("file"), s3.upload, (req, res) => {
 });
 app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
     //console.log("I am getting an /uploaddogbio req");
-    console.log("req.body from /uploaddogbio :", req.body);
+    //console.log("req.body from /uploaddogbio :", req.body);
     let userId = req.session.userId;
     let filen = req.file.filename;
     const imageurl = `${s3Url}${filen}`;
@@ -294,7 +290,7 @@ app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
         userId
     )
         .then(({ rows }) => {
-            console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
+            // console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
             res.json({
                 dog: rows[0],
             });
@@ -305,7 +301,7 @@ app.post("/uploaddogbio", uploader.single("file"), s3.upload, (req, res) => {
 });
 app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
     //console.log("I am getting an /uploaddogbio req");
-    console.log("req.body from /uploaddogbio :", req.body);
+    //console.log("req.body from /uploaddogbio :", req.body);
     //let userId = req.session.userId;
     let filen = req.file.filename;
     const imageurl = `${s3Url}${filen}`;
@@ -319,7 +315,7 @@ app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
         imageurl
     )
         .then(({ rows }) => {
-            console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
+            //console.log(" rows[0] from addDogInfo in index.js: ", rows[0]);
             res.json({
                 dog: rows[0],
             });
@@ -333,18 +329,14 @@ app.get("/doginfo", (req, res) => {
     // console.log("req.session.userId", req.session.userId);
     if (req.session.userId) {
         let userId = req.session.userId;
-        console.log("userId from /user ", userId);
+        //console.log("userId from /user ", userId);
         db.getCd(userId)
             .then((data) => {
                 var cd = data.rows[0].cd;
-                console.log(
-                    "cd after I fetch it from users table /doginfo",
-                    cd
-                );
                 db.getDogInfo(cd)
                     .then((info) => {
                         var list = info.rows;
-                        console.log("list[0] from /dogifo ", list[0]);
+                        //console.log("list[0] from /dogifo ", list[0]);
                         return res.json({
                             id: list[0].id,
                             name: list[0].name,
@@ -407,7 +399,7 @@ app.get("/trick/:id.json", (req, res) => {
         db.getTrick(trickId)
             .then((info) => {
                 var trick = info.rows[0];
-                console.log("my trick in server  :", trick);
+                // console.log("my trick in server  :", trick);
                 return res.json({
                     trick,
                 });
@@ -453,7 +445,88 @@ app.get("*", function (req, res) {
 });
 /////////////////////////////////////////////////////////////////////
 
-app.listen(8080, function () {
+server.listen(8080, function () {
     console.log("server is listening...");
 });
 //////////////////////////////////////////////////////////////////////
+var onlineUsers = {};
+io.on("connection", function (socket) {
+    console.log(`socket.id ${socket.id} is now connected`);
+    const userId = socket.request.session.userId;
+    console.log("userId from socket :", userId);
+    // next: filter the needed online users here
+    if (!socket.request.session.userId) {
+        return socket.disconnect(true);
+    } else {
+        onlineUsers[socket.id] = userId;
+        var arr = Object.values(onlineUsers);
+        console.log("My array of users ids in sockets : ", arr);
+
+        db.getUsersByIds(arr)
+            .then(({ rows }) => {
+                console.log(
+                    "these are my rows after getUsersByIds in index.js",
+                    rows.reverse()
+                );
+                io.sockets.emit("onlineusers", rows);
+            })
+            .catch((err) => console.log("err in db.getUsersByIds", err));
+    }
+
+    socket.on("disconnect", () => {
+        var disconectedId = onlineUsers[socket.id];
+        //console.log("disconedtedId when user leaves: ", disconectedId);
+        delete onlineUsers[socket.id];
+        //console.log("onlineUsers after the user leaves :", onlineUsers)
+        var arr = Object.values(onlineUsers);
+        //console.log("My array of users ids in sockets : ", arr);
+        if (!Object.values(onlineUsers).includes(disconectedId)) {
+            db.getUsersByIds(arr)
+                .then(({ rows }) => {
+                    //console.log("these are my rows after getUsersByIds in index.js", rows.reverse());
+                    io.sockets.emit("userleft", rows);
+                })
+                .catch((err) => console.log("err in db.getUsersByIds", err));
+        }
+    });
+
+    // a good place to retrieve out last 5 chat messages // kicks in after the user logs-in; all code inside this io.on(.....)
+    //inside .then( we are going to emit the event for socket.js) -> then dispatch an action(.js) => reducer -> add it to redux
+
+    // db.getChatMessages().then(({ rows }) => {
+    //     // console.log("rows after getChatMessages in index.js", rows.reverse());
+    //     var msgs = rows.reverse();
+    //     io.sockets.emit("chatMessages", msgs);
+    // });
+
+    //1arg = event that comes from chat.js
+    //2arg info that comes along with the emit:
+
+    // socket.on("message", (newMsg) => {
+    //     //console.log("This message is comming from chat.js component :", newMsg);
+    //     //console.log("users who sent this newMsg id :", socket.request.session.userId);
+    //     db.addMessage(socket.request.session.userId, newMsg)
+    //         .then(({ rows }) => {
+    //             // console.log("these are my rows after addMessage in index.js", rows)
+    //             db.getUser(socket.request.session.userId)
+    //                 .then((info) => {
+    //                     var list = info.rows;
+    //                     // console.log("my list here after getUser in message handling indez.js :", list);
+    //                     var message = {
+    //                         first: list[0].first,
+    //                         last: list[0].last,
+    //                         imageurl: list[0].imageurl,
+    //                         message: rows[0].message,
+    //                     };
+    //                     //console.log(" newly constructed message in index.js :", message);
+    //                     io.sockets.emit("chatMessage", message);
+    //                 })
+    //                 .catch((err) => console.log(err));
+    //             //new db.addMessage to chats
+    //             // next: db.getUser (first, imageurl)
+    //             //make sure your new chat message object looks like the one we receive from the first 10msg
+    //             //when object is there (last5) we emit it for users to see:
+    //         })
+    //         .catch((err) => console.log("error in addMessage :", err));
+    // });
+});

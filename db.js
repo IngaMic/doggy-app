@@ -70,6 +70,13 @@ module.exports.getOtherUsers = (cd, userId) => {
         [cd, userId]
     );
 };
+module.exports.getUsersByIds = (arr) => {
+    return db.query(
+        `SELECT id, first, imageurl 
+        FROM users WHERE id = ANY($1)`,
+        [arr]
+    );
+};
 module.exports.getDogInfo = (cd) => {
     return db.query(
         `SELECT * FROM doggy 

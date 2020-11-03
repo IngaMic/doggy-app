@@ -15,6 +15,21 @@ export default function (state = {}, action) {
             quotes: action.quotes,
         });
     }
+    if (action.type == "ONLINE_USERS") {
+        console.log("action.onlineUsers in reducers : ", action.onlineUsers);
+        state = Object.assign({}, state, {
+            onlineUsers: action.onlineUsers,
+        });
+    }
+    if (action.type == "USER_LEFT") {
+        console.log(
+            "action.onlineUsers in reducers userLeft : ",
+            action.onlineUsers
+        );
+        state = Object.assign({}, state, {
+            onlineUsers: action.onlineUsers,
+        });
+    }
     //console.log("state.trick from reducer", state.trick);
     // if (action.type == "SAY_YES") {
     //     state = {

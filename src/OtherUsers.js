@@ -1,16 +1,16 @@
 import React, { useEffect } from "react";
-//import { Link } from "react-router-dom";
-//import { useDispatch, useSelector } from "react-redux";
-
+import { useSelector } from "react-redux";
+//useDispatch, concider
 export default function OtherUsers({ otherUsers }) {
+    const onlineUsers = useSelector((state) => state && state.onlineUsers);
     //const dispatch = useDispatch();
-    // useEffect(() => {
-    // }, []);
+    useEffect(() => {}, [onlineUsers]);
 
     if (!otherUsers) {
         return null;
     } else {
         console.log("otherUsers from OtherUsers.js", otherUsers);
+        console.log("onlineUsers from OtherUsers.js", onlineUsers);
     }
     return (
         <div className="other-users">
