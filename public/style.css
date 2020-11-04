@@ -452,22 +452,13 @@ img {
     object-fit: cover;
     z-index: 99999;
 }
-.user2-profile-img {
-    position: absolute;
-    border: 6px solid rgb(255, 255, 255);
-    top: 415px;
-    left: 440px;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    opacity: 65%;
-    z-index: -1;
-}
+
 /* OtherUsers 02.11 */
 #other-users-container {
+    margin-top: -30px;
     margin-left: 10px;
-    position: absolute;
+    width: 100px;
+    position: relative;
     display: flex;
     flex-direction: column-reverse;
     z-index: 1;
@@ -502,17 +493,83 @@ img {
     margin-top: 50px;
     z-index: 1;
 }
+.add-user {
+    position: relative;
+    margin-top: 10px;
+}
+.add-user p {
+    color: rgb(32, 42, 43);
+    position: relative;
+    width: 90px;
+    z-index: 9;
+}
+.user2-profile-img {
+    position: absolute;
+    border: 6px solid rgb(255, 255, 255);
+    margin-left: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 65%;
+    z-index: 2;
+}
 /* OtherUsers 02.11 end */
+#invitation {
+    border-radius: 30px;
+    background-color: #4fadb1;
+    padding: 30px;
+    position: absolute;
+    height: 140px;
+    width: 270px;
+    font-family: "Firma Sans", sans-serif;
+    top: 570px;
+    left: 40px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    opacity: 95%;
+}
+#invitation button {
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-right: -10px;
+    border: 1px solid black;
+    background-color: #5fd5d9;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+}
+#invitation h2 {
+    margin-top: 10px;
+}
+#instruction {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: top;
+}
+#instruction .bi-camera,
+#instruction .bi-pencil-square,
+#instruction .bi-plus-circle {
+    object-fit: cover;
+    position: relative;
+    margin-right: 10px;
+}
+#instruction .bi-plus-circle {
+    padding-bottom: 80px;
+}
 #dog-info {
     border-radius: 30px;
-
     background-color: #4fadb1;
     padding: 30px;
     position: absolute;
     height: 400px;
     width: 500px;
     font-family: "Firma Sans", sans-serif;
-    top: 260px;
+    top: 210px;
     right: 150px;
     color: rgb(255, 255, 255);
     text-align: justify;
@@ -537,7 +594,7 @@ img {
 }
 .dogbioform {
     position: absolute;
-    top: 250px;
+    top: 220px;
     right: 10%;
     height: 400px;
 }
@@ -564,8 +621,9 @@ img {
     padding: 5px 10px;
     background-color: #5fd1d9;
     color: #fff;
-    top: 600px;
-    left: 100px;
+    top: 540px;
+    left: 910px;
+    z-index: 1;
 }
 .layer {
     position: absolute;

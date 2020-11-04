@@ -60,11 +60,11 @@ export default class Profile extends React.Component {
     clickCharacter(e) {
         var choice = e.currentTarget.value;
         if (choice == "not") {
-            this.setState({ characterImg: "/sit.png" });
+            this.setState({ characterImg: "/anim2.gif" });
         } else if (choice == "some") {
-            this.setState({ characterImg: "/lay.png" });
+            this.setState({ characterImg: "/anim1.gif" });
         } else if (choice == "mid") {
-            this.setState({ characterImg: "/come.png" });
+            this.setState({ characterImg: "/skate1.gif" });
         } else if (choice == "well") {
             this.setState({ characterImg: "/huskygradient.png" });
         }
@@ -79,9 +79,9 @@ export default class Profile extends React.Component {
                     <div id="users-profile">
                         <div className="profiles-left"></div>
                         <div className="profiles-right"></div>
-                        <button className="next-page">
+                        <a className="next-page" href="#character-level">
                             Fill a questionaire
-                        </button>
+                        </a>
                         <img
                             id="dog-profile-img"
                             src={this.props.dogimg || "/dog1.png"}
@@ -99,13 +99,15 @@ export default class Profile extends React.Component {
                             }
                             alt=""
                         ></img>
-                        <OtherUsers otherUsers={this.props.otherUsers} />
                         <h4 id="name-surname">{this.props.first}</h4>
-                        <div>
+                        <OtherUsers otherUsers={this.props.otherUsers} />
+                        <div className="add-users">
                             <img
+                                onClick={this.props.openInvitation}
                                 className="user2-profile-img"
-                                src={this.props.seconduserimg || "/plus.png"}
+                                src={"/plus.png"}
                             ></img>
+                            <p>Invite your team member!</p>
                         </div>
                         <Bioeditor
                             dogId={this.props.dogId}
@@ -115,7 +117,82 @@ export default class Profile extends React.Component {
                         />
                     </div>
                 )}
-                {this.props.firstuserid && (
+                {!this.props.name && (
+                    <div id="dog-info">
+                        <h4 id="dog-name">Welcome to your profile page!</h4>
+                        <div id="instruction">
+                            <svg
+                                height="50px"
+                                width="50px"
+                                viewBox="0 0 16 16"
+                                className="bi bi-camera"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M15 12V6a1 1 0 0 0-1-1h-1.172a3 3 0 0 1-2.12-.879l-.83-.828A1 1 0 0 0 9.173 3H6.828a1 1 0 0 0-.707.293l-.828.828A3 3 0 0 1 3.172 5H2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM2 4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-1.172a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 9.172 2H6.828a2 2 0 0 0-1.414.586l-.828.828A2 2 0 0 1 3.172 4H2z"
+                                />
+                                <path
+                                    fillRule="evenodd"
+                                    d="M8 11a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5zm0 1a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"
+                                />
+                                <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
+                            </svg>
+                            <h4>
+                                Click on the bubble in the top left corner to
+                                upload your picture
+                            </h4>
+                        </div>
+                        <div id="instruction">
+                            <svg
+                                height="50px"
+                                width="50px"
+                                viewBox="0 0 16 16"
+                                className="bi bi-pencil-square"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456l-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                <path
+                                    fillRule="evenodd"
+                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"
+                                />
+                            </svg>
+                            <h4>
+                                Click on a pen icon to fill your doggies profile
+                                information and upload picture.
+                            </h4>
+                        </div>
+                        <div id="instruction">
+                            <svg
+                                height="150px"
+                                width="150px"
+                                viewBox="0 0 16 16"
+                                className="bi bi-plus-circle"
+                                fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <path
+                                    fillRule="evenodd"
+                                    d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                                />
+                                <path
+                                    fillRule="evenodd"
+                                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"
+                                />
+                            </svg>
+                            <h4>
+                                Click on a plus and invite your friends to join
+                                your account! You will get a code that can be
+                                user while filling a registration form, that way
+                                you can collaborate while training and filling
+                                the diary.
+                            </h4>
+                        </div>
+                    </div>
+                )}
+                {this.props.name && (
                     <div id="dogs-profile">
                         <div id="dog-info">
                             <h2 id="dog-name">{this.props.name}</h2>
@@ -144,7 +221,7 @@ export default class Profile extends React.Component {
                     )}
                 </div>
                 {this.props.firstuserid && (
-                    <div>
+                    <div id="questionaire">
                         <div className="training-level">
                             <h2>How well is your dog trained?</h2>
                             <button
@@ -173,7 +250,7 @@ export default class Profile extends React.Component {
                             </button>
                             <img src={this.state.trainingImg}></img>
                         </div>
-                        <div className="character-level">
+                        <div className="character-level" id="character-level">
                             <h2>What is your dogs temperament?</h2>
                             <button
                                 onClick={(e) => this.clickCharacter(e)}

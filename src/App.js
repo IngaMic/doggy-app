@@ -7,6 +7,7 @@ import Dashboard from "./Dashboard";
 import Diary from "./Diary";
 import Trick from "./Trick";
 import Uploader from "./Uploader";
+import Invitation from "./Invitation";
 /////////////////////////////////////////////////////////////
 
 export default class App extends React.Component {
@@ -29,6 +30,7 @@ export default class App extends React.Component {
             seconduserid: null,
             otherUsers: [],
             uploaderIsVisible: false,
+            invitationIsVisible: false,
             error: false,
         };
     }
@@ -100,6 +102,10 @@ export default class App extends React.Component {
     closeUploader(e) {
         e.preventDefault();
         this.setState({ uploaderIsVisible: false });
+    }
+    openInvitation(e) {
+        e.preventDefault();
+        this.setState({ invitationIsVisible: true });
     }
     setImage(imageUrl) {
         this.setState({ imageUrl: imageUrl });
@@ -182,6 +188,11 @@ export default class App extends React.Component {
                                                 uploaderIsVisible: true,
                                             })
                                         }
+                                        openInvitation={() =>
+                                            this.setState({
+                                                invitationIsVisible: true,
+                                            })
+                                        }
                                         setInfo={() => {
                                             axios
                                                 .get("/doginfo")
@@ -234,6 +245,15 @@ export default class App extends React.Component {
                             userId={this.state.logUserId}
                             closeUploader={() => {
                                 this.setState({ uploaderIsVisible: false });
+                            }}
+                        />
+                    )}
+                    {this.state.invitationIsVisible && (
+                        <Invitation
+                            cd={this.state.cd}
+                            userId={this.state.logUserId}
+                            closeInvitation={() => {
+                                this.setState({ invitationIsVisible: false });
                             }}
                         />
                     )}
