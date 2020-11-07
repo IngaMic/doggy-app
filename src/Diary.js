@@ -2,10 +2,13 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 //import { Link } from "react-router-dom";
+//import Wheel from "./Wheel";
+import TimePicker from "./TimePicker";
 
 const Diary = () => {
     const [userInput, setUserInput] = useState("");
     const [walks, setWalks] = useState([]);
+
     useEffect(() => {
         //console.log("useEffect is running!");//runs when the component mounts
         (async () => {
@@ -27,6 +30,7 @@ const Diary = () => {
         //console.log("e.target.value : ", e.target.value);
         setUserInput(e.target.value);
     }
+
     //must be (walks.length == 0)
     if (!walks) {
         return (
@@ -43,12 +47,14 @@ const Diary = () => {
     } else {
         return (
             <div>
+                <TimePicker />
                 <input
                     onChange={handleChange}
                     type="text"
                     name="userInput"
                     placeholder="How Long Have You Walked Today?"
                 />
+
                 {!userInput && <h2>Previous entries:</h2>}
 
                 {walks.map((walk, i) => {
