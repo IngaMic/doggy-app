@@ -66,7 +66,7 @@ export default class Profile extends React.Component {
         } else if (choice == "mid") {
             this.setState({ characterImg: "/skate1.gif" });
         } else if (choice == "well") {
-            this.setState({ characterImg: "/huskygradient.png" });
+            this.setState({ characterImg: "/anim3.gif" });
         }
     }
     render() {
@@ -80,7 +80,7 @@ export default class Profile extends React.Component {
                         <div className="profiles-left"></div>
                         <div className="profiles-right"></div>
                         <a className="next-page" href="#character-level">
-                            Fill a questionaire
+                            To The Questionaire!
                         </a>
                         <img
                             id="dog-profile-img"
@@ -275,6 +275,34 @@ export default class Profile extends React.Component {
                                 value="well"
                             >
                                 Communicable / Submissive
+                            </button>
+                            <img src={this.state.characterImg}></img>
+                        </div>
+                        <div className="hero-level" id="hero-level">
+                            <h2>What is your dogs temperament?</h2>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="not"
+                            >
+                                Lassie
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="some"
+                            >
+                                Mailo from the MASK
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="mid"
+                            >
+                                Laika
+                            </button>
+                            <button
+                                onClick={(e) => this.clickCharacter(e)}
+                                value="well"
+                            >
+                                Doggo Master
                             </button>
                             <img src={this.state.characterImg}></img>
                         </div>
