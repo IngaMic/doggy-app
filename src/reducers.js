@@ -1,5 +1,5 @@
 export default function (state = {}, action) {
-    console.log("Action :", action);
+    //  console.log("Action :", action);
     if (action.type == "RECEIVE_TRICKS") {
         state = Object.assign({}, state, {
             tricks: action.tricks,
@@ -10,22 +10,27 @@ export default function (state = {}, action) {
             trick: action.trick,
         });
     }
+    if (action.type == "UPDATE_TRICK_NUMBER") {
+        //console.log("action.trickNumber in reducers : ", action.trickNumber);
+        state = { ...state, trickNumber: action.trickNumber };
+    }
+
     if (action.type == "RECEIVE_QUOTES") {
         state = Object.assign({}, state, {
             quotes: action.quotes,
         });
     }
     if (action.type == "ONLINE_USERS") {
-        console.log("action.onlineUsers in reducers : ", action.onlineUsers);
+        // console.log("action.onlineUsers in reducers : ", action.onlineUsers);
         state = Object.assign({}, state, {
             onlineUsers: action.onlineUsers,
         });
     }
     if (action.type == "USER_LEFT") {
-        console.log(
-            "action.onlineUsers in reducers userLeft : ",
-            action.onlineUsers
-        );
+        // console.log(
+        //     "action.onlineUsers in reducers userLeft : ",
+        //     action.onlineUsers
+        // );
         state = Object.assign({}, state, {
             onlineUsers: action.onlineUsers,
         });

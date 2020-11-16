@@ -13,11 +13,11 @@ const Diary = () => {
         //console.log("useEffect is running!");//runs when the component mounts
         (async () => {
             try {
-                console.log("userInput", userInput);
+                // console.log("userInput", userInput);
                 const resp = await axios.get("/api/walks", {
                     params: { userInput: userInput },
                 });
-                console.log("resp.data :", resp.data.walks);
+                // console.log("resp.data :", resp.data.walks);
                 setWalks(resp.data.walks);
             } catch (err) {
                 console.log("err : ", err);
@@ -25,11 +25,11 @@ const Diary = () => {
         })();
     }, [userInput]);
 
-    console.log("walks : ", walks);
-    function handleChange(e) {
-        //console.log("e.target.value : ", e.target.value);
-        setUserInput(e.target.value);
-    }
+    // console.log("walks : ", walks);
+    // function handleChange(e) {
+    //     //console.log("e.target.value : ", e.target.value);
+    //     setUserInput(e.target.value);
+    // }
 
     //must be (walks.length == 0)
     if (!walks) {
@@ -46,20 +46,21 @@ const Diary = () => {
         );
     } else {
         return (
-            <div>
+            <div className="diaryContainer">
+                <img className="walkies" src="walk.png"></img>
                 <TimePicker />
-                <input
+                {/* <input
                     onChange={handleChange}
                     type="text"
                     name="userInput"
                     placeholder="How Long Have You Walked Today?"
-                />
+                /> */}
 
                 {!userInput && <h2>Previous entries:</h2>}
 
                 {walks.map((walk, i) => {
                     return (
-                        <div className="dogwalk" key={i}>
+                        <div className="dogwalk-record" key={i}>
                             <p>
                                 {walk.mins} mins, by user :{walk.user_id}
                             </p>

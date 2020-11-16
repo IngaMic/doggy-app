@@ -9,8 +9,8 @@ export default function OtherUsers({ otherUsers }) {
     if (!otherUsers) {
         return null;
     } else {
-        console.log("otherUsers from OtherUsers.js", otherUsers);
-        console.log("onlineUsers from OtherUsers.js", onlineUsers);
+        //console.log("otherUsers from OtherUsers.js", otherUsers);
+        //console.log("onlineUsers from OtherUsers.js", onlineUsers);
         if (!onlineUsers) {
             return null;
         }

@@ -23,6 +23,7 @@ export default class Profile extends React.Component {
             error: false,
             trainingImg: "/dog1.png",
             characterImg: "/dog1.png",
+            heroImg: "/dog1.png",
         };
         // this.closeEditor = this.closeEditor.bind(this);
     }
@@ -38,7 +39,7 @@ export default class Profile extends React.Component {
             firstuserid: this.props.firstuserid,
             seconduserid: this.props.seconduserid,
         });
-        console.log("this.props in profile", this.props);
+        //console.log("this.props in profile", this.props);
         // console.log("this.state in profile", this.state);
         // console.log(
         //     "this.props.otherUsers in profile ...",
@@ -67,6 +68,18 @@ export default class Profile extends React.Component {
             this.setState({ characterImg: "/skate1.gif" });
         } else if (choice == "well") {
             this.setState({ characterImg: "/anim3.gif" });
+        }
+    }
+    clickHero(e) {
+        var choice = e.currentTarget.value;
+        if (choice == "not") {
+            this.setState({ heroImg: "/anim2.gif" });
+        } else if (choice == "some") {
+            this.setState({ heroImg: "/skate1.gif" });
+        } else if (choice == "mid") {
+            this.setState({ heroImg: "/laika.png" });
+        } else if (choice == "well") {
+            this.setState({ heroImg: "/anim3.gif" });
         }
     }
     render() {
@@ -279,32 +292,32 @@ export default class Profile extends React.Component {
                             <img src={this.state.characterImg}></img>
                         </div>
                         <div className="hero-level" id="hero-level">
-                            <h2>What is your dogs temperament?</h2>
+                            <h2>Which famous dog is you favourite?</h2>
                             <button
-                                onClick={(e) => this.clickCharacter(e)}
+                                onClick={(e) => this.clickHero(e)}
                                 value="not"
                             >
                                 Lassie
                             </button>
                             <button
-                                onClick={(e) => this.clickCharacter(e)}
+                                onClick={(e) => this.clickHero(e)}
                                 value="some"
                             >
                                 Mailo from the MASK
                             </button>
                             <button
-                                onClick={(e) => this.clickCharacter(e)}
+                                onClick={(e) => this.clickHero(e)}
                                 value="mid"
                             >
                                 Laika
                             </button>
                             <button
-                                onClick={(e) => this.clickCharacter(e)}
+                                onClick={(e) => this.clickHero(e)}
                                 value="well"
                             >
                                 Doggo Master
                             </button>
-                            <img src={this.state.characterImg}></img>
+                            <img src={this.state.heroImg}></img>
                         </div>
                     </div>
                 )}

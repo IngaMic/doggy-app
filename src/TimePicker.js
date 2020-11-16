@@ -15,10 +15,10 @@ const TimePicker = () => {
         setTime();
         document.querySelector(".time-picker").dataset.time =
             formatTime(hour) + ":" + formatTime(minute);
-        console.log("let d hour min", d, hour, minute); //works
+        // console.log("let d hour min", d, hour, minute); //works
     }, [userInput]);
     function setTime() {
-        console.log("I'm here set time"); //works
+        // console.log("I'm here set time"); //works
         h1 = formatTime(hour);
         m1 = formatTime(minute);
         document.querySelector(".time-picker").dataset.time =
@@ -26,14 +26,14 @@ const TimePicker = () => {
     }
 
     function formatTime(time) {
-        console.log("format time is working"); //works
+        // console.log("format time is working"); //works
         if (time < 10) {
             time = "0" + time;
         }
         return time;
     }
     function hour_change(e) {
-        console.log("hour-change works"); //works
+        //console.log("hour-change works"); //works
         if (e.target.value > 23) {
             e.target.value = 23;
         } else if (e.target.value < 0) {
@@ -48,7 +48,7 @@ const TimePicker = () => {
     }
 
     function minute_change(e) {
-        console.log("minute_change is working"); //works
+        // console.log("minute_change is working"); //works
         if (e.target.value > 59) {
             e.target.value = 59;
         } else if (e.target.value < 0) {
@@ -63,7 +63,7 @@ const TimePicker = () => {
     }
 
     function hour_up() {
-        console.log("hour_up is working");
+        //  console.log("hour_up is working");
         hour++;
         if (hour > 23) {
             hour = 0;
@@ -71,7 +71,7 @@ const TimePicker = () => {
         setTime();
     }
     function hour_down() {
-        console.log("hour_down is working");
+        //   console.log("hour_down is working");
         hour--;
         if (hour < 0) {
             hour = 23;
@@ -80,7 +80,7 @@ const TimePicker = () => {
     }
 
     function minute_up() {
-        console.log("minute_up is working");
+        // console.log("minute_up is working");
         minute++;
         if (minute > 59) {
             minute = 0;
@@ -97,16 +97,20 @@ const TimePicker = () => {
         setTime();
     }
 
-    //must be (walks.length == 0)
     return (
         <div>
             <h2 className="time-picker-h">How long have you walked today?</h2>
             <div className="time-picker" data-time="00:00">
                 <div className="hour">
-                    <div className="hr-up" onClick={hour_up}></div>
+                    <div
+                        className="hr-up"
+                        style={{ backgroundColor: 548795 }}
+                        onClick={hour_up}
+                    ></div>
                     <input
                         type="number"
                         className="hr"
+                        placeholder="hr"
                         value={h1}
                         onChange={hour_change}
                         // placeholder={h1}
@@ -121,6 +125,7 @@ const TimePicker = () => {
                     <input
                         type="number"
                         className="min"
+                        placeholder="min"
                         value={m1}
                         onChange={minute_change}
                     ></input>

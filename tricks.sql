@@ -3,25 +3,29 @@ CREATE TABLE tricks (
 id SERIAL PRIMARY KEY,
 tname VARCHAR NOT NULL,
 imagebub TEXT,
+imageon TEXT,
 descr VARCHAR NOT NULL
 );
 
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
+INSERT INTO tricks (tname, imagebub, imageon, descr) VALUES (
     'Sit',
     '/sit.png',
+    '/sitstep3.gif',
   'Teaching your dog how to sit on command is one of the simplest behaviors you can teach and it 
   is usually the first command in basic obedience training. As with the teaching of all behaviors,
    the first step is to get your dogs full attention. Practice step one until your dogs starts to get an idea
    what do you expect. When you are done with one step fully, transition to a second one.'
 );
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
+INSERT INTO tricks (tname, imagebub, imageon, descr) VALUES (
     'Lay',
     '/lay.png',
+    '/pawstep3.gif',
   'this is a description of lay command'
 );
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
+INSERT INTO tricks (tname, imagebub, imageon, descr) VALUES (
     'Come',
     '/come.png',
+    'sitstep3.gif',
   'this is a description of come command'
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (

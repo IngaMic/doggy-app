@@ -38,18 +38,18 @@ export default class Bioeditor extends React.Component {
         formData.append("bio", this.state.text);
         formData.append("cd", this.props.cd);
         var that = this;
-        console.log("formData before sending it", formData);
+        //console.log("formData before sending it", formData);
         if (!this.props.dogId) {
             axios
                 .post("/uploaddogbio", formData)
                 .then(function (resp) {
-                    console.log(
-                        "response in DogBio.js after axios is done",
-                        resp
-                    );
+                    // console.log(
+                    //     "response in DogBio.js after axios is done",
+                    //     resp
+                    // );
                     console.log("resp.data.dog.name", resp.data.dog.name);
-                    console.log("resp.data.dog.gender", resp.data.dog.gender);
-                    console.log("resp.data.dog.size", resp.data.dog.size);
+                    // console.log("resp.data.dog.gender", resp.data.dog.gender);
+                    //  console.log("resp.data.dog.size", resp.data.dog.size);
                     // e.target.children.value = "";
                     that.props.setInfo;
                     that.clearInput();
@@ -60,7 +60,7 @@ export default class Bioeditor extends React.Component {
                 });
         } else {
             formData.append("dogId", this.props.dogId);
-            console.log("formData before sending it", formData);
+            // console.log("formData before sending it", formData);
             axios
                 .post("/updatedogbio", formData)
                 .then(function (resp) {

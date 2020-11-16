@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
-import { openTrick, receiveTricks, receiveQuotes } from "./actions";
+import { receiveTricks, receiveQuotes } from "./actions";
 
 export default function Tricks() {
     const dispatch = useDispatch();
@@ -21,7 +21,7 @@ export default function Tricks() {
     useEffect(() => {
         dispatch(receiveTricks());
         dispatch(receiveQuotes());
-    }, [tricksdone, theQuote]);
+    }, [theQuote]);
 
     if (!qts) {
         return "not logging quotes";
@@ -38,13 +38,13 @@ export default function Tricks() {
     if (!tricks) {
         return "we haven't done any tricks yet";
     } else {
-        var tricksdone = tricks.filter(function (trick) {
-            return trick.done == true;
-        });
-        // console.log("done tricks from trickss", tricksdone);
-        var trickstodo = tricks.filter(function (trick) {
-            return trick.done == false;
-        });
+        // var tricksdone = tricks.filter(function (trick) {
+        //     return trick.done == true;
+        // });
+        // // console.log("done tricks from trickss", tricksdone);
+        // var trickstodo = tricks.filter(function (trick) {
+        //     return trick.done == false;
+        // });
         //console.log("todo tricks from tricks", trickstodo);
     }
     var alltricks = (
@@ -85,52 +85,52 @@ export default function Tricks() {
     //     </div>
     // );
 
-    tricksdone = (
-        <div id="tricksdone-list">
-            <h3>Done:</h3>
-            {tricksdone.map((trickdone, i) => (
-                <div className="trickdone" key={i}>
-                    <img
-                        className="trickdone-img"
-                        src={
-                            trickdone.imageurl ||
-                            "https://image.flaticon.com/icons/svg/1338/1338020.svg"
-                        }
-                    />
-                    <button
-                        onClick={() => {
-                            dispatch(openTrick(trickdone.id));
-                        }}
-                    >
-                        Open
-                    </button>
-                </div>
-            ))}
-        </div>
-    );
-    trickstodo = (
-        <div id="trickstodo-list">
-            <h3>To Do:</h3>
-            {trickstodo.map((tricktodo, j) => (
-                <div className="tricktodo" key={j}>
-                    <img
-                        className="tricktodo-img"
-                        src={
-                            tricktodo.imageurl ||
-                            "https://image.flaticon.com/icons/svg/1338/1338020.svg"
-                        }
-                    />
-                    <button
-                        onClick={() => {
-                            dispatch(openTrick(tricktodo.id));
-                        }}
-                    >
-                        Open
-                    </button>
-                </div>
-            ))}
-        </div>
-    );
+    // tricksdone = (
+    //     <div id="tricksdone-list">
+    //         <h3>Done:</h3>
+    //         {tricksdone.map((trickdone, i) => (
+    //             <div className="trickdone" key={i}>
+    //                 <img
+    //                     className="trickdone-img"
+    //                     src={
+    //                         trickdone.imageurl ||
+    //                         "https://image.flaticon.com/icons/svg/1338/1338020.svg"
+    //                     }
+    //                 />
+    //                 <button
+    //                     onClick={() => {
+    //                         dispatch(openTrick(trickdone.id));
+    //                     }}
+    //                 >
+    //                     Open
+    //                 </button>
+    //             </div>
+    //         ))}
+    //     </div>
+    // );
+    // trickstodo = (
+    //     <div id="trickstodo-list">
+    //         <h3>To Do:</h3>
+    //         {trickstodo.map((tricktodo, j) => (
+    //             <div className="tricktodo" key={j}>
+    //                 <img
+    //                     className="tricktodo-img"
+    //                     src={
+    //                         tricktodo.imageurl ||
+    //                         "https://image.flaticon.com/icons/svg/1338/1338020.svg"
+    //                     }
+    //                 />
+    //                 <button
+    //                     onClick={() => {
+    //                         dispatch(openTrick(tricktodo.id));
+    //                     }}
+    //                 >
+    //                     Open
+    //                 </button>
+    //             </div>
+    //         ))}
+    //     </div>
+    // );
     return (
         <div className="tricks-container">
             <div className="tricks-gradient"></div>

@@ -36,7 +36,7 @@ export default class App extends React.Component {
     }
     componentDidMount() {
         axios.get("/doginfo").then(({ data }) => {
-            console.log("data after App component mounts and dogInfo", data);
+            // console.log("data after App component mounts and dogInfo", data);
             this.setState({
                 dogId: data.id,
                 name: data.name,
@@ -47,13 +47,13 @@ export default class App extends React.Component {
                 firstuserid: data.firstuserid,
                 seconduserid: data.seconduserid,
             });
-            console.log(
-                "state after App component mounts and dogInfo",
-                this.state
-            );
+            // console.log(
+            //     "state after App component mounts and dogInfo",
+            //     this.state
+            // );
         });
         axios.get("/user").then((resp) => {
-            console.log("resp after App component mounts and userInfo", resp);
+            // console.log("resp after App component mounts and userInfo", resp);
             this.setState({
                 logUserId: resp.data.userId,
                 first: resp.data.first,
@@ -64,17 +64,17 @@ export default class App extends React.Component {
             });
         });
         axios.get("/otherusers").then((resp) => {
-            console.log(
-                "resp after App component mounts and otherusersInfo",
-                resp
-            );
+            // console.log(
+            //     "resp after App component mounts and otherusersInfo",
+            //     resp
+            // );
             this.setState({
                 otherUsers: resp.data.list,
             });
-            console.log(
-                "state.otherUsers after App component mounts and otherUsers",
-                this.state.otherUsers
-            );
+            // console.log(
+            //     "state.otherUsers after App component mounts and otherUsers",
+            //     this.state.otherUsers
+            // );
         });
     }
     showUploader(e) {

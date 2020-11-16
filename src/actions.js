@@ -26,8 +26,19 @@ export async function receiveTrick(id) {
         trick: data.trick,
     };
 }
+export async function updateTrickNumber(g, t) {
+    let trickNumber = {};
+    trickNumber.gif = g;
+    trickNumber.text = t;
+    //console.log("trickNumber from actions", trickNumber);
+    return {
+        type: "UPDATE_TRICK_NUMBER",
+        trickNumber: trickNumber,
+    };
+}
+
 export async function onlineUsers(onlineUsers) {
-    console.log("onlineUsers from actions.js", onlineUsers);
+    //console.log("onlineUsers from actions.js", onlineUsers);
     return {
         type: "ONLINE_USERS",
         onlineUsers,
