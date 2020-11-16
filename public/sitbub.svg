@@ -1,0 +1,3766 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="145.974mm"
+   height="158.15956mm"
+   viewBox="0 0 145.974 158.15956"
+   version="1.1"
+   id="svg16466"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
+   sodipodi:docname="sitGrey.svg">
+  <defs
+     id="defs16460">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient19633">
+      <stop
+         style="stop-color:#449093;stop-opacity:1;"
+         offset="0"
+         id="stop19629" />
+      <stop
+         style="stop-color:#449093;stop-opacity:0;"
+         offset="1"
+         id="stop19631" />
+    </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9357">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9355">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9349" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9351" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9353" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9367">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9365">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9359" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9361" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9363" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9377">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9375">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9369" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9371" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9373" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9477">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9475">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9469" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9471" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9473" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9387">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9385">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9379" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9381" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9383" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9397">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9395">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9389" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9391" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9393" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9407">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9405">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9399" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9401" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9403" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9417">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9415">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9409" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9411" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9413" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9427">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9425">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9419" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9421" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9423" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9437">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9435">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9429" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9431" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9433" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9447">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9445">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9439" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9441" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9443" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9457">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9455">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9449" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9451" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9453" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9467">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9465">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9459" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9461" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9463" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9487">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9485">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9479" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9481" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9483" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9497">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9495">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9489" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9491" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9493" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9507">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9505">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9499" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9501" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9503" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9517">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9515">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9509" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9511" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9513" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9527">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9525">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9519" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9521" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9523" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9537">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9535">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9529" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9531" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9533" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9547">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9545">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9539" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9541" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9543" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9557">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9555">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9549" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9551" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9553" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9567">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9565">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9559" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9561" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9563" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9577">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9575">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9569" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9571" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9573" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9587">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9585">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9579" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9581" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9583" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9597">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9595">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9589" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9591" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9593" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9607">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9605">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9599" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9601" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9603" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9357-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9355-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9349-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9351-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9353-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9367-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9365-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9359-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9361-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9363-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9377-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9375-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9369-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9371-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9373-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9477-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9475-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9469-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9471-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9473-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9387-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9385-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9379-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9381-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9383-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9397-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9395-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9389-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9391-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9393-3" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9407-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9405-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9399-6" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9401-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9403-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9417-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9415-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9409-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9411-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9413-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9427-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9425-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9419-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9421-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9423-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9437-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9435-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9429-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9431-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9433-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9447-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9445-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9439-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9441-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9443-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9457-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9455-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9449-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9451-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9453-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9467-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9465-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9459-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9461-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9463-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9487-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9485-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9479-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9481-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9483-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9497-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9495-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9489-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9491-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9493-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9507-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9505-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9499-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9501-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9503-3" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9517-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9515-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9509-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9511-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9513-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9527-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9525-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9519-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9521-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9523-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9537-1">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9535-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9529-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9531-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9533-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9547-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9545-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9539-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9541-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9543-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9557-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9555-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9549-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9551-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9553-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9567-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9565-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9559-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9561-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9563-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9577-1">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9575-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9569-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9571-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9573-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9587-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9585-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9579-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9581-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9583-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9597-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9595-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9589-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9591-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9593-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9607-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9605-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9599-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9601-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9603-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9357-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9355-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9349-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9351-75" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9353-61" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9367-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9365-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9359-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9361-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9363-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9377-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9375-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9369-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9371-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9373-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9477-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9475-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9469-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9471-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9473-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9387-73">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9385-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9379-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9381-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9383-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9397-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9395-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9389-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9391-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9393-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9407-57">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9405-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9399-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9401-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9403-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9417-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9415-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9409-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9411-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9413-3" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9427-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9425-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9419-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9421-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9423-92" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9437-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9435-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9429-20" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9431-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9433-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9447-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9445-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9439-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9441-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9443-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9457-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9455-63">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9449-6" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9451-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9453-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9467-47">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9465-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9459-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9461-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9463-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9487-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9485-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9479-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9481-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9483-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9497-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9495-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9489-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9491-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9493-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9507-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9505-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9499-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9501-39" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9503-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9517-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9515-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9509-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9511-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9513-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9527-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9525-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9519-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9521-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9523-3" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9537-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9535-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9529-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9531-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9533-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9547-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9545-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9539-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9541-37" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9543-3" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9557-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9555-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9549-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9551-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9553-91" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9567-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9565-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9559-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9561-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9563-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9577-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9575-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9569-5" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9571-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9573-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9587-38">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9585-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9579-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9581-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9583-78" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9597-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9595-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9589-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9591-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9593-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9607-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9605-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9599-06" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9601-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9603-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9357-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9355-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9349-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9351-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9353-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9367-69">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9365-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9359-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9361-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9363-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9377-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9375-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9369-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9371-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9373-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9477-22">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9475-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9469-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9471-57" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9473-8" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9387-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9385-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9379-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9381-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9383-8" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9397-29">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9395-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9389-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9391-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9393-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9407-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9405-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9399-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9401-77" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9403-04" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9417-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9415-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9409-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9411-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9413-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9427-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9425-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9419-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9421-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9423-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9437-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9435-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9429-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9431-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9433-03" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9447-46">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9445-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9439-57" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9441-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9443-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9457-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9455-60">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9449-38" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9451-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9453-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9467-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9465-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9459-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9461-19" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9463-67" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9487-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9485-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9479-6" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9481-82" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9483-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9497-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9495-28">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9489-35" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9491-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9493-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9507-88">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9505-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9499-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9501-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9503-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9517-90">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9515-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9509-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9511-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9513-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9527-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9525-00">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9519-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9521-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9523-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9537-11">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9535-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9529-6" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9531-8" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9533-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9547-86">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9545-22">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9539-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9541-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9543-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9557-97">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9555-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9549-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9551-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9553-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9567-02">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9565-64">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9559-0" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9561-02" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9563-64" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9577-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9575-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9569-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9571-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9573-72" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9587-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9585-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9579-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9581-5" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9583-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9597-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9595-3">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9589-3" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9591-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9593-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9607-1">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9605-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9599-00" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9601-1" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9603-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9357-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9355-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9349-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9351-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9353-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9367-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9365-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9359-51" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9361-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9363-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9377-27">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9375-2">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9369-82" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9371-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9373-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9477-96">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9475-1">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9469-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9471-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9473-28" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9387-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9385-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9379-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9381-7" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9383-02" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9397-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9395-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9389-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9391-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9393-6" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9407-03">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9405-24">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9399-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9401-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9403-045" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9417-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9415-31">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9409-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9411-4" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9413-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9427-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9425-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9419-1" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9421-75" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9423-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9437-03">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9435-7">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9429-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9431-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9433-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9447-39">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9445-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9439-03" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9441-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9443-8" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9457-9">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9455-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9449-4" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9451-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9453-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9467-0">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9465-36">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9459-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9461-15" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9463-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9487-51">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9485-15">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9479-83" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9481-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9483-7" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9497-4">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9495-0">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9489-7" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9491-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9493-07" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9507-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9505-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9499-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9501-29" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9503-0" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9517-3">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9515-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9509-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9511-11" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9513-12" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9527-5">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9525-8">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9519-8" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9521-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9523-1" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9537-6">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9535-5">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9529-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9531-3" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9533-76" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9547-1">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9545-4">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9539-97" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9541-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9543-70" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9557-976">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9555-6">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9549-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9551-0" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9553-2" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9567-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9565-9">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9559-34" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9561-2" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9563-71" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9577-23">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9575-27">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9569-04" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9571-9" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9573-9" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9587-8">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9585-37">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9579-2" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9581-51" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9583-4" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9597-2">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9595-98">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9589-6" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9591-6" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9593-5" />
+      </feComponentTransfer>
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Lighting"
+       id="filter9607-7">
+      <feComponentTransfer
+         result="component"
+         id="feComponentTransfer9605-45">
+        <feFuncR
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncR9599-9" />
+        <feFuncG
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncG9601-35" />
+        <feFuncB
+           type="gamma"
+           amplitude="1.37725"
+           exponent="1"
+           offset="0"
+           id="feFuncB9603-18" />
+      </feComponentTransfer>
+    </filter>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient19633"
+       id="linearGradient19635"
+       x1="78.882004"
+       y1="206.2476"
+       x2="115.92367"
+       y2="132.92023"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.7"
+     inkscape:cx="265.4156"
+     inkscape:cy="385.08872"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     inkscape:window-width="1267"
+     inkscape:window-height="730"
+     inkscape:window-x="83"
+     inkscape:window-y="5"
+     inkscape:window-maximized="0" />
+  <metadata
+     id="metadata16463">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-32.012954,-69.420227)">
+    <circle
+       style="fill:#5ac3c6;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="circle19627"
+       cx="104.99995"
+       cy="152.24443"
+       r="72.987" />
+    <circle
+       style="fill:url(#linearGradient19635);fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;paint-order:stroke markers fill"
+       id="circle19603"
+       cx="104.99995"
+       cy="152.24443"
+       r="72.987" />
+    <path
+       style="fill:#502d16;stroke:#554400;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9357-3)"
+       d="m 211.28789,1385.902 c 21.7063,61.7031 -70.4441,52.2458 -140.553408,56.5642 l -56.564201,-11.1415 -12.8552998,-36.8523 79.7038008,-20.5688 99.415908,-18.8547 z"
+       id="path17877"
+       sodipodi:nodetypes="ccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#502d16;stroke:#502d16;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9367-7)"
+       d="m -45.822118,1103.0812 c -11.9751,20.327 -20.1029,44.7579 1.7143,101.1299 l 2.5711,30.8531 c -4.3893,20.4 1.6645,43.4107 5.9992,65.9916 l 0.8568,48.8509 c -2.5983,9.713 -3.8639,19.426 2.5711,29.1391 8.9526,24.9498 -3.6007,36.4588 -11.9982,50.5649 -12.3128,4.9993 -26.2655,8.8273 -23.14,24.854 -4.7028,7.1419 -4.2766,14.2839 -2.571,21.4258 l 4.285,0.857 c 2.8773,4.9588 6.6293,2.044 10.2846,0 8.2634,7.9678 15.6547,2.852 23.1396,-0.857 l 1.7143,5.1422 c -1.6261,-6.8246 4.0923,-4.2064 7.7132,-4.2852 29.8997992,7.7057 25.4207992,-15.4111 34.281399,-26.568 22.187201,-17.9976 7.1552,-20.594 8.5703,-29.9961 -3.1492,-12.8555 -2.5258,-25.711 -1.7142,-38.5665 -0.6016,-34.5912 3.670901,-65.2831 11.141401,-93.4166 z"
+       id="path17879"
+       sodipodi:nodetypes="ccccccccccccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#784421;stroke:#ffe680;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9377-27)"
+       d="m -10.683618,1026.8053 -34.2813,76.2759 c -4.481862,23.3227 -21.215248,63.554 19.7117,137.1253 l 50.565,63.4204 c 26.79,62.5486 57.4893,99.6877 93.416608,102.8439 47.81599,14.4142 75.4501,-15.5476 71.9906,-41.1376 l 55.7071,-99.4157 c -3.2416,-25.6408 -6.3619,-51.4842 -16.2835,-65.9916 0.7574,-61.3705 -28.3751,-76.5474 -51.4218,-101.1299 l -23.14,-30.8531 -1.7142,-50.565 z"
+       id="path17881"
+       sodipodi:nodetypes="cccccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#a05a2c;fill-opacity:1;stroke:#803300;stroke-width:0.328612px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9477-96)"
+       d="m 54.284882,1362.8765 c -25.0848,-6.0539 -40.021601,-56.0814 -58.2111006,-92.0113 -7.0013994,-33.4908 25.0844006,-30.5009 54.4552006,-30.0445 23.1014,-3.1978 14.2018,32.7168 16.9005,54.4557 0.6419,35.929 -6.5088,51.0778 -13.1446,67.6001 z"
+       id="path17883"
+       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#784421;fill-opacity:1;stroke:#784421;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9387-6)"
+       d="m 68.721548,1249.4843 c -2.6317,45.8331 -5.8489,90.1043 -17.9978,110.5572 -9.0722,10.0837 -6.8449,24.6871 -8.5704,37.7095 l -1.7139,32.5672 c -7.1832,6.611 -12.233,16.0662 -14.5696,29.1392 -4.6403,3.9647 -9.9014,7.6191 -5.1422,16.2836 -2.7352,11.816 -1.6921,17.9646 6.8561,12.8555 l 2.8132,8.043 c 0.6512,-3.7986 3.695,-7.5972 5.794,-11.3958 -0.4855,9.6862 -2.3257,20.1852 12.8188,20.4934 7.3252,2.0489 6.319,-1.853 8.5704,-3.4281 9.8106,16.0048 9.6477,2.0896 13.7125,0.8571 7.1469,1.8694 13.2173,1.0476 17.1406,-5.1422 l 7.3105,5.0287 c -1.7271,-5.2517 0.7789,-6.2702 3.831,-6.7428 8.827802,-2.1753 7.426802,-12.2189 5.999202,-22.2829 -10.146402,-16.5693 -5.5612,-33.1386 -4.2853,-49.7079 20.0157,-45.0726 21.1403,-97.7017 31.7103,-146.5526 l 13.7125,-42.8516 z"
+       id="path17885"
+       sodipodi:nodetypes="cccccccccccccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#784421;stroke:#ffe680;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9397-9)"
+       d="m 241.63929,1262.5844 c 8.6017,6.354 14.6898,3.1356 27.0696,39.3284 4.9039,15.9863 16.789,28.1327 6.8564,52.279 2.6003,14.2326 -3.365,26.7521 -8.5703,39.4236 -2.7468,20.4007 -3.8704,46.7528 -11.1414,50.5649 -14.2143,11.0603 -27.3224,22.5356 -35.1385,35.9953 -10.6784,4.3048 -18.1546,3.8066 -23.9968,0.8571 -12.6514,5.7194 -17.335,-1.0821 -24.8539,-3.4281 -6.3312,5.9123 -9.6978,3.6724 -12.8553,0.857 -9.5943,1.3187 -7.3038,-8.3333 -6.8565,-16.2837 3.7274,-10.5241 7.7309,-20.109 15.4265,-17.1406 8.8887,-14.2365 16.7119,-11.4194 24.8542,-13.7126 3.5574,-0.048 7.6853,-4.089 12.8554,-15.4265 -41.0997,-39.1032 -22.8543,-50.2793 -34.2814,-75.4189 z"
+       id="path17887"
+       sodipodi:nodetypes="ccccccccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9407-03)"
+       d="m -65.962218,1476.3191 c 3.3393,-10.4381 3.5173,-20.2438 11.9985,-31.7103 h 2.9995 c -9.2665,8.8633 -11.0132,20.7344 -14.998,31.7103 z"
+       id="path17889"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9417-9)"
+       d="m 14.170281,1449.3224 c -1.1332,-7.0753 -4.8191998,-12.8741 -8.1418999,-18.8546 l 10.7129999,14.5695 z"
+       id="path17891"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9427-0)"
+       d="m 43.737982,1495.6022 1.7139,-18.8547 2.5711,19.7118 c -1.0056,-3.6667 -2.4717,-3.6516 -4.285,-0.8571 z"
+       id="path17893"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9437-03)"
+       d="m 69.448982,1500.3159 c -0.6468,-7.1419 -0.5416,-14.2839 -3.8566,-21.4258 2.3976,-3.2368 3.4882,-2.8789 4.285,-1.7141 2.5656,2.3946 2.337,5.8372 1.7143,9.4274 z"
+       id="path17895"
+       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9447-39)"
+       d="m 93.445782,1478.4616 c 0.3915,5.9424 -3.0175,3.9212 5.1421,26.1395 0.666,-0.9782 1.199,-2.3885 3.428198,1.7141 -4.540898,-8.9783 -8.421498,-18.0767 -8.570298,-27.8536 z"
+       id="path17897"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9457-9)"
+       d="m 196.71829,1478.4616 c -1.1015,-9.7027 -1.8153,-19.3085 3.4282,-27.425 l 2.6137,5.3871 c -5.1309,4.8524 -4.5784,14.2515 -6.0419,22.0379 z"
+       id="path17899"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#28170b;stroke:#28170b;stroke-width:0.848418px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9467-0)"
+       d="m 170.64139,1474.9071 c 1.9689,-7.2225 4.1324,-14.2501 4.5451,-23.0285 0.8173,3.0976 4.2879,2.4811 1.5151,10.6052 -2.0202,2.2463 -4.04,7.9917 -6.0602,12.4233 z"
+       id="path17901"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#502d16;stroke:#502d16;stroke-width:0.328612px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9487-51)"
+       d="m 210.14059,1285.8875 c -21.8381,32.6363 -42.296,57.6809 -59.15,62.9057 10.3198,-5.0588 14.7203,-1.8304 61.0278,-57.2724 z"
+       id="path17903"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#008080;stroke:#d38d5f;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9497-4)"
+       d="m -25.823918,1003.2473 c 0.1752,21.5449 -1.8689,44.0986 13.3635,58.7993 49.9506,46.9343 113.520798,3.0717 171.052508,-0.5345 l 0.5346,-71.62826 z"
+       id="path17905"
+       sodipodi:nodetypes="ccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#784421;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9507-2)"
+       d="M 147.58159,918.79014 C 127.23589,877.2565 97.142082,846.2021 20.361281,865.33624 c -24.3978996,1.19554 -27.9369993,8.90948 -29.9341993,17.10525 -5.3453997,11.16196 -10.6907997,15.90181 -16.0361997,17.10525 -21.7712,-3.32128 -27.0146,5.75325 -32.0723,14.96709 -19.5859,10.25575 -22.802,32.78886 -25.6579,55.59206 1.2843,6.26483 2.6541,12.4584 12.2944,11.75986 l 3.7418,6.41447 c 12.6082,23.17918 20.9421,12.16448 31.0032,14.96708 24.9286,19.4274 50.189299,49.48 73.7664,25.6579 64.500098,23.0236 83.283208,13.7108 89.802608,-4.2763 z"
+       id="path17907"
+       sodipodi:nodetypes="cccccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#502d16;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9517-3)"
+       d="m -22.936418,935.89539 c 15.2282997,11.4973 21.6104994,29.87492 24.0542992,51.31575 3.1376,20.35146 -0.46570003,27.22106 -10.1562995,21.91616 -10.5786997,-1.8947 -3.3278997,9.1775 1.0691,18.1743 -13.7835997,-6.8217 -20.4259997,-14.7384 -21.3814997,-27.2615 l -20.1449,4.5894 c -10.4936,-0.4618 -18.7372,-5.44146 -17.2729,-16.34928 l -6.949,-19.24341 c 0,0 -2.6727,-12.82894 0,-1.06908 2.6727,11.75986 -0.5345,13.36348 -0.5345,13.36348 -8.1528,-1.4689 -10.3695,-8.87393 -8.5527,-20.31248 8.1963,-45.23791 16.3925,-40.26567 24.5888,-41.69405 z"
+       id="path17909"
+       sodipodi:nodetypes="ccccccccscccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#502d16;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9527-5)"
+       d="m 38.000982,1028.9052 c 16.6449,-11.4017 34.8525,-21.8266 29.3997,-47.03945 8.6102,9.21931 -1.949,28.82205 37.417698,21.38155 -14.638298,29.5467 -41.133598,26.4865 -66.817398,25.6579 z"
+       id="path17911"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#502d16;fill-opacity:1;stroke:#000000;stroke-width:0;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter9537-6)"
+       d="m 147.04699,917.18652 c 15.8546,-4.53876 26.6922,42.7653 38.4868,80.18086 6.2778,17.68212 18.6465,39.83082 4.8109,42.76312 -20.9814,16.1766 -40.2304,16.7609 -59.8684,20.8471 -10.3464,1.1993 -19.3837,7.6349 -28.33051,14.4325 -9.598398,5.1439 -7.271698,-1.6373 -9.087198,-4.2763 -17.974,-47.8827 10.639298,-66.9256 19.243408,-98.35521 16.4057,-36.06205 13.2159,-44.1305 10.1562,-52.38483 7.7272,-14.6706 15.4689,-28.9245 24.5888,-3.20724 z"
+       id="path17913"
+       sodipodi:nodetypes="ccccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9547-1)"
+       d="m -52.336018,904.89213 c 31.9305,0.33921 26.5956,9.55115 30.4687,16.57071 0.3717,3.91995 -0.451,7.8399 5.3454,11.75986 l -5.88,4.27631 c -1.5052,5.80634 -5.9944,6.63929 -11.7598,5.34539 -11.5586,5.39978 -16.2816,0.54627 -22.4507,-2.13816 -12.3644,-4.8021 -4.8742,-12.08603 -6.949,-18.17433 1.9826,-8.51866 6.4306,-13.3394 11.2254,-17.63978 z"
+       id="path17915"
+       sodipodi:nodetypes="cccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9557-976)"
+       d="m -54.474218,940.70624 c -1.4564,6.17441 -2.3938,16.05944 -6.4145,17.10525 -18.7368,2.03858 -14.6913,12.62056 -11.2253,22.98518 -0.8141,-10.18775 -1.2635,-20.10194 9.0872,-21.9161 5.5698,0.23135 11.7252,9.80455 18.7089,17.10525 l 20.1788,11.09168 c -15.3683,-6.18592 -20.6858,-17.64167 -22.9852,-21.9161 -12.8158,-8.01808 -7.925,-16.43707 -7.3499,-24.45516 z"
+       id="path17917"
+       sodipodi:nodetypes="cccccccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <circle
+       style="fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#e9c6af;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill;filter:url(#filter9567-8)"
+       id="circle17919"
+       cx="60.18058"
+       cy="916.91925"
+       r="12.027128"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9577-23)"
+       d="m 43.346382,917.18652 24.0543,-1.06907 11.7599,10.69078 h -21.9161 z"
+       id="path17921"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;filter:url(#filter9587-8)"
+       d="m -11.711118,894.73588 c 11.86709937,-0.48092 11.98349937,-6.83719 16.0361991,-11.22531 -1.8737999,-6.89417 -5.4337997,-7.88696 -10.1562994,-4.81086 -7.0521997,3.30849 -5.5653997,10.03259 -5.8798997,16.03617 z"
+       id="path17923"
+       sodipodi:nodetypes="cccc"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#e9c6af;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill;filter:url(#filter9597-2)"
+       id="ellipse17925"
+       cx="65.76664"
+       cy="913.50043"
+       rx="2.6458333"
+       ry="3.4017856"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <ellipse
+       style="fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#e9c6af;stroke-width:0;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:stroke markers fill;filter:url(#filter9607-7)"
+       id="ellipse17927"
+       cx="-2.4953258"
+       cy="882.27954"
+       rx="2.6458333"
+       ry="3.4017856"
+       transform="matrix(0.22717566,0,0,0.22717566,106.54438,-121.69198)" />
+    <path
+       style="fill:#784421;stroke:#784421;stroke-width:0.0601069px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 134.36528,182.62065 c 0.76422,-6.96135 1.18364,-14.16902 4.12161,-19.57769 1.37847,-3.11177 3.55545,-4.82617 3.77814,-9.96054 V 141.061 c 2.24687,6.8837 1.7855,5.37691 2.29655,17.46806 -8.86176,1.55388 -7.80827,14.21949 -12.94407,38.86071 1.3353,-4.78324 2.3803,-9.66326 2.74777,-14.76912 z"
+       id="path17929"
+       sodipodi:nodetypes="ccccccc" />
+  </g>
+</svg>

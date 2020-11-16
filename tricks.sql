@@ -3,12 +3,14 @@ CREATE TABLE tricks (
 id SERIAL PRIMARY KEY,
 tname VARCHAR NOT NULL,
 imagebub TEXT,
+imagebubdone TEXT,
 imageon TEXT,
 descr VARCHAR NOT NULL
 );
 
-INSERT INTO tricks (tname, imagebub, imageon, descr) VALUES (
+INSERT INTO tricks (tname, imagebub, imagebubdone, imageon, descr) VALUES (
     'Sit',
+     '/sitbub.svg',
     '/sit.png',
     '/sitstep3.gif',
   'Teaching your dog how to sit on command is one of the simplest behaviors you can teach and it 
@@ -43,6 +45,11 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Bang',
     '/handgradient.png',
   'this is a description of bang command'
+);
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'Leash',
+    '/leash.png',
+  'this is a description of Leash Walking training'
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'PawsUp',

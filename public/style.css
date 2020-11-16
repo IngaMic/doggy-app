@@ -240,12 +240,10 @@ img {
     display: flex;
     justify-content: space-between;
     padding: 40px 20px 10px 20px;
-    border-bottom: 2px solid rgba(128, 128, 128, 0.596);
     width: 100%;
     margin-left: auto;
     height: 200px;
     margin-right: auto;
-    text-decoration: none;
     font-weight: bold;
     flex-direction: row-reverse;
     z-index: 0;
@@ -258,40 +256,33 @@ img {
     margin-top: 185px;
     color: rgb(255, 255, 255);
 }
-.header {
-    position: absolute;
-    margin-top: -110px;
-    margin-left: 100px;
-    color: rgba(0, 0, 0, 0.466);
-    z-index: 9999;
-    font-weight: bolder;
+.links a:hover {
+    text-shadow: 2px 2px 4px #4c676854;
 }
 .line-one {
     position: absolute;
-    border-bottom: 5px dashed rgb(90, 195, 198, 100);
+    border-bottom: 5px dashed rgba(64, 178, 182, 0);
     width: 312px;
     height: 47px;
     transform: rotate(20deg);
     margin-top: 90px;
     margin-left: 160px;
-    border-color: rgb(184, 184, 184);
     z-index: 0;
     font-weight: bolder;
 }
 .line-two {
     position: absolute;
-    border-bottom: 5px dashed rgb(90, 195, 198, 100);
+    border-bottom: 5px dashed rgba(64, 178, 182, 0);
     width: 312px;
     height: 47px;
     transform: rotate(140deg);
     margin-top: 250px;
     margin-left: 200px;
-    border-color: rgb(184, 184, 184);
     z-index: 0;
     font-weight: bolder;
 }
 .alltrick-img {
-    height: 150px;
+    height: 120px;
     width: auto;
 }
 .profile-link {
@@ -307,19 +298,26 @@ img {
     color: rgb(122, 121, 121);
     font-size: 20px;
 }
+
 #alltricks-list {
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 2.5%;
     margin-right: 2.5%;
     height: 700px;
-    width: 95%;
+    width: 55%;
     opacity: 100%;
     position: absolute;
-    z-index: -0.5;
+    z-index: -0;
+    box-shadow: 0px 2px 25px 5px rgba(128, 128, 128, 0.212);
+    background: linear-gradient(
+        rgba(15, 177, 155, 0.26),
+        rgba(111, 190, 190, 0.692)
+    );
 }
 #alltricks-list img {
     opacity: 100%;
+    filter: drop-shadow(0px 15px 8px rgba(128, 128, 128, 0.493));
 }
 .p {
     color: rgb(255, 0, 0);
@@ -333,29 +331,16 @@ img {
     border-radius: 7%;
     border-top: 1px solid rgb(255, 255, 255);
     margin-top: -80px;
-    /* background: linear-gradient(
-        90deg,
-        rgb(52, 171, 207) 0%,
-        #50a782 35%,
-        #57037e 100%
-    ); */
-    /* background: rgb(199, 197, 248);
-    background: linear-gradient(
-        90deg,
-        rgb(128, 54, 49) 10%,
-        #5a1224 35%,
-        #610261 100% */
-    /* ); */
     background-color: white;
-
+    z-index: 0;
     background-size: cover;
 }
 .trick {
     display: grid;
 }
 .Sit {
-    margin-top: -80px;
-    margin-left: 60px;
+    margin-top: 20px;
+    margin-left: 80px;
 }
 .Come {
     margin-top: -340px;
@@ -439,15 +424,12 @@ img {
     top: 0px;
 }
 #trick-step-number button {
-    /* -webkit-animation: glow 1s ease-in-out;
-    -moz-animation: glow 1s ease-in-out; */
     animation: glowin 1s ease-in;
     animation: glowout 1s ease-out;
     animation-iteration-count: 2;
     text-align: center;
     background-color: rgba(64, 178, 182, 0.671);
     color: white;
-    /* box-shadow: 2px 5px 12px 20px #d6e0e01a; */
     border-radius: 50%;
     border: none;
     margin-top: 40px;
@@ -456,7 +438,9 @@ img {
     height: 70px;
     width: 70px;
     outline: none;
+    box-shadow: 1px 1px;
 }
+
 @-webkit-keyframes glowin {
     from {
         box-shadow: 0 0 0px rgb(75, 224, 187);
@@ -529,6 +513,7 @@ img {
     border-radius: 50%;
     object-fit: cover;
     z-index: 99999;
+    cursor: pointer;
 }
 
 /* OtherUsers 02.11 */
@@ -591,6 +576,7 @@ img {
     object-fit: cover;
     opacity: 65%;
     z-index: 2;
+    cursor: pointer;
 }
 .user2-profile-img:hover {
     filter: brightness(90%);
@@ -645,8 +631,8 @@ img {
 #dog-info {
     border-radius: 30px;
     background-color: #4fadb1;
-    box-shadow: rgba(218, 217, 217, 0.418) 2px 0px 30px;
-
+    box-shadow: 0px 2px 25px 5px rgba(128, 128, 128, 0.212);
+    border: 0px solid white;
     padding: 50px;
     position: absolute;
     height: 400px;
@@ -672,6 +658,7 @@ img {
     height: 90px;
     width: 90px;
     font-weight: bold;
+    cursor: pointer;
 }
 #add-button,
 .add-btn:hover {
@@ -855,6 +842,14 @@ img {
     font-weight: bold;
     margin-left: auto;
     margin-right: auto;
+    cursor: pointer;
+}
+.training-level button:hover,
+.character-level button:hover,
+.hero-level button:hover {
+    color: #ffffff;
+    background-color: #8fddb82a;
+    border: 2px solid rgba(255, 255, 255, 0.548);
 }
 .training-level img,
 .character-level img,
@@ -885,14 +880,15 @@ img {
     position: absolute;
     border-top-left-radius: 50px;
     margin-top: -80px;
-    background-image: linear-gradient(
+    background-color: white;
+    /* background-image: linear-gradient(
         to top,
         #ffffff,
         #f1f0f0,
         #f5f5f5,
         #f8f8f8,
         #ffffff
-    );
+    ); */
     height: 100%;
     z-index: 0;
     width: 50%;
@@ -902,14 +898,8 @@ img {
     border-top-right-radius: 50px;
     margin-top: -80px;
 
-    background-image: linear-gradient(
-        to top,
-        #ffffff,
-        #d3e9e6,
-        #c6e9e5,
-        #c7f1ec,
-        #dbeef5
-    );
+    background-color: white;
+
     height: 100%;
     z-index: 0;
     width: 50%;

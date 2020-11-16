@@ -131,7 +131,7 @@ export default class Profile extends React.Component {
                     </div>
                 )}
                 {!this.props.name && (
-                    <div id="dog-info">
+                    <div id="dog-info-container">
                         <h4 id="dog-name">Welcome to your profile page!</h4>
                         <div id="instruction">
                             <svg

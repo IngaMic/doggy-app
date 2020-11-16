@@ -8,7 +8,6 @@ export default function Trick(props) {
     const trick = useSelector((state) => state.trick);
     const trickNumber = useSelector((state) => state.trickNumber);
     var trickN = 0;
-
     useEffect(() => {
         //console.log("this.props.match.params.id", match.params.id);
         dispatch(receiveTrick(props.match.params.id));
