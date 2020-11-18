@@ -12,8 +12,8 @@ export default function Trick(props) {
         //console.log("this.props.match.params.id", match.params.id);
         dispatch(receiveTrick(props.match.params.id));
 
-        // console.log("props.match.params.id", props.match.params.id);
-    }, [trickN, trick]);
+        //console.log("props.match.params.id", props.match.params.id);
+    }, [trickN]);
 
     function changeTrickNumber(e) {
         e.preventDefault();
@@ -38,7 +38,7 @@ export default function Trick(props) {
             return trickN;
         }
     }
-
+    console.log("trick", trick);
     if (!trick) {
         return null;
     } else {
