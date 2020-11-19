@@ -24,6 +24,10 @@ export async function receiveTrick(id) {
     return {
         type: "RECEIVE_TRICK",
         trick: data.trick,
+        trickNumber: {
+            gif: data.trick.imageon,
+            text: data.trick.descr,
+        }
     };
 }
 export async function updateTrickNumber(g, t) {

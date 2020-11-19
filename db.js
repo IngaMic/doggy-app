@@ -126,11 +126,11 @@ module.exports.getQuotes = () => {
         SELECT * FROM quotes`
     );
 };
-module.exports.getWalks = (userId) => {
+module.exports.getWalks = (cd) => {
     return db.query(
         `
         SELECT * FROM walks
-        WHERE user_id = ($1)`,
-        [userId]
+        WHERE cd = ($1)`,
+        [cd]
     );
 };

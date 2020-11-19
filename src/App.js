@@ -229,6 +229,10 @@ export default class App extends React.Component {
                                         first={this.state.first}
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
+                                        cd={this.state.cd}
+                                        
+                                        otherUsers={this.state.otherUsers}
+                                       
                                     />
                                 )}
                             />

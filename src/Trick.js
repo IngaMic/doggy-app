@@ -8,10 +8,10 @@ export default function Trick(props) {
     const trick = useSelector((state) => state.trick);
     const trickNumber = useSelector((state) => state.trickNumber);
     var trickN = 0;
-    useEffect(() => {
+    useEffect((e) => {
         //console.log("this.props.match.params.id", match.params.id);
         dispatch(receiveTrick(props.match.params.id));
-
+      
         //console.log("props.match.params.id", props.match.params.id);
     }, [trickN]);
 
@@ -38,15 +38,18 @@ export default function Trick(props) {
             return trickN;
         }
     }
-    console.log("trick", trick);
+  
     if (!trick) {
         return null;
     } else {
         return (
+            
             <div className="trick-page">
-                {!trick && <h5>We are working on this trick! Coming soon!</h5>}
+                
+                {!trick && <h5>We are working on this trick! Coming soon!</h5>}      
                 {!!trick && (
                     <div className="oneTrick">
+
                         {!trickNumber && (
                             <div className="trick-step">
                                 <img src={trick.imageon}></img>

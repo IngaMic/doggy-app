@@ -4,7 +4,7 @@ import axios from "./axios";
 //import { Link } from "react-router-dom";
 
 
-const Diary = () => {
+const Diary = ({logUserId, cd, otherUsers, first, imageUrl}) => {
     // const [userInput, setUserInput] = useState("");
     const [walks, setWalks] = useState([]);
     var activity = "";
@@ -12,19 +12,23 @@ const Diary = () => {
 
 
     useEffect(() => {
-        //console.log("useEffect is running!");//runs when the component mounts
-        // (async () => {
-        //     try {
-        //         // console.log("userInput", userInput);
-        //         const resp = await axios.get("/api/walks", {
-        //             // params: { userInput: userInput },
-        //         });
-        //          console.log("resp.data :", resp.data.walks);
-        //         setWalks(resp.data.walks);
-        //     } catch (err) {
-        //         console.log("err : ", err);
-        //     }
-        // })();
+        console.log("useEffect is running!", logUserId, cd);//runs when the component mounts
+        console.log("otherUsers, first,", otherUsers, first,);
+        if(cd) {
+             (async () => {
+            try {
+                // console.log("userInput", userInput);
+                const resp = await axios.get("/api/walks", {
+                    params: { cd: cd, logUserId: logUserId},
+                });
+                 console.log("resp.data :", resp.data);
+                setWalks(resp.data.walks);
+            } catch (err) {
+                console.log("err : ", err);
+            }
+        })();
+        }
+       
     }, []);
 
 const handleSubmit = (e) => {
@@ -42,7 +46,7 @@ const changeTime = (e) => {
      console.log("time in change", time);
     console.log("e.target.value in change", e.target.value);
 }
-
+//console.log("otherUsers", otherUsers)
     //must be (walks.length == 0)
     if (!walks) {
         return (
@@ -57,12 +61,13 @@ const changeTime = (e) => {
             </div>
         );
     } else {
+        //console.log("otherUsers[0].imageurl first", otherUsers[0].imageurl, otherUsers[0].first)
         return (
             <div className="diaryContainer">
 
                <div className="activity-log">
                   <form  action="" className="diary-form" onSubmit={(e) => handleSubmit(e)}>
-                       
+                       <div className="form-line1">
                       <label htmlFor ="activity" id="activity-label">Activity :</label>
                         <select name="activity" id="activity" onChange={(e) => changeActivity(e)}>
                             <option value=""></option>
@@ -70,6 +75,8 @@ const changeTime = (e) => {
                             <option value="sit">Sit</option>
                             <option value="stay">Stay</option>
                         </select>
+                        </div>
+                         <div className="form-line2">
                           <label htmlFor ="time" id="time-label">Time :</label>
                        <select name="time" id="time" onChange={(e) => changeTime(e)}>
                         <option value=""></option>
@@ -78,23 +85,45 @@ const changeTime = (e) => {
                         <option value="20">20 mins</option>
                         <option value="30">30 mins</option>
                     </select>
-                       <button id="submit-diary">Submit</button>
+                    </div>
+                       <button id="submit-diary"><img src="/plus.png"></img></button>
                   </form>
                 </div>
+            
 
 
 
-
-
+                <div className="logged">
                 {walks.map((walk, i) => {
+                     if (logUserId == walk.user_id) {
+                             return (
+                        <div className="dogwalk-record" key={i}>
+                            <p id="record"> {walk.activity}  |   {walk.mins}mins  </p> 
+                        <div className="activity-user">
+                        <img className ="activity-img" src={imageUrl}></img>
+                         <p> {first} </p>
+                        </div>
+                         </div>
+
+                    ) 
+                        } 
                     return (
                         <div className="dogwalk-record" key={i}>
-                            <p>
-                                {walk.mins} mins, by user :{walk.user_id}
-                            </p>
+                            <p id="record"> {walk.activity}  |   {walk.mins}mins   </p>                       
+                           {!!otherUsers && (otherUsers.map((user, i) => {
+                if (user.id == walk.user_id) {
+                    return (
+                       
+                        <div className="activity-user" key={i}>
+                        <img className ="activity-img" src={user.imageurl}></img>
+                         <p>{user.first}</p>
+                        </div>
+
+                    ) }}))}                            
                         </div>
                     );
                 })}
+                </div>
             </div>
         );
     }

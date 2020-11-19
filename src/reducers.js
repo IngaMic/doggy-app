@@ -8,6 +8,7 @@ export default function (state = {}, action) {
     if (action.type == "RECEIVE_TRICK") {
         state = Object.assign({}, state, {
             trick: action.trick,
+            trickNumber: action.trickNumber,
         });
     }
     if (action.type == "UPDATE_TRICK_NUMBER") {

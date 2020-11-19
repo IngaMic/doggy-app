@@ -167,7 +167,7 @@ app.post("/welcome", (req, res) => {
     db.getLogin(email)
         .then((result) => {
             if (result) {
-                console.log("result", result);
+              //  console.log("result", result);
                 var userId = result.rows[0].id;
                 let pass = result.rows[0].password;
                 // console.log("pass   ", pass);
@@ -378,13 +378,14 @@ app.get("/api/tricks", async (req, res) => {
 });
 
 app.get("/api/walks", async (req, res) => {
-    //console.log("I am getting a req in /walks");
+    //console.log("I am getting a req in /walks, req.params.cd", req.query.cd );
     try {
-        var userId = req.session.userId;
+        const cd = req.query.cd;
+        const userId = req.session.userId;
         var walks = [];
-        const { rows } = await db.getWalks(userId);
+        const { rows } = await db.getWalks(cd);
         walks = rows;
-        console.log("walks from get /api/walks", walks);
+       // console.log("walks from get /api/walks", walks);
         res.json({
             walks: walks,
         });
