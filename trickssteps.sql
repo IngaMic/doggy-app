@@ -39,11 +39,11 @@
       sitting for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
       towards getting the dog to sit with your hand signal and the “sit” command with no treat,
       then with only the “sit” command.',
-    '/sitstep3.gif'
+    '/sitstep4.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     2,
-    '/pawstep3.gif',
+    '/pawstep4.gif',
     ' As with the teaching of all behaviors, the first step is to get your dogs full attention.
     Hold a treat in your hand so that he knows you have it, but also so that he cannot nip it from your hand.
     Keep the treat very close to the dog’s nose, then slowly raise it over the top of his head. He will follow the treat with his eyes and nose,
@@ -59,7 +59,7 @@
       sitting for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
       towards getting the dog to sit with your hand signal and the “sit” command with no treat,
       then with only the “sit” command.',
-    '/sitstep3.gif'
+    '/laystep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     3,

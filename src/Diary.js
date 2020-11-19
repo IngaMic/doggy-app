@@ -2,34 +2,46 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 //import { Link } from "react-router-dom";
-//import Wheel from "./Wheel";
-import TimePicker from "./TimePicker";
+
 
 const Diary = () => {
-    const [userInput, setUserInput] = useState("");
+    // const [userInput, setUserInput] = useState("");
     const [walks, setWalks] = useState([]);
+    var activity = "";
+    var time = null;
+
 
     useEffect(() => {
         //console.log("useEffect is running!");//runs when the component mounts
-        (async () => {
-            try {
-                // console.log("userInput", userInput);
-                const resp = await axios.get("/api/walks", {
-                    params: { userInput: userInput },
-                });
-                // console.log("resp.data :", resp.data.walks);
-                setWalks(resp.data.walks);
-            } catch (err) {
-                console.log("err : ", err);
-            }
-        })();
-    }, [userInput]);
+        // (async () => {
+        //     try {
+        //         // console.log("userInput", userInput);
+        //         const resp = await axios.get("/api/walks", {
+        //             // params: { userInput: userInput },
+        //         });
+        //          console.log("resp.data :", resp.data.walks);
+        //         setWalks(resp.data.walks);
+        //     } catch (err) {
+        //         console.log("err : ", err);
+        //     }
+        // })();
+    }, []);
 
-    // console.log("walks : ", walks);
-    // function handleChange(e) {
-    //     //console.log("e.target.value : ", e.target.value);
-    //     setUserInput(e.target.value);
-    // }
+const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("submit reacts");
+   
+}
+const changeActivity = (e) => {
+    activity = e.target.value;    
+    console.log("e.target.value in change", e.target.value);
+      console.log("activity in change", activity);
+}
+const changeTime = (e) => {
+    time = e.target.value;
+     console.log("time in change", time);
+    console.log("e.target.value in change", e.target.value);
+}
 
     //must be (walks.length == 0)
     if (!walks) {
@@ -47,16 +59,32 @@ const Diary = () => {
     } else {
         return (
             <div className="diaryContainer">
-                <img className="walkies" src="walk.png"></img>
-                <TimePicker />
-                {/* <input
-                    onChange={handleChange}
-                    type="text"
-                    name="userInput"
-                    placeholder="How Long Have You Walked Today?"
-                /> */}
 
-                {!userInput && <h2>Previous entries:</h2>}
+               <div className="activity-log">
+                  <form  action="" className="diary-form" onSubmit={(e) => handleSubmit(e)}>
+                       
+                      <label htmlFor ="activity" id="activity-label">Activity :</label>
+                        <select name="activity" id="activity" onChange={(e) => changeActivity(e)}>
+                            <option value=""></option>
+                            <option value="walk" id="walk">Walk</option>
+                            <option value="sit">Sit</option>
+                            <option value="stay">Stay</option>
+                        </select>
+                          <label htmlFor ="time" id="time-label">Time :</label>
+                       <select name="time" id="time" onChange={(e) => changeTime(e)}>
+                        <option value=""></option>
+                        <option value="5">5 mins</option>
+                        <option value="10">10 mins</option>
+                        <option value="20">20 mins</option>
+                        <option value="30">30 mins</option>
+                    </select>
+                       <button id="submit-diary">Submit</button>
+                  </form>
+                </div>
+
+
+
+
 
                 {walks.map((walk, i) => {
                     return (
