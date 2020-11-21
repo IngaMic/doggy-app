@@ -33,7 +33,21 @@ const Diary = ({logUserId, cd, otherUsers, first, imageUrl}) => {
 
 const handleSubmit = (e) => {
     e.preventDefault();
+    let log = {
+        activity, 
+        time, 
+        logUserId,
+        cd,
+    }
     console.log("submit reacts");
+    axios.post("/newlog", log).then((resp) => {
+            // console.log(" resp : ", resp);
+
+         let newWalk = resp.data.newWalk;
+            walks.push(newWalk);
+           console.log(" walks ", walks);
+           clearInput();
+        });
    
 }
 const changeActivity = (e) => {
@@ -45,6 +59,12 @@ const changeTime = (e) => {
     time = e.target.value;
      console.log("time in change", time);
     console.log("e.target.value in change", e.target.value);
+}
+const clearInput = () => {
+  document.querySelector("#activity").innerHTML = "";
+  document.querySelector("#time").innerHTML = "";
+   
+
 }
 //console.log("otherUsers", otherUsers)
     //must be (walks.length == 0)

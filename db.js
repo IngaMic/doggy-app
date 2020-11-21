@@ -130,7 +130,16 @@ module.exports.getWalks = (cd) => {
     return db.query(
         `
         SELECT * FROM walks
-        WHERE cd = ($1)`,
+        WHERE cd = ($1)
+        ORDER BY walks.created_at DESC`,
         [cd]
+    );
+};
+module.exports.newlog = (activity, time, cd, logUserId) => {
+    return db.query(
+        `
+    INSERT INTO walks (activity, mins, cd, user_id)
+    VALUES ($1, $2, $3, $4) RETURNING * `,
+        [activity, time, cd, logUserId]
     );
 };

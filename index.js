@@ -377,6 +377,28 @@ app.get("/api/tricks", async (req, res) => {
     }
 });
 
+app.post("/newlog", (req, res) => {
+console.log("request-body", req.body);
+
+db.newlog(
+        req.body.activity,
+        req.body.time,
+        req.body.cd,
+        req.body.logUserId,
+    )
+        .then(({ rows }) => {
+            console.log(" rows[0] from newlog ", rows[0]);
+            res.json({
+               newWalk : rows[0],
+            });
+        })
+        .catch((err) => {
+            console.log("err n updateDogInfo index.js", err);
+        });
+
+
+});
+
 app.get("/api/walks", async (req, res) => {
     //console.log("I am getting a req in /walks, req.params.cd", req.query.cd );
     try {
