@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "./axios";
 //import { Link } from "react-router-dom";
-
+import HeatMap from "./Heatmap.js";
 
 const Diary = ({logUserId, cd, otherUsers, first, imageUrl}) => {
     // const [userInput, setUserInput] = useState("");
@@ -110,6 +110,9 @@ const clearInput = () => {
                   </form>
                 </div>
             
+            <div className="git-container">
+                <HeatMap/>
+            </div>
 
 
 

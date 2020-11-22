@@ -1084,3 +1084,18 @@ width: 70%;
  margin-top: auto;
   margin-bottom: auto;
 }
+.git-container {
+    border-radius: 10px;
+    position: absolute;
+    right: -600px;
+    top: 15px;
+    height: 320px;
+    width: 320px;
+    padding:20px;
+     background: linear-gradient(
+        180deg,
+        rgba(198, 230, 233, 0.849) 0%,
+        rgba(209, 237, 238, 0.603) 2%,
+        rgba(204, 240, 241, 0.521) 100%
+    );
+}
