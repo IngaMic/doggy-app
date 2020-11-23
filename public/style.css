@@ -369,6 +369,10 @@ img {
     margin-top: -270px;
     margin-left: 600px;
 }
+.Paw {
+    margin-top: -300px;
+      margin-left: 600px;
+}
 .oneTrick {
     margin-left: 50px;
 }
@@ -1087,7 +1091,7 @@ width: 70%;
 .git-container {
     border-radius: 10px;
     position: absolute;
-    right: -600px;
+    right: -330px;
     top: 15px;
     height: 320px;
     width: 320px;

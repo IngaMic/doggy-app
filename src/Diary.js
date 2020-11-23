@@ -12,8 +12,8 @@ const Diary = ({logUserId, cd, otherUsers, first, imageUrl}) => {
 
 
     useEffect(() => {
-        console.log("useEffect is running!", logUserId, cd);//runs when the component mounts
-        console.log("otherUsers, first,", otherUsers, first,);
+      //  console.log("useEffect is running!", logUserId, cd);
+      //  console.log("otherUsers, first,", otherUsers, first,);
         if(cd) {
              (async () => {
             try {
@@ -21,7 +21,7 @@ const Diary = ({logUserId, cd, otherUsers, first, imageUrl}) => {
                 const resp = await axios.get("/api/walks", {
                     params: { cd: cd, logUserId: logUserId},
                 });
-                 console.log("resp.data :", resp.data);
+                 //console.log("resp.data :", resp.data);
                 setWalks(resp.data.walks);
             } catch (err) {
                 console.log("err : ", err);
@@ -45,20 +45,20 @@ const handleSubmit = (e) => {
 
          let newWalk = resp.data.newWalk;
             walks.push(newWalk);
-           console.log(" walks ", walks);
+          // console.log(" walks ", walks);
            clearInput();
         });
    
 }
 const changeActivity = (e) => {
     activity = e.target.value;    
-    console.log("e.target.value in change", e.target.value);
-      console.log("activity in change", activity);
+   // console.log("e.target.value in change", e.target.value);
+     // console.log("activity in change", activity);
 }
 const changeTime = (e) => {
     time = e.target.value;
-     console.log("time in change", time);
-    console.log("e.target.value in change", e.target.value);
+    // console.log("time in change", time);
+   // console.log("e.target.value in change", e.target.value);
 }
 const clearInput = () => {
   document.querySelector("#activity").innerHTML = "";
@@ -111,7 +111,7 @@ const clearInput = () => {
                 </div>
             
             <div className="git-container">
-                <HeatMap/>
+                <HeatMap logs={walks}/>
             </div>
 
 
