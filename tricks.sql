@@ -13,34 +13,40 @@ INSERT INTO tricks (tname, imagebub, imagebubdone, imageon, descr) VALUES (
      '/sitbub.svg',
     '/sit.png',
     '/sitstep3.gif',
-  'Teaching your dog how to sit on command is one of the simplest behaviors you can teach and it 
-  is usually the first command in basic obedience training. As with the teaching of all behaviors,
-   the first step is to get your dogs full attention. Practice step one until your dogs starts to get an idea
-   what do you expect. When you are done with one step fully, transition to a second one.'
+  'Teaching your dog to sit is often the first step people take in their dog training journey, and will be the basis for a lot
+   of commands we look at later.  Having your dog sit on command can be useful for keeping them at bay while waiting for 
+   traffic lights, or stopping them from jumping up on visitors.  
+As with the teaching of all behaviors, the first step is to get your dog’s full attention. Practice step one until your
+ dog is fully comfortable with the action and begins to anticipate what is being asked. When you are done with one step fully,
+  transition to the second.
+'
 );
 INSERT INTO tricks (tname, imagebub, imagebubdone, descr) VALUES (
     'Lay',
     '/lay.png',
     '/laystep0.gif',
-  'this is a description of lay command'
+  'By now your dog should be well practiced at sitting on command - and the next step is to have them lay down. 
+   As with ‘sit’, teaching your dog to lay down when asked can help keep them safe while out and about, but it can 
+   also signal that it is time to settle in one place for a length of time, for example while out at a coffee shop, 
+   or even when it’s time for bed.  '
 );
 INSERT INTO tricks (tname, imagebub, imagebubdone, descr) VALUES (
     'Come',
     '/come.png',
     'comestep0.gif',
-  'An important part of teaching recall is to make training a game for your dog. You want your dog to think that coming and 
-  being near you is the best thing imaginable, full of fantastic treats and rewards.To teach your dog to come back to you,
-   you must learn to be more exciting than the rest of the world! Also, start training at home or other place with no distractions
-   and slowly move towards more and more distractive environment.
+  'For most people, one of the most challenging parts of training is teaching your dog to come back on command.  The world is a
+   playground for our easily-distracted companions, so it is important to build up slowly and never get frustrated with your 
+   dog if they don’t quite grasp it at first.  As with most other training, we recommend starting in a quiet, controlled
+    environment with as few distractions as possible before moving outside. 
    '
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
-    'Wait',
+    'Stay',
     '/clock0.png',
-  'The idea of "wait" trick is to encourage calm self-control in your dog. By learning that he only gets a reward when he is calm
-   and waits for permission then your dog will be focused to learn. For more active dogs it is important to train after they had their
-    play time and feel a bit less energetic. Choose an environment and timing that helps your dog to suceed when you start training. Many say 
-    that “Stay” is probably the most difficult exercise to teach, because many dogs just hate being still!'
+  'Dogs are notoriously impulsive creatures so teaching them to stay put while there are so many other things they would rather
+   be doing (or sniffing) can be tricky.  Mastering this skill is vital though as it can keep your dog from running after 
+   something they shouldn’t or keep them safe in an emergency situation.  It is important to have patience with your dog, 
+   and to keep training sessions short and sweet, ending on a high note.'
 );
 
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
@@ -56,10 +62,10 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Leash',
     '/leash.png',
-  'Leash training is often difficult because dogs naturally walk in a faster pace than humans. Instead
-   of moving at a consistent speed in one direction they trot from smell to smell and linger until
-    they have collected all the info that can be found there. This is why leash training often requires time and
-    rewarding with treats.'
+  'It is easy to forget that walking on a leash is not a natural behaviour for a dog - in fact, it is a bit counter-intuitive
+   for creatures which naturally walk much quicker than we do and who would much rather trot from smell to smell than follow
+    the pavement.  For this reason it is important to start small when leash training and make sure you are constantly
+     encouraging your dog, even if it is slow going at first.  '
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'PawsUp',
@@ -69,8 +75,7 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Paw',
     '/pawstep3.gif',
-  ' Giving paw is best learned when the dog is in a sitting position. When your dog is sitting, his weight is in his rear,
-   making it easier for him to lift his paw comfortably. At first, some dogs do not like it when someone touch their paws,
-    but soon, if the touches are calm and friendly they get accustomed to it. It is worth checking if your dog is comfortable
-    with paw touches before you start to train.'
+  'Shaking hands / giving a paw is a simple trick that can be great fun for both you and your dog to learn. “Dogs naturally 
+  use their paws more than you might think so this shouldn’t take too long”. It is important that your dog is already an 
+  expert at sitting on command, and as always that you start in a quiet environment where your dog can fully focus!'
 );

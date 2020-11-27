@@ -88,7 +88,7 @@ author TEXT
    
 
       INSERT INTO quotes (quote, author) VALUES (
-         'Dogs crave love and attention but sometimes even negative attention can feel rewarding - so if your dog is displaying unwanted behaviours, sometimes it is better to withhold your attention until they get the message! ',
+         'Dogs crave love and attention but sometimes even negative attention can feel more rewarding than no attention at all - so if your dog is displaying unwanted behaviours, sometimes it is better to withhold your attention until they get the message! ',
         ''
    );
    

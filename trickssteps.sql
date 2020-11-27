@@ -14,75 +14,69 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     1,
     '/sitstep3.gif',
-    ' As with the teaching of all behaviors, the first step is to get your dogs full attention.
-
-
-    Hold a treat in your hand so that he knows you have it, but also so that he cannot nip it from your hand.
-
-    Keep the treat very close to the dog’s nose, then slowly raise it over the top of his head. He will follow the treat with his eyes and nose,
-     looking upward and in the process placing his bottom on the ground.',
+    ' As with the teaching of all behaviors, the first step is to get your dog’s full attention. Hold a treat in your hand so
+     that he knows you have it, but hold it in a closed fist so that they cannot reach it. Keep the treat very close to the
+      dog’s nose, then slowly raise it over the top of their head. They should follow the treat with their eyes and nose,
+       looking upward and in the process eventually placing their bottom on the ground.  Make sure you give your dog lots 
+       of praise and encouragement, and that you reward them with the treat as soon as they are in a sitting position. 
+        Don’t worry about having them hold the position for any length of time for now - just make sure they are consistently
+         ending up with their bottom on the ground, and that they are getting more and more used to what you are expecting. ',
     '/sitstep1.gif',
-     'After you are comfortable with the fist step it is time to introduce the voice command.
-     
-      Say "sit" as the 
-     dog sits and reward him with a treat. When your dog’s rear end makes contact with the ground, say “sit” in a firm voice,
-       then immediately offer him the treat as a reward for sitting.
-       Reinforce the treat reward with praise, because in
-       the next step you will have to remove the treat, but let your dog know the he has done well.',
+     'After you are comfortable with the fist step, it’s time to introduce a voice command. Begin exactly as before, only this 
+     time when your dog’s rear end makes contact with the ground, say “sit” in a firm voice (though never appear angry or
+      strict).  Again, you should immediately offer the treat as a reward for sitting. Reinforce the treat reward with a lot
+       of praise, because eventually you will phase out the treats, but still need your dog to feel encouraged to perform 
+       the command. ',
     '/sitstep2.gif',
-     'When you first start training with the treat trick, give your dog a treat each time he sits.
-      Be sure you always offer enthusiastic praise as well.
-      After a week or two, when your dog is reliably 
-      sitting for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
-      towards getting the dog to sit with your hand signal and the “sit” command with no treat,
-      then with only the “sit” command.',
+     'When you first start training, give your dog a treat each time he sits. Be sure you always offer enthusiastic praise as 
+     well. After a week or two, when your dog is reliably sitting while expecting a treat, begin to only offer the treats
+      intermittently but continue to give lots of encouragement and praise. You will (slowly) work towards getting the dog 
+      to sit without a treat.  ',
     '/sitstep4.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     2,
     '/laystep0.gif',
-    'Lower the treat straight down to the ground slowly enough so that your pup’s muzzle sticks to it like a magnet,
-    dogs body will follow the treat and lay down. Practice the behavior several times, so he understands the concept.
-     However, when you’re trying to trick them into lying down, your dog might be too exited about the treat and 
-     jump up. If this happens,
-     move the treat away quickly. It will discourage this habit from continuing. Then, get them back in the
-      sitting position and start the trick over again.',
+    'Start with a treat in a closed fist, and make sure your pup knows it is there.  While holding the treat in 
+    front of your dog’s nose, slowly move your hand towards the floor, leading the muzzle - the dog’s body should quickly 
+    follow.  Practice this several times until your dog begins to anticipate the action and throws their body down before
+     your hand has reached the ground.  While you shouldn’t worry too much at this stage about your dog holding the position, 
+     make sure to only reward them if they are fully lying down - even if just for a split second!',
     '/laystep1.gif',
-     'After you are comfortable with the fist step it is time to introduce the voice command. You may exchange the lure with
-      a hand signal and add a verbal "lay" or "down" command as soon as your dog is in a desired position. Then instantly reward with
-      a treat and praises. Trained with consistency your puppy will learn to respond to the verbal and/or silent hand signal command.',
+     'Introduce the voice command when your dog is constantly lying down on seeing your hand (and their treat) moving towards the floor. 
+     Again, speak in a clear, consistent voice when communicating with your dog, and make sure you are giving them lots of encouragement 
+     - not just treats.  ',
     '/laystep2.gif',
-     'When you first start training with the trick, give your dog a treat each time he lays down.
-      Be sure you always offer enthusiastic praise as well. After a week or two, when your dog reliably 
-      knows this trick for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
-      towards a successfull behaviour with no special rewards. ',
+     'Like with other commands, you should intermittently phase out the treat. You can start experimenting with different environments, 
+     as well as asking your dog to lay down when you are not sitting directly in front of them - eventually your dog should respond
+      instinctively on hearing the word as you might need to deploy it in an emergency situation. ',
     '/laystep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     3,
     '/comestep0.gif',
-    ' As with the teaching of all behaviors, the first step is to get your dogs full attention. Run away a couple of paces 
-    then call your dogs name and say "come" in a friendly, exciting tone - getting down low can also encourage them to come back. 
-     You need an incentive to encourage your dog to come back - a really tasty treat or a fun game with a toy.
-  Show your dog the toy or food. When you are starting to train only call when you are going to praise your dog - 
-  do not call your dog and then tell them off as it means they will be less likely to come back next time you call.',
+    'The key to success in getting your dog to come every time is to be seen as a more appealing option than any other.  That means it is
+     time to break out some seriously high-value rewards, and really celebrate the behaviour to keep your pup motivated.  Start by getting
+      your dog’s attention, and calling them to you, making sure they know there are good things waiting.  This time, we will throw in the
+       verbal cue immediately. When they get to you, say ‘come’ or any other chosen verbal cue immediately on giving your dog a treat.
+      Practice this regularly at home, and gradually increase distance.',
     '/comestep1.gif',
-     'Reward eye contact. When you notice your dog is looking at you or has self-selected to be close to you,
-      verbally praise and treat. Don’t repeat yourself. If you have to repeat your recall cue, the environment 
-      may be too distracting. Or, your dog doesn’t understand the skill well enough for the level you are trying to train. 
-      Practice recalls daily. Slowly increase the difficulty and level of distraction.',
+     'As you increase distance and move to environments with more and more distractions, you can mix it up by running away from your dog
+      just as they approach you. Encourage your dog to chase you, but never play games that involve chasing them as this can signal mixed 
+      messages.  If your dog is not coming to you most of the time, it might be time to decrease distance again - dogs naturally pay much
+       more attention to us when we are physically close to them.',
     '/pawstep2.gif',
-     'Mix it up by running away from your dog just as they approach you. Encourage your dog to chase you, but never play games
-      that involve you chasing your dog. We all feel annoyed when our dogs don’t come immediately, but it’s imperative that you 
-      control any annoyance, or irritation. It can take months for your dog to develop a habit of coming to you when called, 
-      even without distractions. Hang in there, and keep working on it. With lots of high-value rewards and praise, you can
-       prove to your dog that you are more interesting than their environment, and it’s always worthwhile to come back to you.',
+     'Begin to call your dog in increasingly distracting environments, as well as throwing in different contexts (try lying on your back 
+     and calling, or calling your dog when you aren’t in the same room as them).  It can take a long time to really instill this behaviour
+      so keep working on it regularly and never let your dog see that you are getting frustrated or irritated (if coming to you seems like
+       they might get scolded or punished, it is natural that they will not see coming to you as worthwhile).  Remember, coming to you
+        should always feel like the most exciting thing in the world to your dog.',
     '/pawstep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     4,
     '/staystep0.gif',
-    ' Sit down on a chair and ask your dog to sit in front of you, wait until you get your dogs full attention. 
+    ' NEEDS CHANGE Sit down on a chair and ask your dog to sit in front of you, wait until you get your dogs full attention. 
    When your dog is sitting nicely, show him a treat and ask him to wait. Slowly place the treat onto your knee whilst
     your dog is watching you. If the dog moves or reaches for the treat take it away very quickly and ask him once again
      to sit and wait. Repeat it as many times as you need to until you can put the treat on your knee
@@ -142,20 +136,17 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     7,
     '/pawstep3.gif',
-    ' Start out your leash training by letting your pup get used to wearing a collar or harness and a leash at home. 
-  You could start leaving the leash on for short periods of time, for example while you are training,
-   playing and giving your dog treats. The puppy should love collar-and-leash time 
-   because it represents food and fun. ',
+    ' Start by letting your dog wear a collar (or harness) and leash for short periods of time while doing other things around
+     the house, be it playing, training, or even feeding.  Either way, your dog should build only positive associations with wearing 
+     their leash, and should always be excited to see it as it represents food and/or fun! ',
     '/pawstep1.gif',
-     'After you introduced walking on a leash to your dog at home, take your training outside. You should get in the habit of carrying small, 
-    easily chewable treats for your puppy during the training process. 
-    Gradually you’ll reduce the number of treats and the amount of troubleshooting that your puppy
-     needs during a walk.',
+     'When you get outside, your dog will want to run off and explore, so it is important to have high-value rewards at hand.
+      Keep your dog close to you as you walk and keep attention and rewards regular, only reducing regularity when you are confident
+       that they will stay by your side.  ',
     '/pawstep2.gif',
-     'If your dog starts pulling in the other direction, stop walking. 
-     Stand very still and refuse to move until your dog comes back to you. Do not yank or 
-     jerk the leash, and do not drag your dog along with you.  If your dog is going after something while
-      on a walk — another dog, a car, be proactive. Try to redirect his attention with a treat and keep him focused on you.',
+     'If your dog starts pulling in the other direction, stop walking. Stand very still and refuse to move until your dog comes back to 
+     you. Do not yank or jerk the leash, and do not drag your dog along with you. If your dog is going after something while on a walk 
+     — another dog, a car, be proactive. Try to redirect his attention with a treat and keep him focused on you. ',
     '/leashstep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
