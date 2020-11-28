@@ -82,12 +82,12 @@
      to sit and wait. Repeat it as many times as you need to until you can put the treat on your knee
       without the dog moving or trying to take it, always use the word wait. You may start with only a couple of seconds of suspense,
       if you see that your puppy waits, reward him.',
-    '/waitstep1.gif',
+    '/staystep1.gif',
      'Eventually your dog will sit and wait despite the tempting treat on your knee often he will look directly into your eyes,
       pleading for his treat. Now you should experiment with longer waiting times and bigger distance between you and the dog. Keep a 
       treat in your hand and reward your dog only after he remains calm and waits. You might need to step down a bit after a break
        between training and build up to a longer time and greater distance.',
-    '/pawstep2.gif',
+    '/staystep2.gif',
      'Once you can move around your dog freely while they remain in a stay, see if you can quickly pop out of sight and then
       come back to reward them. You could also begin to add in distractions, like toys, or dancing around them to test your 
       dog’s impulse control. However, you should always return to your dog to let them out of the stay. Don’t call your dog 
