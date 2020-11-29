@@ -109,10 +109,13 @@ const clearInput = () => {
                        <button id="submit-diary"><img src="/plus.png"></img></button>
                   </form>
                 </div>
-            
+            {!!walks && 
             <div className="git-container">
-                <HeatMap logs={walks}/>
-            </div>
+                <HeatMap logs={walks}
+                    cd={cd}
+                />
+            </div>}
+            
 
 
 

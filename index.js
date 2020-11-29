@@ -412,7 +412,22 @@ app.get("/api/walks", async (req, res) => {
             walks: walks,
         });
     } catch (err) {
-        console.log("err in getWalks"), err;
+        console.log("err in getWalks", err);
+    }
+});
+app.get("/api/logs", async (req, res) => {
+    console.log("I am getting a req in /logs, req.params.cd", req.query.cd );
+    try {
+        const cd = req.query.cd;
+        var logs = [];
+        const { rows } = await db.getLogs(cd);
+        logs = rows;
+        console.log("logs from get /api/logs", logs);
+        res.json({
+            logs,
+        });
+    } catch (err) {
+        console.log("err in getLogs", err)
     }
 });
 

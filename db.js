@@ -135,6 +135,17 @@ module.exports.getWalks = (cd) => {
         [cd]
     );
 };
+module.exports.getLogs = (cd) => {
+    return db.query(
+        `SET timezone=UTC;
+
+        SELECT TO_CHAR(created_at, 'Dy Mon DD YYYY HH24:MI:SS ') created_at
+         FROM walks
+        WHERE cd = ($1)
+        `,
+        [cd]
+    );
+};
 module.exports.newlog = (activity, time, cd, logUserId) => {
     return db.query(
         `
