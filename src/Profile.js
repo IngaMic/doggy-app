@@ -2,6 +2,8 @@ import React from "react";
 //import axios from "./axios";
 import Bioeditor from "./DogBio";
 import OtherUsers from "./OtherUsers";
+import axios from "./axios";
+
 export default class Profile extends React.Component {
     constructor(props) {
         super(props);
@@ -24,6 +26,10 @@ export default class Profile extends React.Component {
             trainingImg: "/dog1.png",
             characterImg: "/dog1.png",
             heroImg: "/dog1.png",
+            training: "",
+            characters: "",
+            hero: "",
+            questionaireIsVisible: true,
         };
         // this.closeEditor = this.closeEditor.bind(this);
     }
@@ -39,14 +45,9 @@ export default class Profile extends React.Component {
             firstuserid: this.props.firstuserid,
             seconduserid: this.props.seconduserid,
         });
-        //console.log("this.props in profile", this.props);
-        // console.log("this.state in profile", this.state);
-        // console.log(
-        //     "this.props.otherUsers in profile ...",
-        //     this.props.otherUsers
-        // );
     }
     clickTraining(e) {
+         this.setState({ training: e.currentTarget.value });
         var choice = e.currentTarget.value;
         if (choice == "not") {
             this.setState({ trainingImg: "/sit.png" });
@@ -59,29 +60,52 @@ export default class Profile extends React.Component {
         }
     }
     clickCharacter(e) {
+         this.setState({ characters: e.currentTarget.value });
         var choice = e.currentTarget.value;
-        if (choice == "not") {
+        if (choice == "docile") {
             this.setState({ characterImg: "/anim2.gif" });
-        } else if (choice == "some") {
+        } else if (choice == "active") {
             this.setState({ characterImg: "/anim1.gif" });
-        } else if (choice == "mid") {
+        } else if (choice == "independent") {
             this.setState({ characterImg: "/skate1.gif" });
-        } else if (choice == "well") {
+        } else if (choice == "affectionate") {
             this.setState({ characterImg: "/anim3.gif" });
         }
     }
     clickHero(e) {
+         this.setState({ hero: e.currentTarget.value });
         var choice = e.currentTarget.value;
-        if (choice == "not") {
+        if (choice == "lassie") {
             this.setState({ heroImg: "/anim2.gif" });
-        } else if (choice == "some") {
+        } else if (choice == "mailo") {
             this.setState({ heroImg: "/skate1.gif" });
-        } else if (choice == "mid") {
+        } else if (choice == "laika") {
             this.setState({ heroImg: "/laika.png" });
-        } else if (choice == "well") {
+        } else if (choice == "snoopie") {
             this.setState({ heroImg: "/anim3.gif" });
         }
     }
+     clickSubmit() {
+         let that = this;
+           const answers = {
+              cd: this.props.cd,   
+            training: this.state.training,
+            characters: this.state.characters,
+            hero: this.state.hero,
+        };
+        console.log("answers", answers)
+          axios.post("/updatequestionaire", answers)
+                .then(function (resp) {
+                    console.log(
+                        "response after /updatequestionaire",
+                        resp
+                    );
+                    that.setState({ questionaireIsVisible: false });
+                })
+                .catch(function (err) {
+                    console.log("error in axios post /updatequestionaire", err);
+                });
+     }
     render() {
         // if (!this.props.dogId) {
         //     return null;
@@ -92,9 +116,7 @@ export default class Profile extends React.Component {
                     <div id="users-profile">
                         <div className="profiles-left"></div>
                         <div className="profiles-right"></div>
-                        <a className="next-page" href="#character-level">
-                            To The Questionaire!
-                        </a>
+                       
                         <img
                             id="dog-profile-img"
                             src={this.props.dogimg || "/dog1.png"}
@@ -233,8 +255,13 @@ export default class Profile extends React.Component {
                         <h4 className="err">Something Went Wrong!</h4>
                     )}
                 </div>
-                {this.props.firstuserid && (
-                    <div id="questionaire">
+                {this.state.questionaireIsVisible && (
+                    <div>
+                     <a className="next-page" href="#character-level">
+                            To The Questionaire!
+                        </a>
+                        <div id="questionaire">
+                        
                         <div className="training-level">
                             <h2>How well is your dog trained?</h2>
                             <button
@@ -267,27 +294,27 @@ export default class Profile extends React.Component {
                             <h2>What is your dogs temperament?</h2>
                             <button
                                 onClick={(e) => this.clickCharacter(e)}
-                                value="not"
+                                value="docile"
                             >
                                 Docile
                             </button>
                             <button
                                 onClick={(e) => this.clickCharacter(e)}
-                                value="some"
+                                value="active"
                             >
                                 Active
                             </button>
                             <button
                                 onClick={(e) => this.clickCharacter(e)}
-                                value="mid"
+                                value="independent"
                             >
-                                Dominant / Independent
+                                Independent
                             </button>
                             <button
                                 onClick={(e) => this.clickCharacter(e)}
-                                value="well"
+                                value="affectionate"
                             >
-                                Communicable / Submissive
+                                Affectionate
                             </button>
                             <img src={this.state.characterImg}></img>
                         </div>
@@ -295,30 +322,32 @@ export default class Profile extends React.Component {
                             <h2>Which famous dog is you favourite?</h2>
                             <button
                                 onClick={(e) => this.clickHero(e)}
-                                value="not"
+                                value="lassie"
                             >
                                 Lassie
                             </button>
                             <button
                                 onClick={(e) => this.clickHero(e)}
-                                value="some"
+                                value="mailo"
                             >
                                 Mailo from the MASK
                             </button>
                             <button
                                 onClick={(e) => this.clickHero(e)}
-                                value="mid"
+                                value="laika"
                             >
                                 Laika
                             </button>
                             <button
                                 onClick={(e) => this.clickHero(e)}
-                                value="well"
+                                value="snoopy"
                             >
-                                Doggo Master
+                                Snoopy
                             </button>
                             <img src={this.state.heroImg}></img>
                         </div>
+                        <button className="submit-questionaire-button"   onClick={() => this.clickSubmit()}>Submit</button>
+                    </div>
                     </div>
                 )}
             </div>

@@ -71,7 +71,7 @@
       so keep working on it regularly and never let your dog see that you are getting frustrated or irritated (if coming to you seems like
        they might get scolded or punished, it is natural that they will not see coming to you as worthwhile).  Remember, coming to you
         should always feel like the most exciting thing in the world to your dog.',
-    '/pawstep3.gif'
+    '/comestep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     4,

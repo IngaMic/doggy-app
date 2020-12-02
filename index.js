@@ -324,7 +324,23 @@ app.post("/updatedogbio", uploader.single("file"), s3.upload, (req, res) => {
             console.log("err n updateDogInfo index.js", err);
         });
 });
-
+app.post("/updatequestionaire", (req, res) => {
+    db.updateQuestionaire(
+        req.body.cd,
+        req.body.training,
+        req.body.characters,
+        req.body.hero,
+    )
+        .then(({ rows }) => {
+            //console.log(" rows[0] ", rows[0]);
+            res.json({
+                questionaire: rows[0],
+            });
+        })
+        .catch((err) => {
+            console.log("err in updateQuestionaire", err);
+        });
+});
 app.get("/doginfo", (req, res) => {
     // console.log("req.session.userId", req.session.userId);
     if (req.session.userId) {
@@ -416,7 +432,6 @@ app.get("/api/walks", async (req, res) => {
     }
 });
 app.get("/api/logs", async (req, res) => {
-    console.log("I am getting a req in /logs, req.params.cd", req.query.cd );
     try {
         const cd = req.query.cd;
         var logs = [];

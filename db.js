@@ -103,7 +103,13 @@ module.exports.updateDogInfo = (
         [dogId, name, gender, size, bio, cd, imageurl]
     );
 };
-
+module.exports.updateQuestionaire = (cd, training, characters, hero) => {
+    return db.query(
+        `INSERT INTO questionaire (cd, training, characters, hero)
+         VALUES($1, $2, $3, $4) RETURNING * `,
+        [cd, training, characters, hero]
+    );
+};
 module.exports.getTricks = () => {
     return db.query(
         `
