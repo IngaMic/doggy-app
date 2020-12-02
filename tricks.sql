@@ -74,7 +74,7 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
 );
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Paw',
-    '/pawstep3.gif',
+    '/pawstep0.gif',
   'Shaking hands / giving a paw is a simple trick that can be great fun for both you and your dog to learn. “Dogs naturally 
   use their paws more than you might think so this shouldn’t take too long”. It is important that your dog is already an 
   expert at sitting on command, and as always that you start in a quiet environment where your dog can fully focus!'

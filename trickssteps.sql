@@ -65,7 +65,7 @@
       just as they approach you. Encourage your dog to chase you, but never play games that involve chasing them as this can signal mixed 
       messages.  If your dog is not coming to you most of the time, it might be time to decrease distance again - dogs naturally pay much
        more attention to us when we are physically close to them.',
-    '/pawstep2.gif',
+    '/comestep2.gif',
      'Begin to call your dog in increasingly distracting environments, as well as throwing in different contexts (try lying on your back 
      and calling, or calling your dog when you aren’t in the same room as them).  It can take a long time to really instill this behaviour
       so keep working on it regularly and never let your dog see that you are getting frustrated or irritated (if coming to you seems like
@@ -92,11 +92,11 @@
       come back to reward them. You could also begin to add in distractions, like toys, or dancing around them to test your 
       dog’s impulse control. However, you should always return to your dog to let them out of the stay. Don’t call your dog 
       out of a stay because this could confuse them.',
-    '/pawstep3.gif'
+    '/staystep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     5,
-    '/pawstep3.gif',
+    '/pawstep1.gif',
     ' If your dog already sits on command, you are off to a good start. If you already know "paw" trick, it will also be easier
     because your dog is used to having his paws touched. While this is a fairly easy trick for your dog to learn,
      it takes repetition and consistency for him to retain it.',
@@ -139,7 +139,7 @@
     ' Start by letting your dog wear a collar (or harness) and leash for short periods of time while doing other things around
      the house, be it playing, training, or even feeding.  Either way, your dog should build only positive associations with wearing 
      their leash, and should always be excited to see it as it represents food and/or fun! ',
-    '/pawstep1.gif',
+    '/leashstep1.gif',
      'When you get outside, your dog will want to run off and explore, so it is important to have high-value rewards at hand.
       Keep your dog close to you as you walk and keep attention and rewards regular, only reducing regularity when you are confident
        that they will stay by your side.  ',
@@ -170,7 +170,7 @@
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     9,
-    '/pawstep1.gif',
+    '/pawstep0.gif',
     ' As with the teaching of all behaviors, the first step is to get your dogs full attention. Start at a sitting position, show 
     your dog a treat to get his attention, and then create a fist to hide the treat. 
 Wait for your dog to stretch out his paw to you. This may not take long if your dog regularly uses his paws to get your attention
@@ -185,5 +185,5 @@ Wait for your dog to stretch out his paw to you. This may not take long if your 
      'After a week or two, praise your dog with affection and hugs whenever trick goes well rather than handing a treat. Also, as your dog gets more skilled
       with this trick, add in some challenges. For example, practice the trick in different situations and locations where there
        will be distractions (e.g., cars, people, other dogs). ',
-    '/pawstep4.gif'
+    '/pawstep3.gif'
 );
