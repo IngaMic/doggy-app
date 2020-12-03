@@ -28,6 +28,7 @@ export default class App extends React.Component {
             bio: "",
             firstuserid: null,
             seconduserid: null,
+            answers: null,
             otherUsers: [],
             uploaderIsVisible: false,
             invitationIsVisible: false,
@@ -64,17 +65,15 @@ export default class App extends React.Component {
             });
         });
         axios.get("/otherusers").then((resp) => {
-            // console.log(
-            //     "resp after App component mounts and otherusersInfo",
-            //     resp
-            // );
             this.setState({
                 otherUsers: resp.data.list,
             });
-            // console.log(
-            //     "state.otherUsers after App component mounts and otherUsers",
-            //     this.state.otherUsers
-            // );
+        });
+         axios.get("/questionaire").then((resp) => {
+             console.log("resp after App component mounts and questionaire", resp);
+            this.setState({
+                answers: resp.data.answers,
+            });
         });
     }
     showUploader(e) {
@@ -183,6 +182,7 @@ export default class App extends React.Component {
                                         otherUsers={this.state.otherUsers}
                                         firstuserid={this.state.firstuserid}
                                         seconduserid={this.state.seconduserid}
+                                        answers={this.state.answers}
                                         clickHandler={() =>
                                             this.setState({
                                                 uploaderIsVisible: true,

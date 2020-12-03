@@ -110,6 +110,14 @@ module.exports.updateQuestionaire = (cd, training, characters, hero) => {
         [cd, training, characters, hero]
     );
 };
+module.exports.getQuestionaire = (cd) => {
+    return db.query(
+        `SELECT * FROM questionaire 
+    WHERE cd = ($1)
+    `,
+        [cd]
+    );
+};
 module.exports.getTricks = () => {
     return db.query(
         `

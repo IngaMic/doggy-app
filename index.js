@@ -341,6 +341,29 @@ app.post("/updatequestionaire", (req, res) => {
             console.log("err in updateQuestionaire", err);
         });
 });
+app.get("/questionaire", (req, res) => {
+      let userId = req.session.userId;
+        db.getCd(userId)
+            .then((data) => {
+                var cd = data.rows[0].cd;
+                db.getQuestionaire(cd)
+                    .then((info) => {
+                        return res.json({
+                            answers: info.rows[0],
+                        });
+                    })
+                    .catch((err) => {
+                        console.log("err in getQuestionaire", err);
+                        return res.json({
+                            answers: null,
+                        });
+                    });
+            })
+            .catch((err) => {
+                console.log("err in getCd /questionaire", err);
+            });
+  
+});
 app.get("/doginfo", (req, res) => {
     // console.log("req.session.userId", req.session.userId);
     if (req.session.userId) {

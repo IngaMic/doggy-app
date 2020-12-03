@@ -34,6 +34,11 @@ export default class Profile extends React.Component {
         // this.closeEditor = this.closeEditor.bind(this);
     }
     componentDidMount() {
+        if (this.props.answers) {
+                this.setState({
+             questionaireIsVisible: false,
+        });
+        }
         this.setState({
             dogId: this.props.dogId,
             userId: this.props.userId,

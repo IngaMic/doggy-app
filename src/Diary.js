@@ -94,6 +94,13 @@ const clearInput = () => {
                             <option value="walk" id="walk">Walk</option>
                             <option value="sit">Sit</option>
                             <option value="stay">Stay</option>
+                            <option value="lay">Lay</option>
+                            <option value="come">Come</option>
+                            <option value="paw">Paw</option>
+                            <option value="leash">Leash</option>
+                            <option value="hi five">Hi Five</option>
+                            <option value="paws up">Paws Up</option>
+                          
                         </select>
                         </div>
                          <div className="form-line2">
@@ -104,6 +111,9 @@ const clearInput = () => {
                         <option value="10">10 mins</option>
                         <option value="20">20 mins</option>
                         <option value="30">30 mins</option>
+                        <option value="40">40 mins</option>
+                        <option value="50">50 mins</option>
+                        <option value="60">60 mins</option>
                     </select>
                     </div>
                        <button id="submit-diary"><img src="/plus.png"></img></button>
