@@ -135,7 +135,7 @@
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     7,
-    '/pawstep3.gif',
+    '/leashstep0.gif',
     ' Start by letting your dog wear a collar (or harness) and leash for short periods of time while doing other things around
      the house, be it playing, training, or even feeding.  Either way, your dog should build only positive associations with wearing 
      their leash, and should always be excited to see it as it represents food and/or fun! ',
@@ -151,22 +151,22 @@
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     8,
-    '/pawstep3.gif',
+    '/pawsupstep0.gif',
     ' PAWS UP PAWS UP Start out your leash training by letting your pup get used to wearing a collar or harness and a leash at home. 
   You could start leaving the leash on for short periods of time, for example while you are training,
    playing and giving your dog treats. The puppy should love collar-and-leash time 
    because it represents food and fun. ',
-    '/pawstep1.gif',
+    '/pawsupstep1.gif',
      'After you introduced walking on a leash to your dog at home, take your training outside. You should get in the habit of carrying small, 
     easily chewable treats for your puppy during the training process. 
     Gradually you’ll reduce the number of treats and the amount of troubleshooting that your puppy
      needs during a walk.',
-    '/pawstep2.gif',
+    '/pawsupstep2.gif',
      'If your dog starts pulling in the other direction, stop walking. 
      Stand very still and refuse to move until your dog comes back to you. Do not yank or 
      jerk the leash, and do not drag your dog along with you.  If your dog is going after something while
       on a walk — another dog, a car, be proactive. Try to redirect his attention with a treat and keep him focused on you.',
-    '/leashstep3.gif'
+    '/pawsupstep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     9,

@@ -134,10 +134,10 @@ export default function Tricks() {
     return (
         <div className="tricks-container">
             <div className="tricks-gradient"></div>
-            <div className="header"></div>
+            {/* <div className="header"></div>
             <div className="line-one"></div>
             <div className="line-two"></div>
-            <div className="line-three"></div>
+            <div className="line-three"></div> */}
             {/* <img src="background.png" className="tricksbg"></img> */}
             {/* <div id="tricksdone">
                 {!tricks.length && <h5>No tricks yet!</h5>}
