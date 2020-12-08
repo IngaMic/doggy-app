@@ -9,7 +9,6 @@ import Trick from "./Trick";
 import Uploader from "./Uploader";
 import Invitation from "./Invitation";
 /////////////////////////////////////////////////////////////
-
 export default class App extends React.Component {
     constructor() {
         super();

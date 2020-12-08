@@ -1,3 +1,5 @@
+
+
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
@@ -48,6 +50,7 @@ export default function Tricks() {
         //console.log("todo tricks from tricks", trickstodo);
     }
     var alltricks = (
+        
         <div id="alltricks-list">
             {tricks.map((trick, i) => (
                 <div className="trick" key={i}>
@@ -60,12 +63,15 @@ export default function Tricks() {
                                     "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg"
                                 }
                             />
+                          
                         </Link>
                         <p>{trick.tname}</p>
                     </div>
                 </div>
             ))}
+              
         </div>
+        
     );
     var quote = (
         <div>
@@ -133,11 +139,14 @@ export default function Tricks() {
     // );
     return (
         <div className="tricks-container">
-            <div className="tricks-gradient"></div>
-            {/* <div className="header"></div>
-            <div className="line-one"></div>
-            <div className="line-two"></div>
-            <div className="line-three"></div> */}
+           
+            <div className="imageOne"></div>
+             <div className="imageTwo"></div>
+              <div className="imageThree"></div>
+               <div className="imageFour"></div>
+                <div className="imageFive"></div>
+                 <div className="imageSix" data-rellax-speed="4"></div>
+                  <div className="tricks-gradient"></div>
             {/* <img src="background.png" className="tricksbg"></img> */}
             {/* <div id="tricksdone">
                 {!tricks.length && <h5>No tricks yet!</h5>}

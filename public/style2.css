@@ -1,0 +1,1145 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Fira Sans", sans-serif;
+}
+body::-webkit-scrollbar {
+    width: 1em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.164);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(46, 186, 189);
+  outline: 1px solid rgb(201, 248, 252);
+}
+.grid-one {
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    -moz-box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    box-shadow: 0px 0px 26px 1px rgba(140, 140, 140, 0.45);
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 700px;
+    width: 80%;
+    background-color: white;
+    opacity: 85%;
+    position: absolute;
+    z-index: -1;
+}
+.welcome {
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+#background {
+    margin-top: 0px;
+    position: absolute;
+    max-height: 100vw;
+    max-width: 1600vw;
+    width: 100%;
+    object-fit: cover;
+    z-index: -3;
+    opacity: 50%;
+}
+img {
+    object-fit: cover;
+}
+.welcome-logo-name {
+    margin-top: 15px;
+    margin-left: 15px;
+}
+#firstdog {
+    position: relative;
+    top: 100px;
+    height: 320px;
+    width: 320px;
+    left: 220px;
+    z-index: -2;
+}
+.description {
+    position: relative;
+    top: 140px;
+    left: 100px;
+    font-size: large;
+}
+.login,
+.registration {
+    opacity: 80%;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    /* box-shadow: 3px, 3px, 3px, slategrey; */
+    position: absolute;
+    top: 90px;
+    right: 10%;
+    z-index: 9999;
+}
+.login h3,
+.registration h2 {
+    text-align: center;
+    padding: 5px;
+    color: teal;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+.login input {
+    width: 80%;
+    border: none;
+    text-align: left;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+.registration input {
+    width: 100%;
+    border: none;
+    text-align: left;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    padding-left: 10px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+.glyphicon-user {
+    padding-right: 10px;
+    padding-bottom: 10.5px;
+    padding-top: 6px;
+    padding-left: 11px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+.glyphicon-lock {
+    padding-right: 10px;
+    padding-bottom: 11px;
+    padding-top: 6px;
+    padding-left: 11px;
+    border-bottom: 2px solid grey;
+    background-color: whitesmoke;
+}
+.login input,
+.registration input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.login button {
+    color: white;
+    background-color: turquoise;
+    border: 5px solid rgb(115, 228, 216);
+    width: 90%;
+    height: 50px;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.registration button {
+    color: white;
+    background-color: turquoise;
+    border: 5px solid rgb(115, 228, 216);
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+/* MEDIA REQUESTS */
+.reglink {
+    margin-top: 50px;
+}
+@media all and (max-width: 1290px) {
+    #firstdog {
+        position: relative;
+        top: 80px;
+        height: 250px;
+        width: 250px;
+        left: 15%;
+        z-index: -2;
+    }
+    .description {
+        position: relative;
+        top: 120px;
+        left: 15%;
+        width: 40%;
+        font-size: large;
+        margin-right: 25px;
+    }
+    .login,
+    .registration {
+        opacity: 80%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        position: relative;
+        top: -430px;
+        left: 60%;
+        width: 32%;
+    }
+    .grid-one {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 900px) {
+    html,
+    main {
+        background-color: rgba(192, 192, 224, 0.815);
+        z-index: -1;
+    }
+    .login,
+    .registration {
+        opacity: 80%;
+        padding: 50px;
+        border-radius: 20px;
+        background-color: whitesmoke;
+        position: relative;
+        top: -180px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 70%;
+        z-index: -0.5;
+        left: auto;
+        right: auto;
+    }
+    #firstdog {
+        position: relative;
+        top: 20px;
+        height: 100px;
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1;
+    }
+    .description {
+        position: relative;
+        top: 220px;
+        left: auto;
+        right: auto;
+        width: 40%;
+        font-size: medium;
+    }
+}
+.container {
+    margin-left: 0px;
+}
+/* DASHBOARD PAGE */
+#logodog {
+    margin-top: 15px;
+    border: 5px solid white;
+    border-radius: 50%;
+    margin-left: 25px;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    z-index: 1;
+    opacity: 100%;
+}
+.links {
+    color: white;
+    background-color: rgb(90, 195, 198, 100);
+    background: linear-gradient(
+        180deg,
+        rgba(90, 195, 198, 1) 0%,
+        rgba(90, 195, 198, 1) 2%,
+        rgba(68, 144, 147, 1) 100%
+    );
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px 10px 20px;
+    width: 100%;
+    margin-left: auto;
+    height: 200px;
+    margin-right: auto;
+    font-weight: bold;
+    flex-direction: row-reverse;
+    z-index: 0;
+}
+
+.links a {
+    font-size: 20px;
+    text-decoration: none;
+    margin-right: 85px;
+    margin-top: 185px;
+    color: rgb(255, 255, 255);
+}
+.links a:hover {
+    text-shadow: 2px 2px 4px #4c676854;
+}
+.line-one {
+    position: absolute;
+    border-bottom: 5px dashed rgba(64, 178, 182, 0);
+    width: 312px;
+    height: 47px;
+    transform: rotate(20deg);
+    margin-top: 90px;
+    margin-left: 160px;
+    z-index: 0;
+    font-weight: bolder;
+}
+.line-two {
+    position: absolute;
+    border-bottom: 5px dashed rgba(64, 178, 182, 0);
+    width: 312px;
+    height: 47px;
+    transform: rotate(140deg);
+    margin-top: 250px;
+    margin-left: 200px;
+    z-index: 0;
+    font-weight: bolder;
+}
+.alltrick-img {
+    position: fixed;
+    height: 120px;
+    width: auto;
+}
+.alltrick-img:hover {
+    transform: scale(1.1);
+}
+
+.profile-link {
+    margin-top: 10px;
+}
+.quotedisplay {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    float: right;
+    width: 25%;
+    height: auto;
+    color: rgb(122, 121, 121);
+    font-size: 20px;
+    
+    border-radius: 12px;
+    padding: 32px;
+   border: 2px solid rgba(0, 128, 128, 0.377);
+}
+.imageOne {
+    position: absolute;
+    right: -5px;
+    background-image: url("background.svg");
+    height:2000px;
+    width: 110vw;
+    background-size: cover;
+    z-index: 0;
+}
+
+#alltricks-list {
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 700px;
+    width: 40%;
+    opacity: 100%;
+    position: fixed;
+    z-index: -0;
+    box-shadow: 0px 0px 25px 1px rgba(128, 128, 128, 0.37);
+    background: linear-gradient(#ffffffa2, #ffffffaf);
+}
+
+#alltricks-list img {
+    opacity: 100%;
+    filter: drop-shadow(0px 15px 8px rgba(128, 128, 128, 0.493));
+}
+.p {
+    color: rgb(255, 0, 0);
+}
+.tricks-gradient {
+    height: 1000px;
+    width: 100%;
+    position: absolute;
+    opacity: 100%;
+    background: rgb(199, 197, 248);
+    border-radius: 7%;
+    border-top: 0px solid rgb(255, 255, 255);
+    margin-top: -80px;
+   
+    background: linear-gradient(rgb(255, 255, 255),rgba(179, 246, 255, 0));
+    z-index: 0;
+    background-size: cover;
+}
+.trick {
+    position: relative;
+    display: grid;
+    top: 50px;
+}
+.Sit {
+    /* margin-top: 20px; */
+    margin-left: 50px;
+}
+
+.Come {
+    margin-top: 150px;
+    margin-left: 150px;
+}
+.Lay {
+    margin-top: 100px;
+    margin-left: 300px;
+}
+.Stay {
+    margin-top: 200px;
+    margin-left: 550px;
+}
+.Paw {
+    /* margin-top: -600px; */
+    margin-left: 1200px;
+}
+.Leash {
+     /* margin-top: -350px; */
+    margin-left: 900px;
+}
+.HiFive {
+    /* margin-top: 60px; */
+    margin-left: 650px;
+}
+.Bang {
+    /* margin-top: -100px; */
+    margin-left: 1100px;
+}
+
+
+.oneTrick {
+    margin-left: 50px;
+}
+.oneTrick img {
+    width: 300px;
+    object-fit: contain;
+}
+.oneTrick h2 {
+    position: absolute;
+    top: 300px;
+    left: 30%;
+}
+.oneTrick h6 {
+    position: absolute;
+    top: 350px;
+    left: 30%;
+    width: 15%;
+}
+.trick-steps {
+    position: absolute;
+    top: 70px;
+    right: 10px;
+    width: 95%;
+}
+
+.trick-step {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: auto;
+    width: 85%;
+    border-radius: 15px;
+    background-color: rgb(64, 178, 182);
+    
+    margin-bottom: 20px;
+    margin-left: 50px;
+    top: 30px;
+}
+.trick-step p {
+    position: absolute;
+    top: 60px;
+    right: 5%;
+    min-width: 40%;
+    max-width: 50%;
+    background-color: rgba(255, 255, 255, 0.836);
+    padding: 55px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 12px 20px #d6e0e01a;
+     border-left: 10px solid white;
+      border-bottom: 10px solid white;
+    font-size: larger;
+    font-size: larger;
+    color: rgb(64, 178, 182);
+    font-kerning: none;
+    line-height: 26px;
+}
+#trick-step-number {
+    display: flex;
+    flex-direction: row;
+    margin-left: 28%;
+    margin-right: auto;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+#trick-step-number button {
+    animation: glowin 1s ease-in;
+    animation: glowout 1s ease-out;
+    animation-iteration-count: 2;
+    text-align: center;
+    background-color: rgba(64, 178, 182, 0.671);
+    color: white;
+    border-radius: 50%;
+    border: none;
+    margin-top: 40px;
+    margin-left: 70px;
+    margin-right: 70px;
+    height: 70px;
+    width: 70px;
+    outline: none;
+    box-shadow: 1px 1px;
+}
+
+@-webkit-keyframes glowin {
+    from {
+        box-shadow: 0 0 0px rgb(75, 224, 187);
+    }
+    to {
+        box-shadow: 0 0 20px rgb(41, 211, 197);
+    }
+}
+
+@-webkit-keyframes glowout {
+    from {
+        box-shadow: 0 0 20px rgb(41, 211, 183);
+    }
+    to {
+        box-shadow: 0 0 0px rgb(55, 192, 158);
+    }
+}
+
+/* .trick-step h3 {
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.trick-step p {
+    width: 60%;
+    float: left;
+    margin-left: 20px;
+} */
+.trick-step img {
+    width: 30%;
+    top: 30%;
+    margin: 20px;
+    margin-left: 60px;
+}
+
+#uploader {
+    /* border: 4px solid #ffffff; */
+    background-color: #6ccfd3;
+    opacity: 95%;
+    border-radius: 15px;
+    padding: 20px;
+    /* padding-right: 2px; */
+    position: absolute;
+    /* margin-top: 10px; */
+    top: 40px;
+    margin-left: 230px;
+    display: flex;
+}
+#uploader button {
+    height: 30px;
+    padding: 0 10px;
+}
+
+#dog-profile-img {
+    position: absolute;
+    box-shadow: rgb(161, 161, 161) 2px 2px 20px;
+    top: 210px;
+    left: 200px;
+    width: 460px;
+    height: 460px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#user1-profile-img {
+    position: absolute;
+    box-shadow: rgb(161, 161, 161) 2px 2px 20px;
+    top: 15px;
+    left: 25px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 99999;
+    cursor: pointer;
+}
+
+/* OtherUsers 02.11 */
+#other-users-container {
+    margin-top: -30px;
+    margin-left: 10px;
+    width: 100px;
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 1;
+}
+#other-users-container img {
+    position: absolute;
+    border: 2px solid white;
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    z-index: 1;
+}
+.other-user-name {
+    color: rgba(143, 143, 143, 0.829);
+    font-weight: bolder;
+    position: relative;
+    text-align: right;
+    margin-left: 75px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 12px;
+}
+.online-user-p {
+    position: absolute;
+    border: 3px solid rgba(17, 216, 17, 0.692);
+    border-radius: 50%;
+    background-color: rgb(0, 197, 43);
+    width: 12px;
+    height: 12px;
+    margin-left: 45px;
+    margin-top: 50px;
+    z-index: 1;
+}
+.add-user {
+    position: relative;
+    margin-top: 10px;
+}
+.add-user p {
+    color: rgb(32, 42, 43);
+    position: relative;
+    width: 90px;
+    z-index: 9;
+}
+.user2-profile-img {
+    position: absolute;
+    /* border: 6px solid rgb(255, 255, 255); */
+    margin-left: 5px;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    opacity: 65%;
+    z-index: 2;
+    cursor: pointer;
+}
+.user2-profile-img:hover {
+    filter: brightness(90%);
+}
+/* OtherUsers 02.11 end */
+#invitation {
+    border-radius: 30px;
+    background-color: #4fadb1;
+    padding: 30px;
+    position: absolute;
+    height: 140px;
+    width: 270px;
+    font-family: "Firma Sans", sans-serif;
+    top: 570px;
+    left: 40px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    opacity: 95%;
+}
+#invitation button {
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-right: -10px;
+    border: 1px solid black;
+    background-color: #5fd5d9;
+    color: #fff;
+    height: 40px;
+    width: 40px;
+    font-weight: bold;
+}
+#invitation h2 {
+    margin-top: 10px;
+}
+#instruction {
+    margin-top: 15px;
+    display: flex;
+    flex-flow: row;
+    justify-content: top;
+}
+#instruction .bi-camera,
+#instruction .bi-pencil-square,
+#instruction .bi-plus-circle {
+    object-fit: cover;
+    position: relative;
+    margin-right: 10px;
+}
+#instruction .bi-plus-circle {
+    padding-bottom: 80px;
+}
+#dog-info {
+    border-radius: 30px;
+    background: linear-gradient(#7db8d4, #88c8c9);
+    box-shadow: -2px 2px 25px 9px rgba(127, 182, 167, 0.281);
+    border: 0px solid white;
+    padding: 50px;
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    font-family: "Firma Sans", sans-serif;
+    font-size: large;
+    top: 210px;
+    right: 150px;
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    opacity: 80%;
+}
+#add-button,
+.add-btn {
+    box-shadow: 2px 2px 20px 2px rgba(128, 128, 128, 0.233);
+    border-radius: 50%;
+    border: 0px solid black;
+    padding: 15px 10px;
+    background-color: #5fd5d9;
+    color: #fff;
+    position: absolute;
+    top: 590px;
+    right: 58%;
+    height: 90px;
+    width: 90px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#add-button,
+.add-btn:hover {
+    filter: brightness(90%);
+}
+
+.bi-pencil-square {
+    font-size: 60px;
+}
+.dogbioform {
+    position: absolute;
+    top: 210px;
+    right: 10%;
+    height: 430px;
+    width: 530px;
+}
+.dogbioform label {
+    color: whitesmoke;
+    margin-left: 10px;
+    margin-right: 15px;
+}
+.dogbioform input,
+.dogbioform textarea {
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+.dogbioform button {
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: #5fd1d9;
+    color: #fff;
+    margin-left: 15px;
+}
+.next-page {
+    position: relative;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #5fd1d9;
+    color: #fff;
+    top: 80px;
+    left: 1150px;
+    z-index: 1;
+    text-decoration: none;
+    font-weight: bold;
+}
+.next-page:hover {
+    filter: brightness(90%);
+}
+.layer {
+    position: absolute;
+    margin-top: -90px;
+    height: 260px;
+    width: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+/* ///////////////////////// */
+.inputfile {
+    width: 120px;
+    height: 40px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+}
+
+.inputfile + label {
+    border: none;
+    color: #4fadb1;
+    background: white;
+    cursor: pointer;
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 15px;
+    text-align: center;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: #19f8c8;
+    outline: none;
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    margin-right: 0.25em;
+}
+
+.inputfile:focus + label {
+    outline: none;
+}
+.submit-btn {
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 15px 30px;
+    outline: none;
+    /* margin-top: 5px; */
+    width: 100%;
+    color: #ffffff;
+    background: #3a3e43;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-btn:hover {
+    filter: brightness(90%);
+}
+#uploader .x {
+    border-radius: 50%;
+    position: relative;
+    float: right;
+    margin-left: 8px;
+    /* margin-right: -10px; */
+    border: 1px solid rgb(78, 78, 78);
+    background-color: #5fd5d9;
+    color: #fff;
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+    font-weight: bold;
+    text-align: center;
+}
+#uploader .x:hover {
+    filter: brightness(90%);
+}
+
+#questionaire {
+    margin-top: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    grid-gap: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.submit-questionaire-button {
+    position: relative;
+    border-radius: 50px;
+    padding: 20px;
+    background-color: #5fd1d9;
+    color: #fff;
+    font-weight: bold;   
+    left: 105%;
+   
+}
+.training-level,
+.character-level,
+.hero-level {
+    box-shadow: rgb(218, 217, 217) 2px 0px 30px;
+
+    background-color: #4fadb1;
+    margin: 20px 20px;
+    border-radius: 50px;
+    padding: 50px;
+    color: white;
+    align-items: center;
+}
+.training-level h2,
+.character-level h2,
+.hero-level h2 {
+    color: #4fadb1;
+    box-shadow: rgb(15, 160, 160) 2px 2px 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.training-level button,
+.character-level button,
+.hero-level button {
+    display: block;
+    box-shadow: rgb(15, 160, 160) 2px 2px 20px;
+    color: #4fadb1;
+    background-color: white;
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 35px;
+    width: 90%;
+    margin-top: 10px;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.training-level button:hover,
+.character-level button:hover,
+.hero-level button:hover {
+    color: #ffffff;
+    background-color: #8fddb82a;
+    border: 2px solid rgba(255, 255, 255, 0.548);
+}
+.training-level img,
+.character-level img,
+.hero-level img {
+    position: relative;
+    object-fit: contain;
+    padding-left: auto;
+    padding-right: auto;
+    width: 256px;
+    height: 256px;
+    /* left: 30px; */
+    margin-top: 70px;
+    max-width: 100%;
+}
+.trick-page {
+    border-radius: 60px;
+    background-color: rgb(255, 255, 255);
+    margin-top: -80px;
+    /* margin-left: 2.5%; */
+    /* margin-right: 2.5%; */
+    height: 570px;
+    width: 100%;
+    opacity: 100%;
+    position: absolute;
+    z-index: -0.5;
+}
+.profiles-left {
+    position: absolute;
+    border-top-left-radius: 50px;
+    margin-top: -80px;
+    background-color: white;
+
+    height: 100%;
+    z-index: 0;
+    width: 50%;
+}
+.profiles-right {
+    position: absolute;
+    border-top-right-radius: 50px;
+    margin-top: -80px;
+
+    background: linear-gradient(
+        rgb(151, 226, 221),
+        rgb(168, 211, 204),
+        rgb(208, 252, 250),
+        white
+    );
+    box-shadow: -9px 0px 30px 9px rgba(128, 128, 128, 0.247);
+    height: 90%;
+    z-index: 0;
+    width: 50%;
+    margin-left: 50%;
+}
+.dogbioform {
+    border: 0px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: rgb(90, 195, 198, 100);
+    opacity: 97%;
+    z-index: 5;
+}
+#dog-bio {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+#dog-name {
+    color: #499ea1;
+    /* box-shadow: rgba(13, 151, 151, 0.479) 2px 2px 5px; */
+    background: white;
+    box-shadow: inset 2px 5px 15px 12px rgb(245, 245, 245);
+    border-radius: 40px;
+    text-align: center;
+    margin-top: -30px;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding: 15px;
+    font-size: 50px;
+}
+.dogname-input {
+    border: 0px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+textarea {
+    border: 0px solid black;
+}
+#size {
+    border: 0px solid black;
+}
+#gender {
+    border: 0px solid black;
+}
+#file-upload-button {
+    border: 0px solid black;
+}
+#close-bio-editor {
+    float: right;
+}
+.walkies {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 200px;
+    object-fit: scale-down;
+}
+.activity-log{
+    margin-top: 100px;
+    margin-left: 50px;
+    position: relative;   
+}
+.diaryContainer{
+    top: -80px;
+    left: 30px;
+    height: 200px;
+    width: 700px;
+    position: relative;
+    font-size: 30px;
+    border-radius: 50px;
+    z-index: 0;
+    background-color: rgb(88, 211, 219);
+}
+.diary-form {
+    padding: 15px 50px 30px 0px;
+    display: flex;
+    flex-direction: column;
+}
+.diary-form div {
+margin: 15px;
+    background-color: rgb(90, 195, 198, 100);
+    background: linear-gradient(
+        180deg,
+        rgba(90, 195, 198, 1) 0%,
+        rgba(90, 195, 198, 1) 2%,
+        rgb(84, 184, 187) 100%
+    );
+border-radius: 15px;
+padding: 5px 15px;
+width: 70%;
+}
+#activity-label {
+  margin-right: 45px;
+}
+#time-label {
+  margin-right: 80px;
+}
+#activity {
+  border-radius: 15px;
+  width: 220px;
+  left: 30%;
+}
+#time {
+   border-radius: 15px;
+  width: 220px;
+  left: 30%;
+}
+
+#submit-diary {
+ position: absolute;
+ right: 40px;
+ top: 20%;
+ height: 50%;
+ border-radius: 50%;
+}
+#submit-diary img {
+    height: 100px;
+    width: 100px;
+}
+.logged {
+    margin-top: 200px;
+    width: 40%;
+    height: 10px;
+    position: absolute;
+    left: 50px;
+}
+.activity-user {
+    position: relative;
+    left: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+  
+}
+.activity-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    top: -10px;
+    left: -20px;
+}
+.activity-user p {
+   position: relative;
+   font-size: 15px;
+   left: -15px;
+   margin: 5px;
+}
+.dogwalk-record {
+    font-size: 20px ;
+    margin: 10px;
+    width: 270px;
+    background-color: #5fd1d9;
+    border-radius: 21px;
+    box-shadow: 2px 2px 0px;
+    padding: 6px;
+    padding-right: 10px;
+    top: -200px;
+    position: relative;
+}
+.dogwalk-record #record {
+ position: relative;
+ float: right;
+ margin-left: 80px;
+ margin-top: auto;
+  margin-bottom: auto;
+}
+.git-container {
+    border-radius: 10px;
+    position: absolute;
+    right: -350px;
+    top: 15px;
+    height: 320px;
+    width: 320px;
+    padding:20px;
+     background: linear-gradient(
+        180deg,
+        rgba(198, 230, 233, 0.849) 0%,
+        rgba(209, 237, 238, 0.603) 2%,
+        rgba(204, 240, 241, 0.521) 100%
+    );
+}
