@@ -47,7 +47,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 50%;
 }
 img {
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 .welcome-logo-name {
     margin-top: 15px;
@@ -244,9 +244,9 @@ img {
     background-color: rgb(90, 195, 198, 100);
     background: linear-gradient(
         180deg,
-        rgba(90, 195, 198, 1) 0%,
-        rgba(90, 195, 198, 1) 2%,
-        rgba(68, 144, 147, 1) 100%
+        rgb(102, 215, 223) 0%,
+        rgb(0, 255, 242) 2%,
+        rgb(68, 138, 147) 100%
     );
     position: relative;
     display: flex;
@@ -294,12 +294,15 @@ img {
     font-weight: bolder;
 }
 .alltrick-img {
-    position: fixed;
-    height: 120px;
+    position: absolute;
+    height: 160px;
     width: auto;
+    filter: brightness(95%);
 }
+
 .alltrick-img:hover {
     transform: scale(1.1);
+    filter: brightness(120%);
 }
 
 .profile-link {
@@ -307,51 +310,71 @@ img {
 }
 .quotedisplay {
     position: absolute;
-    top: 30%;
+    top: 20%;
     right: 10%;
     float: right;
-    width: 25%;
+    width: 30%;
     height: auto;
-    color: rgb(122, 121, 121);
+    color: rgba(101, 0, 104, 0.397);
     font-size: 20px;
-    
+    background-color: rgba(68, 219, 181, 0.5);
     border-radius: 12px;
     padding: 32px;
-   border: 2px solid rgba(0, 128, 128, 0.377);
+   box-shadow: -5px 10px 7px 5px rgba(83, 71, 71, 0.123);
 }
-.imageOne {
-    position: absolute;
-    right: -5px;
-    background-image: url("background.svg");
-    height:2000px;
-    width: 110vw;
-    background-size: cover;
-    z-index: 0;
-}
+
 
 #alltricks-list {
     border-radius: 20px;
     margin-top: 20px;
     margin-left: 5%;
     margin-right: 5%;
-    height: 700px;
+    height: 1500px;
     width: 40%;
     opacity: 100%;
-    position: fixed;
+    position: absolute;
     z-index: -0;
-    box-shadow: 0px 0px 25px 1px rgba(128, 128, 128, 0.37);
-    background: linear-gradient(#ffffffa2, #ffffffaf);
+    box-shadow: 5px 12px 8px 10px rgba(83, 71, 71, 0.123);
+     /* box-shadow: inset 0px 0px 65px 22px rgba(224, 243, 240, 0.13); */
+     
+  /* background: -webkit-linear-gradient(to right, #42888d, #b6ffef); Chrome 10-25, Safari 5.1-6 */
+  background: rgba(102, 215, 223, 0.548)  ; 
+}
+img {
+    position: absolute;
+   filter: drop-shadow(0 -6mm 10mm rgba(88, 88, 88, 0.212));
+    height: 1000px;
+    width: 99vw;
+    background-repeat: no-repeat;
+    filter: saturate(0.8);
+}
+.background2 {
+    background-size: cover;
+    position: absolute;
+    top: 738px;
+    z-index: -5;
+}
+.backTwoOne {
+     background: linear-gradient( #092025, #20c4e0);
+  height: 2000px;
+    width: 99vw;
+   
+}
+.backTwoFour {
+    z-index: 5;
 }
 
-#alltricks-list img {
+
+/* #alltricks-list img {
     opacity: 100%;
-    filter: drop-shadow(0px 15px 8px rgba(128, 128, 128, 0.493));
-}
+    transform: scale(1.5); 
+    /* filter: drop-shadow(0px 15px 8px rgba(128, 128, 128, 0.493)); */
+/* }  */
 .p {
-    color: rgb(255, 0, 0);
+    letter-spacing: 10px;
 }
 .tricks-gradient {
-    height: 1000px;
+    height: 800px;
     width: 100%;
     position: absolute;
     opacity: 100%;
@@ -359,8 +382,8 @@ img {
     border-radius: 7%;
     border-top: 0px solid rgb(255, 255, 255);
     margin-top: -80px;
-   
-    background: linear-gradient(rgb(255, 255, 255),rgba(179, 246, 255, 0));
+   background: linear-gradient(to right, #ffffff, #d3f8ff);
+    /* background: linear-gradient(rgb(255, 255, 255),rgba(0, 255, 255, 0.384)); */
     z-index: 0;
     background-size: cover;
 }
@@ -380,27 +403,27 @@ img {
 }
 .Lay {
     margin-top: 100px;
-    margin-left: 300px;
+    margin-left: 240px;
 }
 .Stay {
     margin-top: 200px;
-    margin-left: 550px;
+    margin-left: 300px;
 }
 .Paw {
-    /* margin-top: -600px; */
-    margin-left: 1200px;
+    margin-top: 100px;
+    margin-left: 120px;
 }
 .Leash {
-     /* margin-top: -350px; */
-    margin-left: 900px;
+     margin-top: 100px;
+    margin-left: 300px;
 }
 .HiFive {
-    /* margin-top: 60px; */
-    margin-left: 650px;
+    margin-top: 100px;
+    margin-left: 50px;
 }
 .Bang {
-    /* margin-top: -100px; */
-    margin-left: 1100px;
+    margin-top: 150px;
+    margin-left: 310px;
 }
 
 
