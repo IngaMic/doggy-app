@@ -123,7 +123,7 @@ export default class App extends React.Component {
                 <BrowserRouter>
                     <div>
                         <Link to="/">
-                            <img id="logodog" src="/dog3.png"></img>
+                            <img id="logodog" src="/applogo.svg"></img>
                         </Link>
                     </div>
                     <div className="flex">
