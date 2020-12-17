@@ -8,13 +8,13 @@
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="505.19839mm"
-   height="503.54483mm"
-   viewBox="0 0 505.19839 503.54483"
+   width="539.30676mm"
+   height="532.8587mm"
+   viewBox="0 0 539.30676 532.8587"
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="applogo.svg"
+   sodipodi:docname="logo.svg"
    inkscape:export-filename="C:\Users\Dell\Desktop\Dan\doglogoteal.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
@@ -38,8 +38,8 @@
        id="linearGradient1545"
        x1="2224.0166"
        y1="-5596.2896"
-       x2="1833.469"
-       y2="-6122.4766"
+       x2="1742.0334"
+       y2="-6119.2681"
        gradientUnits="userSpaceOnUse"
        gradientTransform="translate(-1891.0334,5836.162)" />
     <linearGradient
@@ -63,17 +63,17 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.16493849"
-     inkscape:cx="1018.0651"
-     inkscape:cy="1293.2033"
+     inkscape:cx="289.08295"
+     inkscape:cy="1403.9958"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
      showgrid="false"
      inkscape:snap-global="false"
-     inkscape:window-width="1366"
-     inkscape:window-height="746"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
+     inkscape:window-width="1920"
+     inkscape:window-height="1051"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
      inkscape:window-maximized="1" />
   <metadata
      id="metadata5">
@@ -91,7 +91,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(88.977585,266.20962)">
+     transform="translate(123.08593,295.52348)">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
@@ -193,5 +193,36 @@
            ry="0.50743097" />
       </g>
     </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:42.1347px;line-height:1.25;font-family:sans-serif;fill:#008080;fill-opacity:1;stroke:#008080;stroke-width:1.05337"
+       id="text11542"
+       inkscape:transform-center-x="34.618547"
+       inkscape:transform-center-y="-67.469642"
+       transform="matrix(-1.0246983,-0.075329,0.075329,-1.0246983,348.63001,8.7646653)"><textPath
+         xlink:href="#circle2244"
+         id="textPath11540"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:61.2321px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#008080;stroke:#008080">RED THE DOG</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:42.1347px;line-height:1.25;font-family:sans-serif;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:1.05337"
+       id="text32"
+       inkscape:transform-center-x="28.585837"
+       inkscape:transform-center-y="-62.777422"
+       transform="matrix(-1.0246983,-0.075329,0.075329,-1.0246983,354.66272,13.456886)"><textPath
+         xlink:href="#circle2244"
+         id="textPath38"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:61.2321px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;stroke:#ffffff">RED THE DOG</textPath></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:10.5833px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       x="166.07962"
+       y="-218.08562"
+       id="text36"><tspan
+         sodipodi:role="line"
+         id="tspan34"
+         x="166.07962"
+         y="-218.08562"
+         style="stroke-width:0.264583" /></text>
   </g>
 </svg>

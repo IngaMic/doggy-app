@@ -48,6 +48,26 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
    something they shouldn’t or keep them safe in an emergency situation.  It is important to have patience with your dog, 
    and to keep training sessions short and sweet, ending on a high note.'
 );
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'Leash',
+    '/walk.svg',
+  'It is easy to forget that walking on a leash is not a natural behaviour for a dog - in fact, it is a bit counter-intuitive
+   for creatures which naturally walk much quicker than we do and who would much rather trot from smell to smell than follow
+    the pavement.  For this reason it is important to start small when leash training and make sure you are constantly
+     encouraging your dog, even if it is slow going at first.  '
+);
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'Paw',
+    '/paw.svg',
+  'Shaking hands / giving a paw is a simple trick that can be great fun for both you and your dog to learn. “Dogs naturally 
+  use their paws more than you might think so this shouldn’t take too long”. It is important that your dog is already an 
+  expert at sitting on command, and as always that you start in a quiet environment where your dog can fully focus!'
+);
+INSERT INTO tricks (tname, imagebub, descr) VALUES (
+    'PawsUp',
+    '/pawsup.png',
+  'this is a description of Paws Up command'
+);
 
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'HiFive',
@@ -59,23 +79,4 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
     '/handgradient.png',
   'this is a description of bang command'
 );
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
-    'Leash',
-    '/leash.png',
-  'It is easy to forget that walking on a leash is not a natural behaviour for a dog - in fact, it is a bit counter-intuitive
-   for creatures which naturally walk much quicker than we do and who would much rather trot from smell to smell than follow
-    the pavement.  For this reason it is important to start small when leash training and make sure you are constantly
-     encouraging your dog, even if it is slow going at first.  '
-);
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
-    'PawsUp',
-    '/pawsup.png',
-  'this is a description of Paws Up command'
-);
-INSERT INTO tricks (tname, imagebub, descr) VALUES (
-    'Paw',
-    '/pawstep0.gif',
-  'Shaking hands / giving a paw is a simple trick that can be great fun for both you and your dog to learn. “Dogs naturally 
-  use their paws more than you might think so this shouldn’t take too long”. It is important that your dog is already an 
-  expert at sitting on command, and as always that you start in a quiet environment where your dog can fully focus!'
-);
+

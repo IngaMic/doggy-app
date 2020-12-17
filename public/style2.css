@@ -442,42 +442,43 @@ img {
      transition: 0.22s;
 }
 .Sit {
-    margin-top: 60px;
+    margin-top: 50px;
     margin-left: 120px;
 }
 
 .Come {
-    margin-top: 160px;
-    margin-left: 60px;
+    margin-top: 180px;
+    margin-left: 180px;
 }
 .Lay {
-    margin-top: 200px;
+     margin-top: 180px;
     margin-left: 300px;
 }
 .Stay {
-    margin-top: 200px;
+     margin-top: 180px;
     margin-left: 300px;
 }
 .Leash {
-     margin-top: 100px;
+      margin-top: 180px;
     margin-left: 300px;
 }
 .HiFive {
-    margin-top: 100px;
+   margin-top: 180px;
     margin-left: 120px;
 }
 
 .Paw {
-    margin-top: 100px;
+    margin-top: 180px;
     margin-left: 50px;
 }
 .Bang {
-    margin-top: 150px;
+     margin-top: 180px;
     margin-left: 310px;
 }
 
 
-.oneTrick {
+.PawsUp{
+     margin-top: 180px;
     margin-left: 50px;
 }
 .oneTrick img {

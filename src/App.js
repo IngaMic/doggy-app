@@ -68,8 +68,11 @@ export default class App extends React.Component {
                 otherUsers: resp.data.list,
             });
         });
-         axios.get("/questionaire").then((resp) => {
-             console.log("resp after App component mounts and questionaire", resp);
+        axios.get("/questionaire").then((resp) => {
+            console.log(
+                "resp after App component mounts and questionaire",
+                resp
+            );
             this.setState({
                 answers: resp.data.answers,
             });
@@ -123,7 +126,7 @@ export default class App extends React.Component {
                 <BrowserRouter>
                     <div>
                         <Link to="/">
-                            <img id="logodog" src="/applogo.svg"></img>
+                            <img id="logodog" src="/logo.png"></img>
                         </Link>
                     </div>
                     <div className="flex">
@@ -229,9 +232,7 @@ export default class App extends React.Component {
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
                                         cd={this.state.cd}
-                                        
                                         otherUsers={this.state.otherUsers}
-                                       
                                     />
                                 )}
                             />

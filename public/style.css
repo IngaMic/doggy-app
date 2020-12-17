@@ -218,8 +218,8 @@ img {
 /* DASHBOARD PAGE */
 #logodog {
     margin-top: 15px;
-    border: 5px solid white;
-    border-radius: 50%;
+
+    border-radius: 0%;
     margin-left: 25px;
     height: 150px;
     width: 150px;
@@ -362,7 +362,7 @@ img {
     margin-left: 1200px;
 }
 .Leash {
-     margin-top: -350px;
+    margin-top: -350px;
     margin-left: 900px;
 }
 .HiFive {
@@ -408,7 +408,7 @@ img {
     width: 85%;
     border-radius: 15px;
     background-color: rgb(64, 178, 182);
-    
+
     margin-bottom: 20px;
     margin-left: 50px;
     top: 30px;
@@ -423,8 +423,8 @@ img {
     padding: 55px;
     border-radius: 20px;
     box-shadow: 2px 5px 12px 20px #d6e0e01a;
-     border-left: 10px solid white;
-      border-bottom: 10px solid white;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
     font-size: larger;
     font-size: larger;
     color: rgb(64, 178, 182);
@@ -827,9 +827,8 @@ img {
     padding: 20px;
     background-color: #5fd1d9;
     color: #fff;
-    font-weight: bold;   
+    font-weight: bold;
     left: 105%;
-   
 }
 .training-level,
 .character-level,
@@ -985,12 +984,12 @@ textarea {
     margin-left: 200px;
     object-fit: scale-down;
 }
-.activity-log{
+.activity-log {
     margin-top: 100px;
     margin-left: 50px;
-    position: relative;   
+    position: relative;
 }
-.diaryContainer{
+.diaryContainer {
     top: -80px;
     left: 30px;
     height: 200px;
@@ -1007,7 +1006,7 @@ textarea {
     flex-direction: column;
 }
 .diary-form div {
-margin: 15px;
+    margin: 15px;
     background-color: rgb(90, 195, 198, 100);
     background: linear-gradient(
         180deg,
@@ -1015,33 +1014,33 @@ margin: 15px;
         rgba(90, 195, 198, 1) 2%,
         rgb(84, 184, 187) 100%
     );
-border-radius: 15px;
-padding: 5px 15px;
-width: 70%;
+    border-radius: 15px;
+    padding: 5px 15px;
+    width: 70%;
 }
 #activity-label {
-  margin-right: 45px;
+    margin-right: 45px;
 }
 #time-label {
-  margin-right: 80px;
+    margin-right: 80px;
 }
 #activity {
-  border-radius: 15px;
-  width: 220px;
-  left: 30%;
+    border-radius: 15px;
+    width: 220px;
+    left: 30%;
 }
 #time {
-   border-radius: 15px;
-  width: 220px;
-  left: 30%;
+    border-radius: 15px;
+    width: 220px;
+    left: 30%;
 }
 
 #submit-diary {
- position: absolute;
- right: 40px;
- top: 20%;
- height: 50%;
- border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    height: 50%;
+    border-radius: 50%;
 }
 #submit-diary img {
     height: 100px;
@@ -1062,7 +1061,6 @@ width: 70%;
     height: 40px;
     text-align: center;
     vertical-align: middle;
-  
 }
 .activity-img {
     height: 60px;
@@ -1074,13 +1072,13 @@ width: 70%;
     left: -20px;
 }
 .activity-user p {
-   position: relative;
-   font-size: 15px;
-   left: -15px;
-   margin: 5px;
+    position: relative;
+    font-size: 15px;
+    left: -15px;
+    margin: 5px;
 }
 .dogwalk-record {
-    font-size: 20px ;
+    font-size: 20px;
     margin: 10px;
     width: 270px;
     background-color: #5fd1d9;
@@ -1092,11 +1090,11 @@ width: 70%;
     position: relative;
 }
 .dogwalk-record #record {
- position: relative;
- float: right;
- margin-left: 80px;
- margin-top: auto;
-  margin-bottom: auto;
+    position: relative;
+    float: right;
+    margin-left: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .git-container {
     border-radius: 10px;
@@ -1105,8 +1103,8 @@ width: 70%;
     top: 15px;
     height: 320px;
     width: 320px;
-    padding:20px;
-     background: linear-gradient(
+    padding: 20px;
+    background: linear-gradient(
         180deg,
         rgba(198, 230, 233, 0.849) 0%,
         rgba(209, 237, 238, 0.603) 2%,

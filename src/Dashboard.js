@@ -80,7 +80,7 @@ export default function Tricks() {
                             />
                           
                         </Link>
-                        <p data-rate="-0.35">{trick.tname}</p>
+                        <p data-rate="-0.34">{trick.tname}</p>
                     </div>
                   
                 </div>
