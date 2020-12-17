@@ -1,9 +1,8 @@
-
-
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveTricks, receiveQuotes } from "./actions";
+import Article1 from "/Article1";
 
 export default function Tricks() {
     const dispatch = useDispatch();
@@ -49,22 +48,21 @@ export default function Tricks() {
         // });
         //console.log("todo tricks from tricks", trickstodo);
     }
-     
 
-     
-    window.addEventListener("scroll", function(e) {
+    window.addEventListener("scroll", function () {
         const target = document.querySelectorAll("img, p");
         // const text = document.querySelectorAll("p")
-        var index = 0, length = target.length;
-        for (index; index<length; index++) {
-        var pos = window.pageYOffset * target[index].dataset.rate;
-        
-        target[index].style.transform = 'translate3d(0px, '+pos+'px, 9px)'
-        console.log(target);
+        var index = 0,
+            length = target.length;
+        for (index; index < length; index++) {
+            var pos = window.pageYOffset * target[index].dataset.rate;
+
+            target[index].style.transform =
+                "translate3d(0px, " + pos + "px, 9px)";
+            console.log(target);
         }
-    })
+    });
     var alltricks = (
-        
         <div id="alltricks-list">
             {/* <h1 className="trickHeader">TRICKS</h1> */}
             {tricks.map((trick, i) => (
@@ -72,22 +70,20 @@ export default function Tricks() {
                     <div className={trick.tname}>
                         <Link to={`/trick/${trick.id}`}>
                             <img
-                                className="alltrick-img" data-rate="-0.35" data-direction="vertical"
+                                className="alltrick-img"
+                                data-rate="-0.35"
+                                data-direction="vertical"
                                 src={
                                     trick.imagebub ||
                                     "https://cdn.pixabay.com/photo/2016/12/13/05/15/puppy-1903313__340.jpg"
                                 }
                             />
-                          
                         </Link>
                         <p data-rate="-0.34">{trick.tname}</p>
                     </div>
-                  
                 </div>
             ))}
-              
         </div>
-        
     );
     var quote = (
         <div>
@@ -155,33 +151,77 @@ export default function Tricks() {
     // );
     return (
         <div className="tricks-container">
-           
-           <div className="tricks-gradient">
-               <div className="background1">
-               <img className="backOneOne"data-rate="-0.6" src="\1.svg" opacity="2"></img>
-               <img className="backOneTwo"data-rate="-0.3" src="\2.svg"></img>
-               <img className="backOneThree"data-rate="-0.2" src="\3.svg"></img>
-               <img className="backOneFour"data-rate="-0.6" src="\4.svg"></img>
-               <img className="backOneFive"data-rate="-0.7" src="\5.svg"></img>
-               </div>
-               <div className="background2">
-               <img className="backTwoOne"data-rate="-0.6"></img>
-               <img className="backTwoTwo"data-rate="-0.1" src="\a4.svg"></img>
-               <img className="backTwoFour"data-rate="-0.4" src="\a1.svg"></img>
-               <img className="backTwoFive"data-rate="-1.1" src="\a2.svg"></img>
-                <img className="backTwoThree"data-rate="-0.2" src="\a3.svg"></img>
-               </div>
+            <div className="tricks-gradient">
+                <div className="background1">
+                    <img
+                        className="backOneOne"
+                        data-rate="-0.6"
+                        src="\1.svg"
+                        opacity="2"
+                    ></img>
+                    <img
+                        className="backOneTwo"
+                        data-rate="-0.3"
+                        src="\2.svg"
+                    ></img>
+                    <img
+                        className="backOneThree"
+                        data-rate="-0.2"
+                        src="\3.svg"
+                    ></img>
+                    <img
+                        className="backOneFour"
+                        data-rate="-0.6"
+                        src="\4.svg"
+                    ></img>
+                    <img
+                        className="backOneFive"
+                        data-rate="-0.7"
+                        src="\5.svg"
+                    ></img>
+                </div>
                 <div className="background2">
-               <img className="backThreeOne"data-rate="-0.1"></img>
-               <img className="backThreeTwo"data-rate="-0.35" src="\b1.svg"></img>
-               <img className="backThreeThree"data-rate="-0.3" src="\b2.svg"></img>
-               <div className="articles">
-                   <div className="latestArticles">LATEST ARTICLES</div>
-               </div>
-               </div>
-               
-           </div>
-           
+                    <img className="backTwoOne" data-rate="-0.6"></img>
+                    <img
+                        className="backTwoTwo"
+                        data-rate="-0.1"
+                        src="\a4.svg"
+                    ></img>
+                    <img
+                        className="backTwoFour"
+                        data-rate="-0.4"
+                        src="\a1.svg"
+                    ></img>
+                    <img
+                        className="backTwoFive"
+                        data-rate="-1.1"
+                        src="\a2.svg"
+                    ></img>
+                    <img
+                        className="backTwoThree"
+                        data-rate="-0.2"
+                        src="\a3.svg"
+                    ></img>
+                </div>
+                <div className="background2">
+                    <img className="backThreeOne" data-rate="-0.1"></img>
+                    <img
+                        className="backThreeTwo"
+                        data-rate="-0.35"
+                        src="\b1.svg"
+                    ></img>
+                    <img
+                        className="backThreeThree"
+                        data-rate="-0.3"
+                        src="\b2.svg"
+                    ></img>
+                    <div className="articles">
+                        <div className="latestArticles">LATEST ARTICLES</div>
+                        <Article1 />
+                    </div>
+                </div>
+            </div>
+
             {/* <img src="background.png" className="tricksbg"></img> */}
             {/* <div id="tricksdone">
                 {!tricks.length && <h5>No tricks yet!</h5>}
@@ -195,7 +235,7 @@ export default function Tricks() {
                 {!tricks.length && <h5>No tricks yet!</h5>}
                 {!!tricks.length && alltricks}
             </div>
-            
+
             <div className="quotedisplay">
                 {!qts.length && <h5>No quotes yet!</h5>}
                 {!!qts.length && quote}

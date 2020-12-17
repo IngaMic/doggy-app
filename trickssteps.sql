@@ -176,7 +176,7 @@
 Wait for your dog to stretch out his paw to you. This may not take long if your dog regularly uses his paws to get your attention
  or play. If this is not how your dog uses his paws, do not respond if he uses his mouth, but when he lifts his paw, even if it is just slightly off the ground, immediately give
   him verbal praise ("good doggy", "yes") and open your fist to give him the treat.',
-    '/pawstep1.gif',
+    '/bangstep1.gif',
      'Once your dog consistently lifts his paw in response to the ‘fisted’ treat, add in a verbal cue to the trick. Say the cue
       after you have closed your fist, and before he lifts his paw to get the treat. Do not repeat the verbal cue to get your 
       dog to follow your command. If your dog does not respond the first time, it could be that he does not yet understand 

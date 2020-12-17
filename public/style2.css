@@ -8,14 +8,14 @@ body {
 body::-webkit-scrollbar {
     width: 1em;
 }
- 
+
 body::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.164);
 }
- 
+
 body::-webkit-scrollbar-thumb {
-  background-color: rgb(46, 186, 189);
-  outline: 1px solid rgb(201, 248, 252);
+    background-color: rgb(46, 186, 189);
+    outline: 1px solid rgb(201, 248, 252);
 }
 .grid-one {
     border-radius: 20px;
@@ -190,8 +190,6 @@ img {
     main {
         background-color: rgba(192, 192, 224, 0.815);
         z-index: -1;
-        
-  
     }
     .login,
     .registration {
@@ -238,7 +236,6 @@ img {
     position: absolute;
     z-index: 1;
     filter: hue-rotate(13deg);
-
 }
 .links {
     color: white;
@@ -300,13 +297,10 @@ img {
     width: auto;
     filter: brightness(95%);
     transition: 0.2s;
-    
 }
 
 .alltrick-img:hover {
-   
     filter: brightness(120%);
-    
 }
 
 .profile-link {
@@ -325,10 +319,9 @@ img {
     background-color: rgba(255, 123, 0, 0);
     border-radius: 12px;
     padding: 32px;
-   /* box-shadow: -5px 10px 7px 5px rgba(83, 71, 71, 0.123); */
-   z-index: 0;
+    /* box-shadow: -5px 10px 7px 5px rgba(83, 71, 71, 0.123); */
+    z-index: 0;
 }
-
 
 #alltricks-list {
     border-radius: 20px;
@@ -341,11 +334,11 @@ img {
     position: absolute;
     z-index: -0;
     box-shadow: 5px 12px 8px 10px rgba(83, 71, 71, 0.123);
-   background: rgba(173, 231, 238, 0.89)  ; 
+    background: rgba(173, 231, 238, 0.89);
 }
 img {
     position: absolute;
-   filter: drop-shadow(0 -6mm 10mm rgba(88, 88, 88, 0.212));
+    filter: drop-shadow(0 -6mm 10mm rgba(88, 88, 88, 0.212));
     height: 1000px;
     width: 99vw;
     background-repeat: no-repeat;
@@ -371,25 +364,23 @@ img {
     top: 734px;
     z-index: -5;
     height: 800px;
-    
 }
 .backTwoOne {
-     background: linear-gradient( #092025, #20c4e0);
-  height: 1700px;
+    background: linear-gradient(#092025, #20c4e0);
+    height: 1700px;
     width: 99vw;
     overflow: hidden;
-   
 }
 .backTwoFour {
     z-index: 5;
 }
 .backThreeOne {
     position: relative;
-     background: #fff569;
-     border-bottom: 4px solid white;
-  height: 200px;
-  top: 1000px;
-  /* border-top: 2px solid black; */
+    background: #fff569;
+    border-bottom: 4px solid white;
+    height: 200px;
+    top: 1000px;
+    /* border-top: 2px solid black; */
 }
 .backThreeTwo {
     position: relative;
@@ -402,7 +393,6 @@ img {
     position: relative;
     top: -600px;
 }
-
 
 /* #alltricks-list img {
     opacity: 100%;
@@ -419,7 +409,7 @@ img {
     opacity: 100%;
     border-radius: 7%;
     margin-top: -80px;
-   background: linear-gradient(to right, #ffffff, #75d8ec);
+    background: linear-gradient(to right, #ffffff, #75d8ec);
     z-index: 0;
     background-size: cover;
 }
@@ -432,14 +422,14 @@ img {
     background: linear-gradient(to right, rgb(0, 163, 163), rgb(0, 140, 182));
     color: rgb(255, 255, 255);
     max-width: 120px;
-  text-align: center;
-  border-radius: 25px;
-  font-size: 30px;
-  font-weight: 600;
-  box-shadow: -2px -2px 5px 3px rgba(0, 0, 0, 0.11);
-   text-transform: uppercase;
-   font-family: Arial, Helvetica, sans-serif;
-     transition: 0.22s;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 30px;
+    font-weight: 600;
+    box-shadow: -2px -2px 5px 3px rgba(0, 0, 0, 0.11);
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.22s;
 }
 .Sit {
     margin-top: 50px;
@@ -448,38 +438,37 @@ img {
 
 .Come {
     margin-top: 180px;
-    margin-left: 180px;
+    margin-left: 80px;
 }
 .Lay {
-     margin-top: 180px;
+    margin-top: 170px;
     margin-left: 300px;
 }
 .Stay {
-     margin-top: 180px;
-    margin-left: 300px;
+    margin-top: 140px;
+    margin-left: 360px;
 }
 .Leash {
-      margin-top: 180px;
-    margin-left: 300px;
+    margin-top: 140px;
+    margin-left: 80px;
 }
 .HiFive {
-   margin-top: 180px;
-    margin-left: 120px;
+    margin-top: 140px;
+    margin-left: 340px;
 }
 
 .Paw {
-    margin-top: 180px;
-    margin-left: 50px;
+    margin-top: 140px;
+    margin-left: 340px;
 }
 .Bang {
-     margin-top: 180px;
-    margin-left: 310px;
+    margin-top: 120px;
+    margin-left: 60px;
 }
 
-
-.PawsUp{
-     margin-top: 180px;
-    margin-left: 50px;
+.PawsUp {
+    margin-top: 120px;
+    margin-left: 60px;
 }
 .oneTrick img {
     width: 300px;
@@ -503,7 +492,8 @@ img {
     width: 95%;
 }
 
-.trick-step, .trick-step img {
+.trick-step,
+.trick-step img {
     padding: 20px;
     display: flex;
     flex-direction: row;
@@ -516,7 +506,6 @@ img {
     margin-bottom: 20px;
     margin-left: 50px;
     top: 30px;
-   
 }
 .trick-step p {
     position: absolute;
@@ -528,8 +517,8 @@ img {
     padding: 55px;
     border-radius: 20px;
     box-shadow: 2px 5px 12px 20px #d6e0e01a;
-     border-left: 10px solid white;
-      border-bottom: 10px solid white;
+    border-left: 10px solid white;
+    border-bottom: 10px solid white;
     font-size: larger;
     font-size: larger;
     color: rgb(64, 178, 182);
@@ -601,7 +590,7 @@ img {
     bottom: -450px;
     height: 200px;
     width: 99vw;
-      background: linear-gradient(
+    background: linear-gradient(
         180deg,
         rgb(102, 215, 223) 0%,
         rgb(0, 255, 242) 2%,
@@ -618,7 +607,7 @@ img {
     color: rgb(90, 180, 192);
     border-top: 4px solid white;
     background: rgb(255, 255, 255);
-     box-shadow: 0px -4px 1px 2px #7575751f;
+    box-shadow: 0px -4px 1px 2px #7575751f;
     padding: 10px;
     border-radius: 20px;
     top: -40px;
@@ -959,9 +948,8 @@ img {
     padding: 20px;
     background-color: #5fd1d9;
     color: #fff;
-    font-weight: bold;   
+    font-weight: bold;
     left: 105%;
-   
 }
 .training-level,
 .character-level,
@@ -1117,12 +1105,12 @@ textarea {
     margin-left: 200px;
     object-fit: scale-down;
 }
-.activity-log{
+.activity-log {
     margin-top: 100px;
     margin-left: 50px;
-    position: relative;   
+    position: relative;
 }
-.diaryContainer{
+.diaryContainer {
     top: -80px;
     left: 30px;
     height: 200px;
@@ -1139,7 +1127,7 @@ textarea {
     flex-direction: column;
 }
 .diary-form div {
-margin: 15px;
+    margin: 15px;
     background-color: rgb(90, 195, 198, 100);
     background: linear-gradient(
         180deg,
@@ -1147,33 +1135,33 @@ margin: 15px;
         rgba(90, 195, 198, 1) 2%,
         rgb(84, 184, 187) 100%
     );
-border-radius: 15px;
-padding: 5px 15px;
-width: 70%;
+    border-radius: 15px;
+    padding: 5px 15px;
+    width: 70%;
 }
 #activity-label {
-  margin-right: 45px;
+    margin-right: 45px;
 }
 #time-label {
-  margin-right: 80px;
+    margin-right: 80px;
 }
 #activity {
-  border-radius: 15px;
-  width: 220px;
-  left: 30%;
+    border-radius: 15px;
+    width: 220px;
+    left: 30%;
 }
 #time {
-   border-radius: 15px;
-  width: 220px;
-  left: 30%;
+    border-radius: 15px;
+    width: 220px;
+    left: 30%;
 }
 
 #submit-diary {
- position: absolute;
- right: 40px;
- top: 20%;
- height: 50%;
- border-radius: 50%;
+    position: absolute;
+    right: 40px;
+    top: 20%;
+    height: 50%;
+    border-radius: 50%;
 }
 #submit-diary img {
     height: 100px;
@@ -1194,7 +1182,6 @@ width: 70%;
     height: 40px;
     text-align: center;
     vertical-align: middle;
-  
 }
 .activity-img {
     height: 60px;
@@ -1206,13 +1193,13 @@ width: 70%;
     left: -20px;
 }
 .activity-user p {
-   position: relative;
-   font-size: 15px;
-   left: -15px;
-   margin: 5px;
+    position: relative;
+    font-size: 15px;
+    left: -15px;
+    margin: 5px;
 }
 .dogwalk-record {
-    font-size: 20px ;
+    font-size: 20px;
     margin: 10px;
     width: 270px;
     background-color: #5fd1d9;
@@ -1224,11 +1211,11 @@ width: 70%;
     position: relative;
 }
 .dogwalk-record #record {
- position: relative;
- float: right;
- margin-left: 80px;
- margin-top: auto;
-  margin-bottom: auto;
+    position: relative;
+    float: right;
+    margin-left: 80px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .git-container {
     border-radius: 10px;
@@ -1237,8 +1224,8 @@ width: 70%;
     top: 15px;
     height: 320px;
     width: 320px;
-    padding:20px;
-     background: linear-gradient(
+    padding: 20px;
+    background: linear-gradient(
         180deg,
         rgba(198, 230, 233, 0.849) 0%,
         rgba(209, 237, 238, 0.603) 2%,
