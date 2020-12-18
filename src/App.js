@@ -8,6 +8,7 @@ import Diary from "./Diary";
 import Trick from "./Trick";
 import Uploader from "./Uploader";
 import Invitation from "./Invitation";
+import ArticleO from "./ArticleO";
 /////////////////////////////////////////////////////////////
 export default class App extends React.Component {
     constructor() {
@@ -31,6 +32,7 @@ export default class App extends React.Component {
             otherUsers: [],
             uploaderIsVisible: false,
             invitationIsVisible: false,
+            art1IsVisible: false,
             error: false,
         };
     }
@@ -108,6 +110,10 @@ export default class App extends React.Component {
         e.preventDefault();
         this.setState({ invitationIsVisible: true });
     }
+    openArt1(e) {
+        e.preventDefault();
+        this.setState({ art1IsVisible: true });
+    }
     setImage(imageUrl) {
         this.setState({ imageUrl: imageUrl });
     }
@@ -149,6 +155,11 @@ export default class App extends React.Component {
                                         first={this.state.first}
                                         last={this.state.last}
                                         imageUrl={this.state.imageUrl}
+                                        openArt1={() =>
+                                            this.setState({
+                                                art1IsVisible: true,
+                                            })
+                                        }
                                     />
                                 )}
                             />
@@ -258,6 +269,13 @@ export default class App extends React.Component {
                             userId={this.state.logUserId}
                             closeInvitation={() => {
                                 this.setState({ invitationIsVisible: false });
+                            }}
+                        />
+                    )}
+                    {this.state.art1IsVisible && (
+                        <ArticleO
+                            closeArt1={() => {
+                                this.setState({ art1IsVisible: false });
                             }}
                         />
                     )}

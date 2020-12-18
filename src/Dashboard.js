@@ -2,9 +2,8 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { receiveTricks, receiveQuotes } from "./actions";
-import Article1 from "/Article1";
 
-export default function Tricks() {
+export default function Tricks({ openArt1 }) {
     const dispatch = useDispatch();
     const tricks = useSelector(
         (state) => state.tricks
@@ -217,7 +216,10 @@ export default function Tricks() {
                     ></img>
                     <div className="articles">
                         <div className="latestArticles">LATEST ARTICLES</div>
-                        <Article1 />
+                        <button
+                            className="artOneButton"
+                            onClick={openArt1}
+                        ></button>
                     </div>
                 </div>
             </div>

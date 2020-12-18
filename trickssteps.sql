@@ -76,16 +76,9 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     4,
     '/staystep0.gif',
-    ' NEEDS CHANGE Sit down on a chair and ask your dog to sit in front of you, wait until you get your dogs full attention. 
-   When your dog is sitting nicely, show him a treat and ask him to wait. Slowly place the treat onto your knee whilst
-    your dog is watching you. If the dog moves or reaches for the treat take it away very quickly and ask him once again
-     to sit and wait. Repeat it as many times as you need to until you can put the treat on your knee
-      without the dog moving or trying to take it, always use the word wait. You may start with only a couple of seconds of suspense,
-      if you see that your puppy waits, reward him.',
+    ' NEEDS CHANGE ',
     '/staystep1.gif',
-     'Eventually your dog will sit and wait despite the tempting treat on your knee often he will look directly into your eyes,
-      pleading for his treat. Now you should experiment with longer waiting times and bigger distance between you and the dog. Keep a 
-      treat in your hand and reward your dog only after he remains calm and waits. You might need to step down a bit after a break
+     'NEEDS CHANGE Keep a treat in your hand and reward your dog only after he remains calm and waits. You might need to step down a bit after a break
        between training and build up to a longer time and greater distance.',
     '/staystep2.gif',
      'Once you can move around your dog freely while they remain in a stay, see if you can quickly pop out of sight and then
@@ -96,45 +89,6 @@
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     5,
-    '/pawstep1.gif',
-    ' If your dog already sits on command, you are off to a good start. If you already know "paw" trick, it will also be easier
-    because your dog is used to having his paws touched. While this is a fairly easy trick for your dog to learn,
-     it takes repetition and consistency for him to retain it.',
-    '/pawstep1.gif',
-     'After you are comfortable with the fist step it is time to introduce the voice command. Say "sit" as the 
-     dog sits and reward him with a treat. When your dog’s rear end makes contact with the ground, say “sit” in a firm voice,
-       then immediately offer him the treat as a reward for sitting. Reinforce the treat reward with praise, because in
-       the next step you will have to remove the treat, but let your dog know the he has done well.',
-    '/pawstep2.gif',
-     'When you first start training with the treat trick, give your dog a treat each time he sits.
-      Be sure you always offer enthusiastic praise as well. After a week or two, when your dog is reliably 
-      sitting for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
-      towards getting the dog to sit with your hand signal and the “sit” command with no treat,
-      then with only the “sit” command.',
-    '/pawstep3.gif'
-);
-    INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
-    6,
-    '/pawstep3.gif',
-    ' BAND BAND BANG As with the teaching of all behaviors, the first step is to get your dogs full attention.
-    Hold a treat in your hand so that he knows you have it, but also so that he cannot nip it from your hand.
-    Keep the treat very close to the dog’s nose, then slowly raise it over the top of his head. He will follow the treat with his eyes and nose,
-     looking upward and in the process placing his bottom on the ground.',
-    '/pawstep1.gif',
-     'After you are comfortable with the fist step it is time to introduce the voice command. Say "sit" as the 
-     dog sits and reward him with a treat. When your dog’s rear end makes contact with the ground, say “sit” in a firm voice,
-       then immediately offer him the treat as a reward for sitting. Reinforce the treat reward with praise, because in
-       the next step you will have to remove the treat, but let your dog know the he has done well.',
-    '/pawstep2.gif',
-     'When you first start training with the treat trick, give your dog a treat each time he sits.
-      Be sure you always offer enthusiastic praise as well. After a week or two, when your dog is reliably 
-      sitting for treats, offer the treats intermittently but continue to offer praise. You will (slowly) work 
-      towards getting the dog to sit with your hand signal and the “sit” command with no treat,
-      then with only the “sit” command.',
-    '/pawstep3.gif'
-);
-    INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
-    7,
     '/leashstep0.gif',
     ' Start by letting your dog wear a collar (or harness) and leash for short periods of time while doing other things around
      the house, be it playing, training, or even feeding.  Either way, your dog should build only positive associations with wearing 
@@ -143,40 +97,21 @@
      'When you get outside, your dog will want to run off and explore, so it is important to have high-value rewards at hand.
       Keep your dog close to you as you walk and keep attention and rewards regular, only reducing regularity when you are confident
        that they will stay by your side.  ',
-    '/pawstep2.gif',
+    '/leashstep2.gif',
      'If your dog starts pulling in the other direction, stop walking. Stand very still and refuse to move until your dog comes back to 
      you. Do not yank or jerk the leash, and do not drag your dog along with you. If your dog is going after something while on a walk 
      — another dog, a car, be proactive. Try to redirect his attention with a treat and keep him focused on you. ',
     '/leashstep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
-    8,
-    '/pawsupstep0.gif',
-    ' PAWS UP PAWS UP Start out your leash training by letting your pup get used to wearing a collar or harness and a leash at home. 
-  You could start leaving the leash on for short periods of time, for example while you are training,
-   playing and giving your dog treats. The puppy should love collar-and-leash time 
-   because it represents food and fun. ',
-    '/pawsupstep1.gif',
-     'After you introduced walking on a leash to your dog at home, take your training outside. You should get in the habit of carrying small, 
-    easily chewable treats for your puppy during the training process. 
-    Gradually you’ll reduce the number of treats and the amount of troubleshooting that your puppy
-     needs during a walk.',
-    '/pawsupstep2.gif',
-     'If your dog starts pulling in the other direction, stop walking. 
-     Stand very still and refuse to move until your dog comes back to you. Do not yank or 
-     jerk the leash, and do not drag your dog along with you.  If your dog is going after something while
-      on a walk — another dog, a car, be proactive. Try to redirect his attention with a treat and keep him focused on you.',
-    '/pawsupstep3.gif'
-);
-    INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
-    9,
+    6,
     '/pawstep0.gif',
     ' As with the teaching of all behaviors, the first step is to get your dogs full attention. Start at a sitting position, show 
     your dog a treat to get his attention, and then create a fist to hide the treat. 
 Wait for your dog to stretch out his paw to you. This may not take long if your dog regularly uses his paws to get your attention
  or play. If this is not how your dog uses his paws, do not respond if he uses his mouth, but when he lifts his paw, even if it is just slightly off the ground, immediately give
   him verbal praise ("good doggy", "yes") and open your fist to give him the treat.',
-    '/bangstep1.gif',
+    '/pawstep1.gif',
      'Once your dog consistently lifts his paw in response to the ‘fisted’ treat, add in a verbal cue to the trick. Say the cue
       after you have closed your fist, and before he lifts his paw to get the treat. Do not repeat the verbal cue to get your 
       dog to follow your command. If your dog does not respond the first time, it could be that he does not yet understand 
@@ -187,3 +122,37 @@ Wait for your dog to stretch out his paw to you. This may not take long if your 
        will be distractions (e.g., cars, people, other dogs). ',
     '/pawstep3.gif'
 );
+    INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
+    7,
+    '/pawsupstep0.gif',
+    ' PAWS UP PAWS UP  ',
+    '/pawsupstep1.gif',
+     'PAWS UP PAWS UP',
+    '/pawsupstep2.gif',
+     'PAWS UP PAWS UP',
+    '/pawsupstep3.gif'
+);
+  INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
+    8,
+    '/pawstep1.gif',
+    ' If your dog already sits on command, you are off to a good start. If you already know "paw" trick, it will also be easier
+    because your dog is used to having his paws touched. While this is a fairly easy trick for your dog to learn,
+     it takes repetition and consistency for him to retain it.',
+    '/pawstep1.gif',
+     'After you are comfortable with the first step it is time to introduce the voice command.',
+    '/pawstep2.gif',
+     'When you first start training with the treat..',
+    '/pawstep3.gif'
+);
+    INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
+    9,
+    '/bangstep0.gif',
+    ' BAND BAND BANG ',
+    '/bangstep1.gif',
+     'BAND BAND BANG',
+    '/bangstep2.gif',
+     'BAND BAND BANG',
+    '/bangstep3.gif'
+);
+
+

@@ -1,9 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 //import { useSelector } from "react-redux";
 
-export default function Invitation() {
-    useEffect(() => {}, []);
-
+export default function ArticleO() {
     // if (!cd) {
     //     return null;
     // }
@@ -11,7 +9,7 @@ export default function Invitation() {
         <div id="article1">
             <h1>Preventing Separation-Anxiety Post-Covid A Brief Guide</h1>
             <div>
-                <img src="/dan.png" height="250"></img>
+                <img src="/dan.png" height="50px" width="50px"></img>
                 <p>
                     Author: Daniel James Murphy is a UI/UX enthusiast,
                     illustrator and writer. He is also one of the authors of
