@@ -214,6 +214,11 @@ export default function Tricks({ openArt1 }) {
                         data-rate="-0.3"
                         src="\b2.svg"
                     ></img>
+                    <img
+                        className="chair"
+                        data-rate="-0.1"
+                        src="chair.svg"
+                    ></img>
                     <div className="articles">
                         <div className="latestArticles">LATEST ARTICLES</div>
                         <button

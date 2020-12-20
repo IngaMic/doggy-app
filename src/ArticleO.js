@@ -7,19 +7,32 @@ export default function ArticleO() {
     // }
     return (
         <div id="article1">
+            <img className="headerImg" src="sadDog.jpg"></img>
             <h1>Preventing Separation-Anxiety Post-Covid A Brief Guide</h1>
-            <div>
-                <img src="/dan.png" height="50px" width="50px"></img>
+            <div className="authorContainer">
+                <img
+                    className="danbub"
+                    src="/dan.png"
+                    height="50px"
+                    width="50px"
+                ></img>
+
+                <br></br>
                 <p>
-                    Author: Daniel James Murphy is a UI/UX enthusiast,
-                    illustrator and writer. He is also one of the authors of
-                    doggy app. Daniel lives in Berlin and spends his days
-                    freelancing, improoving his Web Developing skills and,
-                    according to his partner, creating some of the most exiting
-                    and flavourful dishes on this planet.
+                    <i>
+                        {" "}
+                        About the Author: Daniel James Murphy is a UI/UX
+                        enthusiast, illustrator and writer. He is also one of
+                        the authors of doggy app. Daniel lives in Berlin and
+                        spends his days freelancing, improving his Web
+                        Developing skills and, according to his partner,
+                        creating some of the most exiting and flavourful dishes
+                        on this planet.
+                    </i>
                 </p>
             </div>
-            <p>
+            <br></br>
+            <p className="theMeat">
                 It is hard to see any silver linings to the ongoing disarray
                 brought by COVID-19, but for many it has meant a whole lot more
                 one on one time with their pets. While schools and workplaces
@@ -29,7 +42,9 @@ export default function ArticleO() {
                 our companionship and having their favourite people by their
                 side 24-7 can mean nothing but a world of fun, and the extra
                 face-time will invariably strengthen the bonds between us and
-                our pets. This is not without its risks however. Veterinary
+                our pets.
+                <br></br>
+                <br></br> This is not without its risks however. Veterinary
                 behavioural specialist Monique Feyrecilde predicts that as and
                 when the world begins to lurch towards some semblance of
                 normality we may see many of our pets becoming distressed or
