@@ -243,9 +243,10 @@ img {
     background: linear-gradient(
         180deg,
         rgb(102, 215, 223) 0%,
-        rgb(0, 255, 242) 2%,
+        rgb(0, 209, 199) 2%,
         rgb(68, 138, 147) 100%
     );
+
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -256,7 +257,6 @@ img {
     margin-right: auto;
     font-weight: bold;
     flex-direction: row-reverse;
-    z-index: 0;
 }
 
 .links a {
@@ -493,12 +493,12 @@ img {
     left: 30%;
     width: 15%;
 }
-.trick-steps {
+/* .trick-step {
     position: absolute;
-    top: 70px;
-    right: 10px;
-    width: 95%;
-}
+    top: 90px;
+    right: -80px;
+    width: 120%;
+} */
 
 .trick-step,
 .trick-step img {
@@ -515,14 +515,20 @@ img {
     margin-left: 50px;
     top: 30px;
 }
+.trick-step {
+    /* position: absolute; */
+    right: -80px;
+    top: 70px;
+}
 .trick-step p {
     position: absolute;
     top: 60px;
     right: 5%;
     min-width: 40%;
-    max-width: 50%;
+    max-width: 53%;
     background-color: rgba(255, 255, 255, 0.836);
     padding: 55px;
+    padding-bottom: 35px;
     border-radius: 20px;
     box-shadow: 2px 5px 12px 20px #d6e0e01a;
     border-left: 10px solid white;
@@ -540,12 +546,11 @@ img {
     margin-right: auto;
     align-items: center;
     position: relative;
-    top: 0px;
+    top: 35px;
 }
 #trick-step-number button {
-    animation: glowin 1s ease-in;
-    animation: glowout 1s ease-out;
-    animation-iteration-count: 2;
+    animation: glowout 2s ease-in-out;
+
     text-align: center;
     background-color: rgba(64, 178, 182, 0.671);
     color: white;
@@ -560,21 +565,12 @@ img {
     box-shadow: 1px 1px;
 }
 
-@-webkit-keyframes glowin {
-    from {
-        box-shadow: 0 0 0px rgb(75, 224, 187);
-    }
-    to {
-        box-shadow: 0 0 20px rgb(41, 211, 197);
-    }
-}
-
 @-webkit-keyframes glowout {
     from {
-        box-shadow: 0 0 20px rgb(41, 211, 183);
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
     }
     to {
-        box-shadow: 0 0 0px rgb(55, 192, 158);
+        box-shadow: 0 0 0px rgb(255, 255, 255);
     }
 }
 
@@ -1253,27 +1249,27 @@ textarea {
     border-radius: 45px;
     background-color: rgb(250, 250, 250);
     z-index: 2147483647;
-
-    overflow: scroll;
-    font-family: fantasy;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
+
 .danbub {
     position: relative;
-    top: -175px;
+    /* top: -75px; */
     display: flex;
     margin: auto;
+    top: -150px;
     height: 190px;
     width: auto;
+    background: rgb(204, 204, 204);
 }
 .authorContainer {
     position: relative;
     background-color: white;
-    box-shadow: 2px 2px 12px 12px rgba(83, 83, 83, 0.123);
-    width: 600px;
-    height: auto;
-    top: -140px;
-    display: block;
-    margin: auto;
+    height: 300px;
+    width: 99vw;
+    display: flex;
+    margin-left: 50px;
     font-family: helvetica;
     line-height: 25px;
     padding: 80px;
@@ -1281,24 +1277,79 @@ textarea {
     letter-spacing: 0.8px;
     text-align: center;
 }
-
+.authorContainer p {
+    position: relative;
+    display: flex;
+    width: 400px;
+}
 .headerImg {
     position: relative;
     width: 100%;
     height: 400px;
     object-fit: cover;
-    /* opacity: 80%; */
+    box-shadow: 7px 0px 15px 12px rgba(128, 128, 128, 0.26);
+    filter: brightness(70%);
+    border-bottom-right-radius: 50px;
 }
 #article1 h1 {
     color: rgb(255, 255, 255);
     position: relative;
-    top: -360px;
+    font-size: 50px;
+    top: -310px;
     justify-content: right;
-    left: 36%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 400px;
+    display: block;
+    left: 7%;
+    padding-left: 20px;
+    font-weight: 900;
+    text-shadow: -2px -3px 1px black;
+    border-left: 2px solid rgb(0, 131, 124);
+}
+
+.subSubHeader {
+    position: relative;
+    color: rgb(20, 161, 161);
+    top: -266px;
+    left: 7%;
+    width: 300px;
 }
 .theMeat {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    top: -290px;
+    font-family: Georgia;
     padding: 75px;
     padding-left: 435px;
     padding-right: 435px;
+    font-size: large;
+    letter-spacing: 0.8px;
+}
+.firstLetter {
+    color: rgb(0, 131, 124);
+    float: left;
+    font-family: Georgia;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+.danbubart {
+    position: relative;
+    top: 26px;
+    left: 10px;
+    width: 100px;
+    height: auto;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.13));
+}
+.artOneButton {
+    position: relative;
+    top: 60px;
+    color: grey;
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.13));
+    background: white;
+    border-radius: 15px;
+    border: none;
+    padding: 6px;
+    font-size: 25px;
 }

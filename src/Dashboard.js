@@ -221,10 +221,15 @@ export default function Tricks({ openArt1 }) {
                     ></img>
                     <div className="articles">
                         <div className="latestArticles">LATEST ARTICLES</div>
-                        <button
-                            className="artOneButton"
-                            onClick={openArt1}
-                        ></button>
+                        <img
+                            className="danbubart"
+                            src="/dan.png"
+                            height="50px"
+                            width="50px"
+                        ></img>
+                        <button className="artOneButton" onClick={openArt1}>
+                            Preventing Separation-Anxiety Post-Covid
+                        </button>
                     </div>
                 </div>
             </div>

@@ -16,9 +16,9 @@
     '/sitstep3.gif',
     ' As with the teaching of all behaviors, the first step is to get your dog’s full attention. Hold a treat in your hand so
      that he knows you have it, but hold it in a closed fist so that they cannot reach it. Keep the treat very close to the
-      dog’s nose, then slowly raise it over the top of their head. They should follow the treat with their eyes and nose,
-       looking upward and in the process eventually placing their bottom on the ground.  Make sure you give your dog lots 
-       of praise and encouragement, and that you reward them with the treat as soon as they are in a sitting position. 
+      dog’s nose, then slowly raise it over the top of their head. They should follow the treat with their nose,
+       looking upward and eventually placing their bottom on the ground.  Make sure you give your dog lots 
+       of praise, and reward them with the treat as soon as they are in a sitting position. 
         Don’t worry about having them hold the position for any length of time for now - just make sure they are consistently
          ending up with their bottom on the ground, and that they are getting more and more used to what you are expecting. ',
     '/sitstep1.gif',
