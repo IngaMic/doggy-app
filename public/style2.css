@@ -1,19 +1,23 @@
 * {
     margin: 0;
     box-sizing: border-box;
+    outline: none;
 }
 body {
     font-family: "Fira Sans", sans-serif;
 }
-body::-webkit-scrollbar {
+body::-webkit-scrollbar,
+#article1::-webkit-scrollbar {
     width: 1em;
 }
 
-body::-webkit-scrollbar-track {
+body::-webkit-scrollbar-track,
+#article1::-webkit-scrollbar-track {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.164);
 }
 
-body::-webkit-scrollbar-thumb {
+body::-webkit-scrollbar-thumb,
+#article1::-webkit-scrollbar-thumb {
     background-color: rgb(46, 186, 189);
     outline: 1px solid rgb(201, 248, 252);
 }
@@ -235,7 +239,7 @@ img {
     width: 140px;
     position: absolute;
     z-index: 1;
-    filter: hue-rotate(13deg);
+    filter: hue-rotate(13deg) drop-shadow(3px 4px 3px 2px black);
 }
 .links {
     color: white;
@@ -267,7 +271,7 @@ img {
     color: rgb(255, 255, 255);
 }
 .links a:hover {
-    text-shadow: 2px 2px 4px #4c676854;
+    text-shadow: 2px 2px 4px #1a232454;
 }
 .line-one {
     position: absolute;
@@ -346,17 +350,20 @@ img {
     transition: 0.2s;
 }
 .background1 {
-    filter: drop-shadow(-5px -5px 50px rgba(255, 255, 255, 0.801));
+    filter: drop-shadow(-5px -5px 50px rgba(245, 213, 154, 0.459));
     /* opacity: 80% ; */
 }
 .backOneTwo {
-    filter: drop-shadow(inset 0px 0px 15px rgb(255, 255, 255));
+    filter: drop-shadow(-5px -5px 50px rgba(235, 240, 162, 0.459));
 }
 .backOneThree {
-    filter: saturate(80%);
+    filter: saturate(80%) drop-shadow(-5px -5px 70px rgba(1, 255, 128, 0.479));
 }
 .backOneFour {
-    filter: saturate(110%);
+    filter: saturate(100%) drop-shadow(-5px -5px 30px rgba(39, 121, 66, 0.192));
+}
+.backOneFive {
+    filter: saturate(90%) drop-shadow(-5px -5px 30px rgba(39, 121, 66, 0.192));
 }
 .background2 {
     background-size: cover;
@@ -1101,6 +1108,13 @@ textarea {
 #close-bio-editor {
     float: right;
 }
+.diaryPage {
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    width: 100vw;
+    top: 120px;
+    border-radius: 50px;
+}
 .walkies {
     height: 50px;
     width: 50px;
@@ -1110,20 +1124,22 @@ textarea {
     object-fit: scale-down;
 }
 .activity-log {
-    margin-top: 100px;
+    margin-top: 200px;
     margin-left: 50px;
+    color: rgb(59, 59, 59);
     position: relative;
 }
 .diaryContainer {
     top: -80px;
-    left: 30px;
+    left: 90px;
     height: 200px;
     width: 700px;
     position: relative;
     font-size: 30px;
     border-radius: 50px;
     z-index: 0;
-    background-color: rgb(88, 211, 219);
+    box-shadow: 5px 12px 5px 6px rgba(83, 71, 71, 0.123);
+    background: rgba(153, 219, 226, 0.89);
 }
 .diary-form {
     padding: 15px 50px 30px 0px;
@@ -1153,11 +1169,18 @@ textarea {
     border-radius: 15px;
     width: 220px;
     left: 30%;
+    border: none;
+    transition: 4s;
 }
+#activity option:hover {
+    background-color: lightblue;
+}
+
 #time {
     border-radius: 15px;
     width: 220px;
     left: 30%;
+    border: none;
 }
 
 #submit-diary {
@@ -1202,6 +1225,8 @@ textarea {
 .activity-user p {
     position: relative;
     font-size: 15px;
+    font-weight: 900;
+    color: rgb(0, 146, 139);
     left: -15px;
     margin: 5px;
 }
@@ -1209,12 +1234,14 @@ textarea {
     font-size: 20px;
     margin: 10px;
     width: 270px;
-    background-color: #5fd1d9;
-    border-radius: 21px;
-    box-shadow: 2px 2px 0px;
+    /* background-color: #5fd1d9; */
+    border-bottom-left-radius: 221px;
+    /* border-bottom: 1px solid grey; */
+    /* box-shadow: 2px 2px 0px; */
     padding: 6px;
     padding-right: 10px;
-    top: -200px;
+    padding-top: 30px;
+    top: -100px;
     position: relative;
 }
 .dogwalk-record #record {
@@ -1227,17 +1254,21 @@ textarea {
 .git-container {
     border-radius: 10px;
     position: absolute;
-    right: -350px;
+    right: -650px;
     top: 15px;
-    height: 320px;
+    height: 620px;
     width: 320px;
+    box-shadow: -5px 12px 5px 6px rgba(83, 71, 71, 0.123);
     padding: 20px;
     background: linear-gradient(
         180deg,
         rgba(198, 230, 233, 0.849) 0%,
         rgba(209, 237, 238, 0.603) 2%,
-        rgba(204, 240, 241, 0.521) 100%
+        rgba(0, 229, 236, 0.521) 100%
     );
+}
+.color-empty {
+    background-color: purple;
 }
 #article1 {
     position: relative;
@@ -1252,35 +1283,50 @@ textarea {
     overflow-y: scroll;
     overflow-x: hidden;
 }
+.smLinks {
+    position: relative;
+    width: 150px;
+    height: auto;
+    float: right;
 
+    margin-right: 48%;
+    margin-left: auto;
+    top: -230px;
+}
 .danbub {
     position: relative;
     /* top: -75px; */
     display: flex;
     margin: auto;
+    margin-left: 300px;
+    filter: drop-shadow(2px 2px 9px rgba(128, 128, 128, 0.212));
     top: -150px;
     height: 190px;
     width: auto;
-    background: rgb(204, 204, 204);
 }
 .authorContainer {
     position: relative;
-    background-color: white;
-    height: 300px;
-    width: 99vw;
+    background-color: rgba(58, 58, 58, 0.048);
+    color: rgba(80, 80, 80, 0.753);
+    height: 400px;
+    width: 800px;
     display: flex;
-    margin-left: 50px;
+    margin-left: 300px;
+    margin-right: auto;
     font-family: helvetica;
     line-height: 25px;
-    padding: 80px;
+    /* padding: 80px; */
     font-weight: 700;
     letter-spacing: 0.8px;
     text-align: center;
+    top: -220px;
 }
-.authorContainer p {
+.authorContainer i {
     position: relative;
     display: flex;
-    width: 400px;
+    left: -73%;
+    top: 180px;
+    width: 500px;
 }
 .headerImg {
     position: relative;
@@ -1289,10 +1335,11 @@ textarea {
     object-fit: cover;
     box-shadow: 7px 0px 15px 12px rgba(128, 128, 128, 0.26);
     filter: brightness(70%);
-    border-bottom-right-radius: 50px;
+    /* border-bottom-right-radius: 50px; */
 }
 #article1 h1 {
     color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
     position: relative;
     font-size: 50px;
     top: -310px;
@@ -1301,10 +1348,10 @@ textarea {
     width: 400px;
     display: block;
     left: 7%;
-    padding-left: 20px;
+    padding: 20px;
     font-weight: 900;
-    text-shadow: -2px -3px 1px black;
-    border-left: 2px solid rgb(0, 131, 124);
+    text-shadow: -2px -3px 1px rgba(123, 206, 202, 0.61);
+    border-left: 18px solid rgb(175, 73, 196);
 }
 
 .subSubHeader {
@@ -1352,4 +1399,66 @@ textarea {
     border: none;
     padding: 6px;
     font-size: 25px;
+    outline: none;
+}
+.artOneButton:hover {
+    background: rgb(236, 236, 236);
+}
+.artOneButton:active {
+    background-color: white;
+}
+.articleCloseX {
+    position: absolute;
+    display: block;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(0, 156, 177, 0.61);
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.13));
+    text-align: center;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    z-index: 99999;
+    border-radius: 50%;
+    outline: none;
+}
+.articleCloseX:hover {
+    background-color: rgba(18, 122, 117, 0.61);
+    color: rgb(255, 255, 255);
+}
+.articleCloseX:active {
+    background-color: rgba(0, 177, 168, 0.61);
+    color: white;
+}
+
+.articleCloseBottom {
+    position: absolute;
+    display: flex;
+    padding: 20px;
+    padding-left: 25px;
+    padding-top: 5px;
+    right: 50%;
+    bottom: -2090px;
+    font-size: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(0, 177, 168, 0.61);
+    filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.13));
+    text-align: center;
+    color: white;
+    width: 70px;
+    height: 70px;
+    z-index: 99999;
+    outline: none;
+}
+.articleCloseBottom:hover {
+    background-color: rgba(18, 122, 117, 0.61);
+    color: rgb(255, 255, 255);
+}
+.articleCloseBottom:active {
+    background-color: rgba(0, 177, 168, 0.61);
+    color: white;
 }

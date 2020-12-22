@@ -114,6 +114,10 @@ export default class App extends React.Component {
         e.preventDefault();
         this.setState({ art1IsVisible: true });
     }
+    closeArt1(e) {
+        e.preventDefault();
+        this.setState({ art1IsVisible: false });
+    }
     setImage(imageUrl) {
         this.setState({ imageUrl: imageUrl });
     }

@@ -66,7 +66,14 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'PawsUp',
     '/pawsup.png',
-  'this is a description of Paws Up command'
+  '"Paws up" or "sitting pretty" is a tricky one, but with a lot
+of patience and a lot of practice it can be one of the most rewarding things
+to learn with your dog. As well as looking cute there are practical reasons
+for teaching "paws up" as it increases a dog’s balance and body
+awareness. It also builds your dogs core muscles which can act to
+prevent injury in the long term. Be aware though that this is not suitable
+for many dog types, it is worth double checking the recommendations for
+your dog.'
 );
 
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
@@ -77,6 +84,10 @@ INSERT INTO tricks (tname, imagebub, descr) VALUES (
 INSERT INTO tricks (tname, imagebub, descr) VALUES (
     'Bang',
     '/handgradient.png',
-  'this is a description of bang command'
+  'Now it`s time for one of the classics. "Bang" or "play dead" involves
+a few different movements combined which your pup might not yet be
+used to, so don`t get disheartened if it takes longer than others to master,
+just practice regularly and as always make sure you are consistent with
+your command.'
 );
 

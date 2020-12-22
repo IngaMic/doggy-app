@@ -1,17 +1,20 @@
 import React from "react";
 //import { useSelector } from "react-redux";
 
-export default function ArticleO() {
+export default function ArticleO({ closeArt1 }) {
     // if (!cd) {
     //     return null;
     // }
     return (
         <div id="article1">
+            <button className="articleCloseX" onClick={closeArt1}>
+                x
+            </button>
             <img className="headerImg" src="header.jpg"></img>
             <div className="articleBox"></div>
             <h1>Preventing Separation-Anxiety Post-Covid</h1>
             <br></br>
-
+            <img src="smLinks.png" className="smLinks"></img>
             <h4 className="subSubHeader">
                 <b> By D.M. Quinn</b>
                 <br></br>
@@ -107,6 +110,10 @@ export default function ArticleO() {
                     </i>
                 </p>
             </div>
+            <button className="articleCloseBottom" onClick={closeArt1}>
+                {" "}
+                x{" "}
+            </button>
         </div>
     );
 }

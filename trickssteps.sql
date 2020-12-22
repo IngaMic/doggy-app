@@ -76,15 +76,29 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     4,
     '/staystep0.gif',
-    ' NEEDS CHANGE ',
+    ' Teaching your dog to stay will take a lot of patience so start small and reward
+big. Begin by getting your dog’s attention with a treat and asking them to sit.
+Hold an open palm in front of them and say “stay”, as always in a firm tone of
+voice. Once you have their attention, hold it for as long as possible, even if that’s
+just a moment or two at first. You will be able to gauge quite quickly when your
+dog is about to break their ‘stay’, and move for the treat, so be quick to reward
+them before this happens. You should always be setting your dog up for success
+and building on that. ',
     '/staystep1.gif',
-     'NEEDS CHANGE Keep a treat in your hand and reward your dog only after he remains calm and waits. You might need to step down a bit after a break
-       between training and build up to a longer time and greater distance.',
+     'When you have managed to consistently get your dog to stay put for at least 6-
+10 seconds at a time, start incorporating a step away from them, maintaining the
+hand gesture and voice command as you do so. Progress will likely be slow
+going as dogs do have a hard time sitting still but perseverance and repetition
+are both keys to success. Build up half a step at a time, and as before, always
+try to spot when your dog’s focus starts to fade, rewarding them before they
+break their stay. ',
     '/staystep2.gif',
-     'Once you can move around your dog freely while they remain in a stay, see if you can quickly pop out of sight and then
-      come back to reward them. You could also begin to add in distractions, like toys, or dancing around them to test your 
-      dog’s impulse control. However, you should always return to your dog to let them out of the stay. Don’t call your dog 
-      out of a stay because this could confuse them.',
+     'Increase distance and time regularly as well as introducing more distracting
+environments. It is a good idea to keep a reward at hand while training ‘stay’
+longer than you would with most other commands, as even the best trained dogs
+can sometimes give in to impulse on occasion. Importantly, you shouldn’t end
+the stay by calling your dog to you - always go to them before releasing, as
+otherwise they can easily become confused.',
     '/staystep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
@@ -106,7 +120,7 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     6,
     '/pawstep0.gif',
-    ' As with the teaching of all behaviors, the first step is to get your dogs full attention. Start at a sitting position, show 
+    ' The first step is to get your dogs full attention. Start at a sitting position, show 
     your dog a treat to get his attention, and then create a fist to hide the treat. 
 Wait for your dog to stretch out his paw to you. This may not take long if your dog regularly uses his paws to get your attention
  or play. If this is not how your dog uses his paws, do not respond if he uses his mouth, but when he lifts his paw, even if it is just slightly off the ground, immediately give
@@ -125,11 +139,27 @@ Wait for your dog to stretch out his paw to you. This may not take long if your 
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     7,
     '/pawsupstep0.gif',
-    ' PAWS UP PAWS UP  ',
+    'The goal is to have your dog sit up on their hind legs and hold the position. This
+is not a natural position for a dog to sit in, so it is absolutely crucial that you do
+not push them and that you recognize any signs of discomfort so you can stop at
+the right time. Start with a treat in a closed fist held right above your dog`s nose.
+raise your hand straight up and your dog should follow it with his head until his
+front paws come off the ground. As soon as his paws leave the ground reward
+him. Repeat this behaviour, letting your hand rise slightly higher each time. It is
+a good idea to let your dog use your arm or shoulder for balance if they need to,
+as it might take some time to build the muscles necessary to hold this position.  ',
     '/pawsupstep1.gif',
-     'PAWS UP PAWS UP',
+     'When they are comfortable with this routine and you notice they are already
+holding the position themselves for a moment or two before being rewarded, you
+can start to introduce the voice command. At the exact moment you reward
+them, say "paws up" or any other chosen cue word. Now you can also start to
+gradually increase the amount of time your dog sits fully upright before
+rewarding, letting your dog get used to the position over time.',
     '/pawsupstep2.gif',
-     'PAWS UP PAWS UP',
+     'Patience really is key when practicing this trick, so when you begin to phase out
+the reward, take it much slower than you would with other trainings. It is a good
+idea to pepper this training in amongst others, rather than focus on it for long
+stretches of time, as it can be physically challenging for a lot of dogs.',
     '/pawsupstep3.gif'
 );
   INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
@@ -147,11 +177,25 @@ Wait for your dog to stretch out his paw to you. This may not take long if your 
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     9,
     '/bangstep0.gif',
-    ' BAND BAND BANG ',
+    ' Your dog should have by now fully mastered the lay command, so the first step is
+to have them lay down. Hold a treat in a closed fist and hold it behind their ear
+before moving your hand slowly to the back of their head. Your dog should
+follow the treat with their head and eventually shift their weight on to their side.
+You should not force your dog onto their side but if they aren`t quite getting it, a
+gentle nudge won`t hurt.
+ ',
     '/bangstep1.gif',
-     'BAND BAND BANG',
+     'Next we will introduce the voice command. As soon as your pup reaches the
+desired position, say in a loud clear voice "bang", or any other command you
+have decided on - remembering of course to keep it consistent. As this involves
+more than one movement (i.e. laying down and then rolling onto their side) it is a
+good idea to gradually begin to say the command earlier and earlier in the
+process, so they join the dots that this is one full trick, not just two tied together.',
     '/bangstep2.gif',
-     'BAND BAND BANG',
+     'Finally, we can introduce the hand gesture. Before you say "Bang", show a
+finger-gun to your dog. If they struggle to grasp what you are asking, you can
+always repeat the process of leading them from behind the ear and phase this
+out until they get the picture.',
     '/bangstep3.gif'
 );
 
