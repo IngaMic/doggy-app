@@ -129,7 +129,7 @@ const Diary = ({ logUserId, cd, otherUsers, first, imageUrl }) => {
                                 </select>
                             </div>
                             <button id="submit-diary">
-                                <img src="/plus.png"></img>
+                                <img src="/plus.svg"></img>
                             </button>
                         </form>
                     </div>

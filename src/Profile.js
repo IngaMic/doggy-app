@@ -35,9 +35,9 @@ export default class Profile extends React.Component {
     }
     componentDidMount() {
         if (this.props.answers) {
-                this.setState({
-             questionaireIsVisible: false,
-        });
+            this.setState({
+                questionaireIsVisible: false,
+            });
         }
         this.setState({
             dogId: this.props.dogId,
@@ -52,33 +52,33 @@ export default class Profile extends React.Component {
         });
     }
     clickTraining(e) {
-         this.setState({ training: e.currentTarget.value });
+        this.setState({ training: e.currentTarget.value });
         var choice = e.currentTarget.value;
         if (choice == "not") {
-            this.setState({ trainingImg: "/sit.png" });
+            this.setState({ trainingImg: "/leashstep1.gif" });
         } else if (choice == "some") {
-            this.setState({ trainingImg: "/lay.png" });
+            this.setState({ trainingImg: "/sitstep4.gif" });
         } else if (choice == "mid") {
-            this.setState({ trainingImg: "/come.png" });
+            this.setState({ trainingImg: "/pawstep3.gif" });
         } else if (choice == "well") {
-            this.setState({ trainingImg: "/huskygradient.png" });
+            this.setState({ trainingImg: "/pawsupstep3.gif" });
         }
     }
     clickCharacter(e) {
-         this.setState({ characters: e.currentTarget.value });
+        this.setState({ characters: e.currentTarget.value });
         var choice = e.currentTarget.value;
         if (choice == "docile") {
-            this.setState({ characterImg: "/anim2.gif" });
+            this.setState({ characterImg: "/staystep3.gif" });
         } else if (choice == "active") {
-            this.setState({ characterImg: "/anim1.gif" });
-        } else if (choice == "independent") {
             this.setState({ characterImg: "/skate1.gif" });
+        } else if (choice == "independent") {
+            this.setState({ characterImg: "/leashstep3.gif" });
         } else if (choice == "affectionate") {
-            this.setState({ characterImg: "/anim3.gif" });
+            this.setState({ characterImg: "/comestep3.gif" });
         }
     }
     clickHero(e) {
-         this.setState({ hero: e.currentTarget.value });
+        this.setState({ hero: e.currentTarget.value });
         var choice = e.currentTarget.value;
         if (choice == "lassie") {
             this.setState({ heroImg: "/anim2.gif" });
@@ -90,27 +90,25 @@ export default class Profile extends React.Component {
             this.setState({ heroImg: "/anim3.gif" });
         }
     }
-     clickSubmit() {
-         let that = this;
-           const answers = {
-              cd: this.props.cd,   
+    clickSubmit() {
+        let that = this;
+        const answers = {
+            cd: this.props.cd,
             training: this.state.training,
             characters: this.state.characters,
             hero: this.state.hero,
         };
-        console.log("answers", answers)
-          axios.post("/updatequestionaire", answers)
-                .then(function (resp) {
-                    console.log(
-                        "response after /updatequestionaire",
-                        resp
-                    );
-                    that.setState({ questionaireIsVisible: false });
-                })
-                .catch(function (err) {
-                    console.log("error in axios post /updatequestionaire", err);
-                });
-     }
+        console.log("answers", answers);
+        axios
+            .post("/updatequestionaire", answers)
+            .then(function (resp) {
+                console.log("response after /updatequestionaire", resp);
+                that.setState({ questionaireIsVisible: false });
+            })
+            .catch(function (err) {
+                console.log("error in axios post /updatequestionaire", err);
+            });
+    }
     render() {
         // if (!this.props.dogId) {
         //     return null;
@@ -121,7 +119,7 @@ export default class Profile extends React.Component {
                     <div id="users-profile">
                         <div className="profiles-left"></div>
                         <div className="profiles-right"></div>
-                       
+
                         <img
                             id="dog-profile-img"
                             src={this.props.dogimg || "/dog1.png"}
@@ -145,7 +143,7 @@ export default class Profile extends React.Component {
                             <img
                                 onClick={this.props.openInvitation}
                                 className="user2-profile-img"
-                                src={"/plus.png"}
+                                src={"/plus.svg"}
                             ></img>
                             <p>Invite your team member!</p>
                         </div>
@@ -262,97 +260,104 @@ export default class Profile extends React.Component {
                 </div>
                 {this.state.questionaireIsVisible && (
                     <div>
-                     <a className="next-page" href="#character-level">
+                        <a className="next-page" href="#character-level">
                             To The Questionaire!
                         </a>
                         <div id="questionaire">
-                        
-                        <div className="training-level">
-                            <h2>How well is your dog trained?</h2>
-                            <button
-                                onClick={(e) => this.clickTraining(e)}
-                                value="not"
+                            <div className="training-level">
+                                <h2>How well is your dog trained?</h2>
+                                <button
+                                    onClick={(e) => this.clickTraining(e)}
+                                    value="not"
+                                >
+                                    No Training At All
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickTraining(e)}
+                                    value="some"
+                                >
+                                    Some Basic Training
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickTraining(e)}
+                                    value="mid"
+                                >
+                                    Mid Trained
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickTraining(e)}
+                                    value="well"
+                                >
+                                    Professionally Trained
+                                </button>
+                                <img src={this.state.trainingImg}></img>
+                            </div>
+                            <div
+                                className="character-level"
+                                id="character-level"
                             >
-                                No Training At All
-                            </button>
+                                <h2>What is your dogs temperament?</h2>
+                                <button
+                                    onClick={(e) => this.clickCharacter(e)}
+                                    value="docile"
+                                >
+                                    Docile
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickCharacter(e)}
+                                    value="active"
+                                >
+                                    Active
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickCharacter(e)}
+                                    value="independent"
+                                >
+                                    Independent
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickCharacter(e)}
+                                    value="affectionate"
+                                >
+                                    Affectionate
+                                </button>
+                                <img src={this.state.characterImg}></img>
+                            </div>
+                            <div className="hero-level" id="hero-level">
+                                <h2>Which famous dog is you favourite?</h2>
+                                <button
+                                    onClick={(e) => this.clickHero(e)}
+                                    value="lassie"
+                                >
+                                    Lassie
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickHero(e)}
+                                    value="mailo"
+                                >
+                                    Mailo from the MASK
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickHero(e)}
+                                    value="laika"
+                                >
+                                    Laika
+                                </button>
+                                <button
+                                    onClick={(e) => this.clickHero(e)}
+                                    value="snoopy"
+                                >
+                                    Snoopy
+                                </button>
+                                <img src={this.state.heroImg}></img>
+                            </div>
                             <button
-                                onClick={(e) => this.clickTraining(e)}
-                                value="some"
+                                className="submit-questionaire-button"
+                                onClick={() => this.clickSubmit()}
                             >
-                                Some Basic Training
+                                Submit
                             </button>
-                            <button
-                                onClick={(e) => this.clickTraining(e)}
-                                value="mid"
-                            >
-                                Mid Trained
-                            </button>
-                            <button
-                                onClick={(e) => this.clickTraining(e)}
-                                value="well"
-                            >
-                                Professionally Trained
-                            </button>
-                            <img src={this.state.trainingImg}></img>
                         </div>
-                        <div className="character-level" id="character-level">
-                            <h2>What is your dogs temperament?</h2>
-                            <button
-                                onClick={(e) => this.clickCharacter(e)}
-                                value="docile"
-                            >
-                                Docile
-                            </button>
-                            <button
-                                onClick={(e) => this.clickCharacter(e)}
-                                value="active"
-                            >
-                                Active
-                            </button>
-                            <button
-                                onClick={(e) => this.clickCharacter(e)}
-                                value="independent"
-                            >
-                                Independent
-                            </button>
-                            <button
-                                onClick={(e) => this.clickCharacter(e)}
-                                value="affectionate"
-                            >
-                                Affectionate
-                            </button>
-                            <img src={this.state.characterImg}></img>
-                        </div>
-                        <div className="hero-level" id="hero-level">
-                            <h2>Which famous dog is you favourite?</h2>
-                            <button
-                                onClick={(e) => this.clickHero(e)}
-                                value="lassie"
-                            >
-                                Lassie
-                            </button>
-                            <button
-                                onClick={(e) => this.clickHero(e)}
-                                value="mailo"
-                            >
-                                Mailo from the MASK
-                            </button>
-                            <button
-                                onClick={(e) => this.clickHero(e)}
-                                value="laika"
-                            >
-                                Laika
-                            </button>
-                            <button
-                                onClick={(e) => this.clickHero(e)}
-                                value="snoopy"
-                            >
-                                Snoopy
-                            </button>
-                            <img src={this.state.heroImg}></img>
-                        </div>
-                        <button className="submit-questionaire-button"   onClick={() => this.clickSubmit()}>Submit</button>
-                    </div>
                     </div>
                 )}
             </div>

@@ -7,26 +7,20 @@ export default function Welcome() {
     return (
         <div className="welcome">
             <div>
-                <p className="welcome-logo-name">Doggy App</p>
+                <p className="welcome-logo-name"></p>
             </div>
             <div className="grid-one">
                 <div>
-                    <img id="firstdog" src="/dog3.png"></img>
+                    <img id="firstdog" src="/logo.svg"></img>
                 </div>
 
                 <div>
                     <p className="description">
-                        Would you like to spend more time with your dog,
-                        <br />
-                        not only playing but learning something new and fun?
-                        <br />
-                        Dogs are loving and highly social animals - and good
-                        training doesn't only
-                        <br />
-                        make your life easier, it promotes mental stimulation
-                        and physical wellbeing
-                        <br />
-                        for your dog.
+                        Would you like to spend more time with your dog, not
+                        only playing but learning something new and fun? Dogs
+                        are loving and highly social animals - and good training
+                        doesn`t only make your life easier, it promotes mental
+                        stimulation and physical wellbeing for your dog.
                     </p>
                 </div>
 
@@ -37,7 +31,11 @@ export default function Welcome() {
                     </div>
                 </HashRouter>
             </div>
-            <img id="background" src="/background.png"></img>
+            <img id="background" src="/1.svg"></img>
+            <img id="background" src="/2.svg"></img>
+            <img id="background" src="/3.svg"></img>
+            <img id="background" src="/4.svg"></img>
+            <img id="background" src="/5.svg"></img>
         </div>
     );
 }

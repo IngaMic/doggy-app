@@ -14,8 +14,8 @@
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
     1,
     '/sitstep3.gif',
-    ' As with the teaching of all behaviors, the first step is to get your dog’s full attention. Hold a treat in your hand so
-     that he knows you have it, but hold it in a closed fist so that they cannot reach it. Keep the treat very close to the
+    ' Begin by holding a treat in your hand so
+     that your dog knows you have it, but hold it in a closed fist so that they cannot reach it. Keep the treat very close to the
       dog’s nose, then slowly raise it over the top of their head. They should follow the treat with their nose,
        looking upward and eventually placing their bottom on the ground.  Make sure you give your dog lots 
        of praise, and reward them with the treat as soon as they are in a sitting position. 
@@ -43,7 +43,7 @@
      your hand has reached the ground.  While you shouldn’t worry too much at this stage about your dog holding the position, 
      make sure to only reward them if they are fully lying down - even if just for a split second!',
     '/laystep1.gif',
-     'Introduce the voice command when your dog is constantly lying down on seeing your hand (and their treat) moving towards the floor. 
+     'Introduce the voice command when your dog is consistently lying down on seeing your hand (and their treat) moving towards the floor. 
      Again, speak in a clear, consistent voice when communicating with your dog, and make sure you are giving them lots of encouragement 
      - not just treats.  ',
     '/laystep2.gif',
@@ -58,8 +58,8 @@
     'The key to success in getting your dog to come every time is to be seen as a more appealing option than any other.  That means it is
      time to break out some seriously high-value rewards, and really celebrate the behaviour to keep your pup motivated.  Start by getting
       your dog’s attention, and calling them to you, making sure they know there are good things waiting.  This time, we will throw in the
-       verbal cue immediately. When they get to you, say ‘come’ or any other chosen verbal cue immediately on giving your dog a treat.
-      Practice this regularly at home, and gradually increase distance.',
+       verbal cue immediately. When they get to you, say ‘come’ or any other chosen verbal cue as soon as you give your dog a treat.
+      Practice this regularly at home, and gradually increase distance over time.',
     '/comestep1.gif',
      'As you increase distance and move to environments with more and more distractions, you can mix it up by running away from your dog
       just as they approach you. Encourage your dog to chase you, but never play games that involve chasing them as this can signal mixed 
@@ -70,7 +70,7 @@
      and calling, or calling your dog when you aren’t in the same room as them).  It can take a long time to really instill this behaviour
       so keep working on it regularly and never let your dog see that you are getting frustrated or irritated (if coming to you seems like
        they might get scolded or punished, it is natural that they will not see coming to you as worthwhile).  Remember, coming to you
-        should always feel like the most exciting thing in the world to your dog.',
+        should always feel like the most exciting thing in the world to your dog!`',
     '/comestep3.gif'
 );
     INSERT INTO trickssteps (trick_id, imageon, stepone, imageone, steptwo, imagetwo, stepthree, imagethree) VALUES (
@@ -106,7 +106,7 @@ otherwise they can easily become confused.',
     '/leashstep0.gif',
     ' Start by letting your dog wear a collar (or harness) and leash for short periods of time while doing other things around
      the house, be it playing, training, or even feeding.  Either way, your dog should build only positive associations with wearing 
-     their leash, and should always be excited to see it as it represents food and/or fun! ',
+     their leash, and should always be excited to see it as it represents food, fun or both! ',
     '/leashstep1.gif',
      'When you get outside, your dog will want to run off and explore, so it is important to have high-value rewards at hand.
       Keep your dog close to you as you walk and keep attention and rewards regular, only reducing regularity when you are confident
@@ -195,7 +195,8 @@ process, so they join the dots that this is one full trick, not just two tied to
      'Finally, we can introduce the hand gesture. Before you say "Bang", show a
 finger-gun to your dog. If they struggle to grasp what you are asking, you can
 always repeat the process of leading them from behind the ear and phase this
-out until they get the picture.',
+out until they get the picture.  Dogs do have a tendency to jump the gun (pun intended) when training 
+if a reward is in sight, so it is important not to reward if they have perforemed the trick before you have asked.',
     '/bangstep3.gif'
 );
 

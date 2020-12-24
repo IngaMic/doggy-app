@@ -22,6 +22,7 @@ body {
 }
 .welcome {
     display: grid;
+    color: red;
     grid-column: 1fr 1fr;
 }
 #background {
