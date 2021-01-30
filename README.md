@@ -7,7 +7,9 @@ Dashboard features training steps which each contain three training steps, each 
 </br></br>
 All gifs and illustrations are custom made for the project by myself and Daniel James Murphy.
 
-![](Hnet-image(2).gif)
+![](https://github.com/IngaMic/doggy-app/blob/master/Hnet-image%20(2).gif?raw=true)
+
+
 
 ### Development </br>
 JavaScript  </br>
